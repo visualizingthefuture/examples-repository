@@ -31,12 +31,6 @@ js:
     version: 0.9.6
     cdn: https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js
 
-# search tests
-quoll:
-  main:
-    page: '/'
-    terms: [iran, map, manuscript]
-
 # cors headers for iiif use
 webrick:
   headers:
