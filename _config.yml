@@ -18,11 +18,11 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
-title:            'Wax'
-description:      'Minimal Exhibitions with Jekyll'
+title:            'Visualizing the Future'
+description:      'Minimalist Examples Repository with Jekyll'
 url:              'https://minicomp.github.io'
-baseurl:          '/wax'
-copyright:        'Example copyright org, 2019'
+baseurl:          '/datavis'
+copyright:        'Example copyright org, 2020'
 logo:             '/assets/logo.png'
 
 # ---------------------------------------------------------------
