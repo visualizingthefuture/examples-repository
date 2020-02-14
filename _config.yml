@@ -18,10 +18,10 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
-title:            'Visualizing the Future'
+title:            'Examples Repository'
 description:      'Minimalist Examples Repository with Jekyll'
 url:              'https://minicomp.github.io'
-baseurl:          '/VisualizingtheFuture'
+baseurl:          '/examplesrepo'
 copyright:        'Example copyright org, 2020'
 logo:             '/assets/logo.png'
 
