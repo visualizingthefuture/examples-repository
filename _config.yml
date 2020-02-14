@@ -21,7 +21,7 @@
 title:            'Visualizing the Future'
 description:      'Minimalist Examples Repository with Jekyll'
 url:              'https://minicomp.github.io'
-baseurl:          '/datavis'
+baseurl:          '/VisualizingtheFuture'
 copyright:        'Example copyright org, 2020'
 logo:             '/assets/logo.png'
 

@@ -74,7 +74,7 @@
       {% endfor %}
     {% endif %}
 
-    // FIRST CONTAINER AGAIN; creates the sorting tags on top 
+    // FIRST CONTAINER AGAIN; creates the sorting tags (top of page)
     {% if include.facet_by %}
       {% unless subset %}
         // tells system that we're currently working with include.facet_by tags
@@ -88,7 +88,7 @@
       {% endunless %}
     {% endif %}
 
-    // SECOND CONTAINER; creates the sorting tags on top 
+    // SECOND CONTAINER; creates the sorting tags 
     {% if include.facet_by2 %}
       {% unless subset %}
         var facets = Array.from(new Set([{%- for item in collection -%}'{{ item[include.facet_by2] | slugify }}'{% unless forloop.last %}, {% endunless %}{%- endfor -%}]));
@@ -100,7 +100,7 @@
       {% endunless %}
     {% endif %}
 
-    // THIRD CONTAINER; creates the sorting tags on top 
+    // THIRD CONTAINER; creates the sorting tags
     {% if include.facet_by3 %}
       {% unless subset %}
         var facets = Array.from(new Set([{%- for item in collection -%}'{{ item[include.facet_by3] | slugify }}'{% unless forloop.last %}, {% endunless %}{%- endfor -%}]));
@@ -120,12 +120,13 @@
         
 
  // DYNAMICISM; when you click a tag, it sorts below for items related to that tag
+ // it operates off of the functions at the top of page (3) 
   $(document).ready(function(){
     $(".facet").click(function(){
       var filterValue = $(this).attr('data-filter');
       $('.facet').removeClass('active');
       $(this).addClass('active');
-      if(filterValue == 'all') { $('.facet_by').show('slow'); }
+      if(filterValue == 'all') { $('.all').show('slow'); }
       else { $('.all').hide('slow'); $(`.${filterValue}`).show('slow'); }
       });
     });
