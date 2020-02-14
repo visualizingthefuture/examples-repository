@@ -25,9 +25,9 @@
     
     // FIRST CONTAINER; gathers info so it can later populate the page
     {% if subset %}
-      {% for item in subset %}
+      {% for item in collection %}
         {%- capture item_html -%}
-          "<div class='gallery-item {{ item[include.facet_by] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}'/><div class='overlay'><p class='info'>{{ item.label }}</p></div></div></a></div>"
+          "<div class='gallery-item {{ item[include.facet_by] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}' alt='{{ item.label }}'/><div class='overlay'><p class='info'>{{ item.label }}</p></div></div></a></div>"
         {%- endcapture -%}
         gallery.append({{ item_html | strip_newlines }});
       {% endfor %}
@@ -35,9 +35,9 @@
 
     // SECOND CONTAINER
     {% if subset %}
-      {% for item in subset %}
+      {% for item in collection %}
         {%- capture item_html -%}
-          "<div class='gallery-item {{ item[include.facet_by2] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}'/><div class='overlay'><p class='info'>{{ item.label }}</p></div></div></a></div>"
+          "<div class='gallery-item {{ item[include.facet_by2] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}' alt='{{ item.label }}'/><div class='overlay'><p class='info'>{{ item.label }}</p></div></div></a></div>"
         {%- endcapture -%}
         gallery.append({{ item_html | strip_newlines }});
       {% endfor %}
@@ -45,9 +45,9 @@
 
     // THIRD CONTAINER
     {% if subset %}
-      {% for item in subset %}
+      {% for item in collection %}
         {%- capture item_html -%}
-          "<div class='gallery-item {{ item[include.facet_by3] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}'/><div class='overlay'><p class='info'>{{ item.label }}</p></div></div></a></div>"
+          "<div class='gallery-item {{ item[include.facet_by3] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}' alt='{{ item.label }}'/><div class='overlay'><p class='info'>{{ item.label }}</p></div></div></a></div>"
         {%- endcapture -%}
         gallery.append({{ item_html | strip_newlines }});
       {% endfor %}
