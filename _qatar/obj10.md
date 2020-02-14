@@ -2,7 +2,7 @@
 pid: obj10
 artist: Unknown
 location: Iran
-label: Portrait of Hasan 'Ali Mirza Shuja al-Saltana
+label: Disaster Zones, Net Migration and Pension Funding Ratios 
 _date: 19th century
 object_type: portrait
 current_location: The Museum of Islamic Art, Qatar
