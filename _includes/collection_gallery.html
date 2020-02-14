@@ -1,9 +1,10 @@
 {% assign collection = site[include.collection] %}
 
-{% if include.only and include.facet_by %}
-  {% assign subset = collection | where: include.facet_by, include.only %}
+{% if include.facet_by %}
+  {% assign subset = collection | where: include.facet_by%}
 {% endif %}
-
+ 
+<!-- this creates the gallery formatting (don't need to change) --> 
 <div id='wax-gallery-{{ include.collection }}-container' class='wax-gallery-container full-width'>
   <div class='wax-inline-container'>
     <div id="{{ include.collection }}-facet-buttons" class="facet-buttons"></div>
@@ -11,13 +12,13 @@
   </div>
 </div>
 
-
+<!-- comment out --> 
 <script type="text/javascript">
   $( document ).ready(function() {
     var container = $('#wax-gallery-{{ include.collection }}-container');
     var gallery = $('#wax-gallery-{{ include.collection }}');
     var buttonDiv = $('#{{ include.collection }}-facet-buttons');
-
+    
     {% if subset %}
       {% for item in subset %}
         {%- capture item_html -%}
