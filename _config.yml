@@ -131,11 +131,11 @@ menu:
 footer:
   links:
     - label: 'GitHub'
-      link: 'https://github.com/minicomp/wax'
+      link: 'https://github.com/amawest/wax-1'
     - label: 'Credits'
       link: '/credits'
-    - label: 'Contact'
-      link: 'https://gitter.im/minicomp/wax/'
+    - label: 'Website'
+      link: 'https://visualizingthefuture.github.io//'
   logos:
     - img: '/img/logo.png'
 
