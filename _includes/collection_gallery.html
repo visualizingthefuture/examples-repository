@@ -13,9 +13,10 @@
   </div>
 </div>
 
-<!-- comment out --> 
+<!-- this switches to writing in javascript --> 
 <script type="text/javascript">
-// nothing to fix here
+
+  // nothing to fix here
   $( document ).ready(function() {
     var container = $('#wax-gallery-{{ include.collection }}-container');
     var gallery = $('#wax-gallery-{{ include.collection }}');
@@ -76,12 +77,14 @@
     {% if include.facet_by %}
       {% unless subset %}
         var facets = Array.from(new Set([{%- for item in collection -%}'{{ item[include.facet_by] | slugify }}'{% unless forloop.last %}, {% endunless %}{%- endfor -%}]));
-        buttonDiv.append("<button class='btn facet active' data-filter='all'>show all</button>");
+        // "show all" button
+        buttonDiv.append(`<button class='btn facet' data-filter='${facets}'>$show all</button>`);
 
         for (i in facets) {
           buttonDiv.append(`<button class='btn facet' data-filter='${facets[i]}'>${facets[i]}</button>`);
         }
 
+        // this add dynamicism; when you click a tag, it sorts below for items related to that tag
         $(document).ready(function(){
           $(".facet").click(function(){
             var filterValue = $(this).attr('data-filter');
