@@ -1,7 +1,7 @@
 {% assign collection = site[include.collection] %}
 
-{% if include.only and include.facet_by and include.facet_by2 %}
-  {% assign subset = collection | where: include.facet_by, include.facet_by2, include.only %}
+{% if include.only and include.facet_by and include.facet_by2 and include.facet_by3 %}
+  {% assign subset = collection | where: include.facet_by, include.facet_by2, include.facet_by3, include.only %}
 {% endif %}
 
  
