@@ -2,7 +2,7 @@
 layout: page
 show_title: false
 banner:
-  collection: qatar
+  collection: data/raw_images
   pid: obj10
   y: 25%
   height: '500px'
