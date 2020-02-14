@@ -8,5 +8,3 @@ This site's sample collection comprises a set of objects, each of which is repre
 
 
 {% include collection_gallery.html collection='qatar' facet_by=['object_type', 'location] %}
-{% include collection_gallery.html collection='qatar' facet_by='location' %}
-{% include collection_gallery.html collection='qatar' facet_by='_date' %}
