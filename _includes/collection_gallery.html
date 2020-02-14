@@ -82,6 +82,15 @@
           buttonDiv.append(`<button class='btn facet' data-filter='${facets[i]}'>${facets[i]}</button>`);
         }
 
+        $(document).ready(function(){
+          $(".facet").click(function(){
+            var filterValue = $(this).attr('data-filter');
+            $('.facet').removeClass('active');
+            $(this).addClass('active');
+            if(filterValue == 'all') { $('.all').show('slow'); }
+            else { $('.all').hide('slow'); $(`.${filterValue}`).show('slow'); }
+          });
+        });
       {% endunless %}
     {% endif %}
 
@@ -93,8 +102,6 @@
         for (i in facets) {
           buttonDiv.append(`<button class='btn facet' data-filter='${facets[i]}'>${facets[i]}</button>`);
         }
-
-
       {% endunless %}
     {% endif %}
 
@@ -106,16 +113,6 @@
         for (i in facets) {
           buttonDiv.append(`<button class='btn facet' data-filter='${facets[i]}'>${facets[i]}</button>`);
         }
-
-        $(document).ready(function(){
-          $(".facet").click(function(){
-            var filterValue = $(this).attr('data-filter');
-            $('.facet').removeClass('active');
-            $(this).addClass('active');
-            if(filterValue == 'all') { $('.all').show('slow'); }
-            else { $('.all').hide('slow'); $(`.${filterValue}`).show('slow'); }
-          });
-        });
       {% endunless %}
     {% endif %}
 
