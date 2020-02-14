@@ -31,7 +31,7 @@
         {%- endcapture -%}
         gallery.append({{ item_html | strip_newlines }});
       {% endfor %}
-
+    {% endif %}
 
     // SECOND CONTAINER
     {% if subset %}
@@ -41,7 +41,7 @@
         {%- endcapture -%}
         gallery.append({{ item_html | strip_newlines }});
       {% endfor %}
-
+    {% endif %}
 
     // THIRD CONTAINER
     {% if subset %}
@@ -51,7 +51,7 @@
         {%- endcapture -%}
         gallery.append({{ item_html | strip_newlines }});
       {% endfor %}
-
+    {% endif %}
 
     // FIRST CONTAINER AGAIN; creates the sorting tags on top 
     {% if include.facet_by %}
