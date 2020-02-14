@@ -78,8 +78,8 @@
       {% unless subset %}
         var facets = Array.from(new Set([{%- for item in collection -%}'{{ item[include.facet_by] | slugify }}'{% unless forloop.last %}, {% endunless %}{%- endfor -%}]));
         // "show all" button
-        buttonDiv.append(`<button class='btn facet' data-filter='${facet_by}'>show all</button>`);
-
+        buttonDiv.append("<button class='btn facet active' data-filter='all'>show all</button>");
+        
         for (i in facets) {
           buttonDiv.append(`<button class='btn facet' data-filter='${facets[i]}'>${facets[i]}</button>`);
         }
