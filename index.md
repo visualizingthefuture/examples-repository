@@ -8,7 +8,7 @@ __Wax__ is a [minimal computing](http://go-dh.github.io/mincomp/) project for pr
 The collection items in this demo are from The Museum of Islamic Art, Qatar, (courtesy of [WikiMedia](https://commons.wikimedia.org/wiki/Category:Google_Art_Project_works_in_The_Museum_of_Islamic_Art,_Qatar) and [Google Art Project](https://www.google.com/culturalinstitute/about/artproject/)) and The Qatar National Library (via [World Digital Library](https://www.wdl.org/en/)).
 
 <p align="right">
-  <img src="/img/logo.png" width="40%" />
+  <img src='{{ item.img | absolute_url }}' alt="logo" width="40%"/>
 </p>
 
 ### Browse the Collection
