@@ -9,4 +9,4 @@ The collection items in this demo are from The Museum of Islamic Art, Qatar, (co
 
 ### Browse the Collection
 
-{% include collection_gallery.html facet_by='object_type' collection='qatar' %}
+{% include collection_gallery.html collection='qatar' facet_by='object_type' facet_by2 = 'location' facet_by3 = '_date' %}
