@@ -23,7 +23,7 @@ description:      'Minimalist Examples Repository with Jekyll'
 url:              'https://minicomp.github.io'
 baseurl:          '/examplesrepo'
 copyright:        'Example copyright org, 2020'
-logo:             '/assets/logo.png'
+logo:             '/assets/logo_small.png'
 
 # ---------------------------------------------------------------
 # BUILD SETTINGS
