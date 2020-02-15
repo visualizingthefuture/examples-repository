@@ -102,18 +102,18 @@ search:
 # submenu via `sub`.
 
 menu:
-  - label: 'Exhibits'
+  - label: 'Featured'
     sub:
       - label: 'Inline Parallax Image'
-        link: '/exhibits/a/'
+        link: '/featured/a/'
       - label: 'Inline Image References'
-        link: '/exhibits/b/'
+        link: '/featured/b/'
   - label: 'Browse'
     link: '/collection/'
   - label: 'Search'
     link: '/search/'
-  - label: 'Reuse'
-    link: '/reuse/'
+  - label: 'Data'
+    link: '/data/'
 
 # --------------------------------------------------------------
 # SITE FOOTER SETTINGS
