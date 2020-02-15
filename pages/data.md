@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Reuse the Collection
-permalink: /reuse/
+title: CSV Files from the Collection
+permalink: /data/
 collection: qatar
 ---
 
