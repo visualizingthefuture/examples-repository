@@ -87,7 +87,7 @@
 
       {% endunless %}
     {% endif %}
-
+    document.write("<br>");
     // SECOND CONTAINER; creates the sorting tags 
     {% if include.facet_by2 %}
       {% unless subset %}
@@ -99,7 +99,7 @@
         }
       {% endunless %}
     {% endif %}
-
+    document.write("<br>");
     // THIRD CONTAINER; creates the sorting tags
     {% if include.facet_by3 %}
       {% unless subset %}
