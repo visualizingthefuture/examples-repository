@@ -86,8 +86,9 @@
         }
 
       {% endunless %}
+      document.write("<br>");
     {% endif %}
-    document.write("<br>");
+
     // SECOND CONTAINER; creates the sorting tags 
     {% if include.facet_by2 %}
       {% unless subset %}
@@ -98,8 +99,9 @@
           buttonDiv.append(`<button class='btn facet' data-filter='${facets[i]}'>${facets[i]}</button>`);
         }
       {% endunless %}
-    {% endif %}
     document.write("<br>");
+    {% endif %}
+
     // THIRD CONTAINER; creates the sorting tags
     {% if include.facet_by3 %}
       {% unless subset %}
