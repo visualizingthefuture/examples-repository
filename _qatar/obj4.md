@@ -10,7 +10,7 @@ source: https://commons.wikimedia.org/wiki/File:Unknown,_Iran_-_Page_from_the_Sh
 order: '03'
 layout: labels
 collection: qatar
-thumbnail: "/img/logo_black.png"
+thumbnail: "/img/logo_white.png"
 full: "/img/derivatives/iiif/images/obj4/full/full/0/default.jpg"
 manifest: "/img/derivatives/iiif/obj4/manifest.json"
 ---
