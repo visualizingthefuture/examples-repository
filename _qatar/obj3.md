@@ -10,7 +10,7 @@ source: https://commons.wikimedia.org/wiki/File:Unknown,_Egypt,_15th_Century_-_M
 order: '02'
 layout: labels
 collection: qatar
-thumbnail: "/img/logo_white.png"
+thumbnail: "/img/logo_sepia.png"
 full: "/img/derivatives/iiif/images/obj3/full/full/0/default.jpg"
 manifest: "/img/derivatives/iiif/obj3/manifest.json"
 ---

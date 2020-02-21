@@ -10,7 +10,7 @@ source: https://commons.wikimedia.org/wiki/File:Unknown,_Iran_-_Panel_from_Iran_
 order: '04'
 layout: labels
 collection: qatar
-thumbnail: "/img/logo_white.png"
+thumbnail: "/img/logo_black.png"
 full: "/img/derivatives/iiif/images/obj5/full/full/0/default.jpg"
 manifest: "/img/derivatives/iiif/obj5/manifest.json"
 ---
