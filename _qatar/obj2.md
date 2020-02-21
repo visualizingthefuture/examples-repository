@@ -10,7 +10,7 @@ source: https://commons.wikimedia.org/wiki/File:Unknown,_Egypt_or_Syria,_14th_Ce
 order: '01'
 layout: labels
 collection: qatar
-thumbnail: "/img/logo_black_.png"
+thumbnail: "/img/logo_black.png"
 full: "/img/derivatives/iiif/images/obj2/full/full/0/default.jpg"
 manifest: "/img/derivatives/iiif/obj2/manifest.json"
 ---
