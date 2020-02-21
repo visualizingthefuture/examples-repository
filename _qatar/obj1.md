@@ -14,7 +14,3 @@ thumbnail: "/img/logo_white.png"
 full: "logo_white.png"
 manifest: "logo_white.png"
 ---
-
-<p>
-  <img style="float: center;" src="logo_large.png" width="40%" />
-</p>
