@@ -21,11 +21,9 @@ layout: default
 
     {% if viewer == 'openseadragon' %}
 
-      {% include osd_iiif_image_viewer.html manifest=page.manifest prevlink=prevlink nextlink=nextlink %}
-    {% else %}
-
-       {% include simple_image_viewer.html full_image=page.full prevlink=prevlink nextlink=nextlink %}
-    {% endif %}
+    <p>
+      <img style="padding: 0 15px; float: right;" src="logo_large.png" width="40%" />
+    </p>
     
     <span class='pagination-link' id='nextlink'></span>
   </div>
