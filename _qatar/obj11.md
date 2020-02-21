@@ -10,7 +10,7 @@ source: https://commons.wikimedia.org/wiki/File:Unknown,_Iran,_early_19th_Centur
 order: '10'
 layout: labels
 collection: qatar
-thumbnail: "/img/derivatives/iiif/images/obj11/full/250,/0/default.jpg"
+thumbnail: "/img/logo_white.png"
 full: "/img/derivatives/iiif/images/obj11/full/full/0/default.jpg"
 manifest: "/img/derivatives/iiif/obj11/manifest.json"
 ---
