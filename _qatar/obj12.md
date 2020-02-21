@@ -8,7 +8,7 @@ object_type: manuscript
 current_location: Qatar National Library
 source: https://www.wdl.org/en/item/10668/
 order: '11'
-layout: qatar_item
+layout: labels
 collection: qatar
 thumbnail: "/img/derivatives/iiif/images/obj12_00/full/250,/0/default.jpg"
 full: "/img/derivatives/iiif/images/obj12_00/full/full/0/default.jpg"
