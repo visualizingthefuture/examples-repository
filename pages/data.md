@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CSV Files from the Collection
+title: All Examples from the Collection
 permalink: /data/
 collection: csv_file_data
 ---

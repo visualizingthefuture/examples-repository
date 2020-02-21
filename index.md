@@ -7,9 +7,9 @@ show_title: false
   <img style="padding: 0 15px; float: right;" src="logo_large.png" width="40%" />
 </p>
 
-__Wax__ is a [minimal computing](http://go-dh.github.io/mincomp/) project for producing digital exhibitions focused on longevity, low costs, and flexibility. Our underlying technology is made to learn and to teach, and can produce beautifully rendered, high-quality image collections and scholarly exhibits. To start using Wax, please see our [documentation](https://minicomp.github.io/wiki/#/wax/) for installation instructions and more.
+What does a design process look like that acknowledges, from the beginning, that all digital platforms are ephemeral? What is the core conceptual labor at work in a digital repository, and how might anticipating the broader lifespan of those ideas and labor help guide a development process? This case study follows the development of a forthcoming repository of exemplary data visualization resources for library-based instruction.
 
-The collection items in this demo are from The Museum of Islamic Art, Qatar, (courtesy of [WikiMedia](https://commons.wikimedia.org/wiki/Category:Google_Art_Project_works_in_The_Museum_of_Islamic_Art,_Qatar) and [Google Art Project](https://www.google.com/culturalinstitute/about/artproject/)) and The Qatar National Library (via [World Digital Library](https://www.wdl.org/en/)).
+__Visualizing the Future__ is an [IMLS National Forum](https://www.imls.gov/grants/available/national-leadership-grants-libraries) grant project to develop a literacy-based instructional and research agenda for library and information professionals with the aim to create a community of praxis focused on data visualization. As part of the National Forum, [several fellows](https://visualizingthefuture.github.io/fellows/) began working on building resources to support librarians in developing data visualization pedagogy. The Examples working group elected to develop a digital repository to host exemplary data visualizations and related datasets for instructor use across a variety of contexts.
 
 ### Browse the Collection
 
