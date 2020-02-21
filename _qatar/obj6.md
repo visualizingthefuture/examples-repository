@@ -10,7 +10,7 @@ source: https://commons.wikimedia.org/wiki/File:Unknown,_Iran,_16th_Century_-_Di
 order: '05'
 layout: labels
 collection: qatar
-thumbnail: "/img/derivatives/iiif/images/obj6/full/250,/0/default.jpg"
+thumbnail: "/img/logo_black_.png"
 full: "/img/derivatives/iiif/images/obj6/full/full/0/default.jpg"
 manifest: "/img/derivatives/iiif/obj6/manifest.json"
 ---

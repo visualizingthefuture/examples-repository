@@ -10,7 +10,7 @@ source: https://commons.wikimedia.org/wiki/File:Mihr_%27Ali,_Iran,_1816_-_Portra
 order: '08'
 layout: labels
 collection: qatar
-thumbnail: "/img/derivatives/iiif/images/obj9/full/250,/0/default.jpg"
+thumbnail: "/img/logo_white.png"
 full: "/img/derivatives/iiif/images/obj9/full/full/0/default.jpg"
 manifest: "/img/derivatives/iiif/obj9/manifest.json"
 ---
