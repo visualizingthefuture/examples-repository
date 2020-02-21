@@ -2,7 +2,7 @@
 layout: page
 title: CSV Files from the Collection
 permalink: /data/
-collection: qatar
+collection: csv_file_data
 ---
 
 Wax is inspired by [FAIR data principles](https://journal.code4lib.org/articles/13427), and as such strives to make its collections findable, accessible, interoperable and reusable.
