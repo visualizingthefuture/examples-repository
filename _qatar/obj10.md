@@ -2,7 +2,7 @@
 pid: obj10
 artist: Unknown
 location: Iran
-label: Disaster Zones, Net Migration and Pension Funding Ratios 
+label: Portrait of a King
 _date: 19th century
 object_type: portrait
 current_location: The Museum of Islamic Art, Qatar
@@ -10,7 +10,7 @@ source: https://commons.wikimedia.org/wiki/File:Unknown,_Iran,_early_19th_Centur
 order: '09'
 layout: labels
 collection: qatar
-thumbnail: "/img/derivatives/iiif/images/obj10/full/250,/0/default.jpg"
-full: "/img/derivatives/iiif/images/obj10/full/full/0/default.jpg"
-manifest: "/img/derivatives/iiif/obj10/manifest.json"
+thumbnail: "logo_large.png"
+full: "logo_large.png"
+manifest: "logo_large.png"
 ---
