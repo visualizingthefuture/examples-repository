@@ -71,7 +71,7 @@ collections:
       source: 'qatar.csv' # path to the metadata file within `_data`
     images:
       source: 'raw_images/qatar' # path to the directory of images within `_data`
-  visualizations: # data visualizations
+  datavis: # data visualizations
       output: true
       layout: 'labels' # the layout for the pages to use
   datasets: # data sets 
