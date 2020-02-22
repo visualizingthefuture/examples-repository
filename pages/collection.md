@@ -9,6 +9,6 @@ This site's sample collection comprises a set of objects, each of which is repre
 
 {% include collection_gallery.html collection='datavis' 
         facet_by='object_type' 
-        facet_by2 = 'location' 
+        facet_by2 = 'pid' 
         facet_by3 = '_date'
         %}
