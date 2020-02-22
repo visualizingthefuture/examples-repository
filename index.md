@@ -13,4 +13,8 @@ __Visualizing the Future__ is an [IMLS National Forum](https://www.imls.gov/gran
 
 ### Browse the Collection
 
-{% include collection_gallery.html collection='datavis' facet_by='object_type' facet_by2 = 'location' facet_by3 = '_date' %}
+{% include collection_gallery.html collection='datavis' 
+        facet_by='object_type' 
+        facet_by2 = 'location' 
+        facet_by3 = '_date', 
+        facet_by4 = 'pid' %}
