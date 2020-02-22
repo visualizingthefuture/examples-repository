@@ -1,4 +1,5 @@
 ---
+id: searchable
 pid: obj9
 artist: Mihr 'Ali
 location: Iran

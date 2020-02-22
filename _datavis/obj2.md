@@ -1,4 +1,5 @@
 ---
+id: searchable
 pid: obj2
 artist: Unknown
 location: Egypt

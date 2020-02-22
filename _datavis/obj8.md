@@ -1,4 +1,5 @@
 ---
+id: searchable
 pid: obj8
 artist: Unknown
 location: Iran
