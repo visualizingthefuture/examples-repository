@@ -21,10 +21,12 @@ layout: default
 
     {% if viewer == 'openseadragon' %}
 
-      {% include osd_iiif_image_viewer.html manifest=page.manifest prevlink=prevlink nextlink=nextlink %}
-    {% else %}
-
-       {% include simple_image_viewer.html full_image=page.full prevlink=prevlink nextlink=nextlink %}
+    <p>
+      <img style="padding: 0 15px; float: center;" 
+            src="/examplesrepo/img/logo_black.png"
+            width="400"
+            height="341" />
+    </p>
     {% endif %}
     
     <span class='pagination-link' id='nextlink'></span>
@@ -46,3 +48,9 @@ layout: default
 {% if metadata.size %}
   {% include item_metadata.html meta=metadata %}
 {% endif %}
+
+
+
+<p>
+  <img style="padding: 0 15px; float: center;" src="qatar.full"/>
+</p>
