@@ -11,6 +11,6 @@ order: '02'
 layout: labels
 collection: qatar
 thumbnail: "/img/logo_sepia.png"
-full: "/img/derivatives/iiif/images/obj3/full/full/0/default.jpg"
-manifest: "/img/derivatives/iiif/obj3/manifest.json"
+full: "/examplesrepo/img/logo_sepia.png"
+manifest: "/examplesrepo/img/logo_sepia.png"
 ---

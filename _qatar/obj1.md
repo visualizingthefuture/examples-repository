@@ -12,5 +12,5 @@ layout: labels
 collection: qatar
 thumbnail: "/img/logo_white.png"
 full: "/examplesrepo/img/logo_white.png"
-manifest: "/img/derivatives/iiif/obj2/manifest.json"
+manifest: "/examplesrepo/img/logo_white.png"
 ---
