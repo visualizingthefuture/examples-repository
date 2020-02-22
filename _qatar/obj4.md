@@ -11,6 +11,6 @@ order: '03'
 layout: labels
 collection: qatar
 thumbnail: "/img/logo_white.png"
-full: "/img/derivatives/iiif/images/obj4/full/full/0/default.jpg"
-manifest: "/img/derivatives/iiif/obj4/manifest.json"
+full: "/examplesrepo/img/logo_white.png"
+manifest: "/examplesrepo/img/logo_white.png"
 ---
