@@ -1,12 +1,17 @@
 {% assign collection = site[include.collection] %}
 
 <!-- 
-"SHOW ALL" TAB. Takes in ONE argument (the individual identifier). 
+There are 3 tags I am currently sorting by 
+(5 arguments, more than 4 can be added if one so chooses) 
 --> 
 {% if include.only and
-  include.facet_by %}
+  include.facet_by and 
+  include.facet_by2 and 
+  include.facet_by3 %}
   {% assign subset = collection | 
     where: include.facet_by, 
+    include.facet_by2, 
+    include.facet_by3, 
     include.only %}
 {% endif %}
 
@@ -33,7 +38,7 @@ This switches to programming in javascript.
     var gallery = $('#wax-gallery-{{ include.collection }}');
     var buttonDiv = $('#{{ include.collection }}-facet-buttons');
     
-    // Gathers info so it can later populate the page.
+    // FIRST CONTAINER; gathers info so it can later populate the page.
     {% if subset %}
       {% for item in subset %}
         {%- capture item_html -%}
@@ -50,22 +55,86 @@ This switches to programming in javascript.
       {% endfor %}
     {% endif %}
 
-    // Creates the sorting tags (top of page).
+    // SECOND CONTAINER: gathers info so it can later populate the page.
+    {% if subset %}
+      {% for item in subset %}
+        {%- capture item_html -%}
+          "<div class='gallery-item {{ item[include.facet_by2] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}'/><div class='overlay'><p class='info'>{{ item.label }}</p></div></div></a></div>"
+        {%- endcapture -%}
+        gallery.append({{ item_html | strip_newlines }});
+      {% endfor %}
+    {% else %}
+      {% for item in collection %}
+        {%- capture item_html -%}
+          "<div class='gallery-item {{ item[include.facet_by2] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}' alt='{{ item.label }}'/><div class='overlay'><p class='info'>{{ item.label }}</p></div></div></a></div>"
+        {%- endcapture -%}
+        gallery.append({{ item_html | strip_newlines }});
+      {% endfor %}
+    {% endif %}
+
+    // THIRD CONTAINER: gathers info so it can later populate the page.
+    {% if subset %}
+      {% for item in subset %}
+        {%- capture item_html -%}
+          "<div class='gallery-item {{ item[include.facet_by3] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}'/><div class='overlay'><p class='info'>{{ item.label }}</p></div></div></a></div>"
+        {%- endcapture -%}
+        gallery.append({{ item_html | strip_newlines }});
+      {% endfor %}
+    {% else %}
+      {% for item in collection %}
+        {%- capture item_html -%}
+          "<div class='gallery-item {{ item[include.facet_by3] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}' alt='{{ item.label }}'/><div class='overlay'><p class='info'>{{ item.label }}</p></div></div></a></div>"
+        {%- endcapture -%}
+        gallery.append({{ item_html | strip_newlines }});
+      {% endfor %}
+    {% endif %}
+  
+
+    // FIRST CONTAINER AGAIN; creates the sorting tags (top of page)
     {% if include.facet_by %}
       {% unless subset %}
         // Tells system that we're currently working with include.facet_by tags
         var facets = Array.from(new Set([{%- for item in collection -%}'{{ item[include.facet_by] | slugify }}'{% unless forloop.last %}, {% endunless %}{%- endfor -%}]));
 
-        buttonDiv.append("<button class='btn facet active' data-filter='all'>show all</button>");
+        // This puts in the buttons for each
+        for (i in facets) {
+          buttonDiv.append(`<button class='btn facet' data-filter='${facets[i]}'>${facets[i]}</button>`);
+        }
 
       {% endunless %}
     {% endif %}
 
- // GLOBAL FEATURES
+    // SECOND CONTAINER; creates the sorting tags 
+    {% if include.facet_by2 %}
+      {% unless subset %}
+        var facets = Array.from(new Set([{%- for item in collection -%}'{{ item[include.facet_by2] | slugify }}'{% unless forloop.last %}, {% endunless %}{%- endfor -%}]));
+        
+        // this puts in the buttons for each
+        for (i in facets) {
+          buttonDiv.append(`<button class='btn facet' data-filter='${facets[i]}'>${facets[i]}</button>`);
+        }
+      {% endunless %}
+    {% endif %}
 
+
+    // THIRD CONTAINER; creates the sorting tags
+    {% if include.facet_by3 %}
+      {% unless subset %}
+        var facets = Array.from(new Set([{%- for item in collection -%}'{{ item[include.facet_by3] | slugify }}'{% unless forloop.last %}, {% endunless %}{%- endfor -%}]));
+        buttonDiv.append(`<button class='btn facet' data-filter='${facets}'>show all</button>`);
+
+        // this puts in the buttons for each
+        for (i in facets) {
+          buttonDiv.append(`<button class='btn facet' data-filter='${facets[i]}'>${facets[i]}</button>`);
+        }
+    
+      {% endunless %}
+    {% endif %}
+
+  
+ // GLOBAL FEATURES
  // 'SHOW ALL' Button: Follows the third container's definition of facet. 
  // buttonDiv.append(`<button class='btn facet active' data-filter='${facets}'>show all</button>`);
-
 
  // DYNAMICISM; when you click a tag, it sorts below for items related to that tag
  // it operates off of the functions at the top of page
@@ -78,6 +147,5 @@ This switches to programming in javascript.
       else { $('.all').hide('slow'); $(`.${filterValue}`).show('slow'); }
       });
     });
-  
   });
 </script>
