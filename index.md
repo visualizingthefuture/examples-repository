@@ -13,9 +13,13 @@ __Visualizing the Future__ is an [IMLS National Forum](https://www.imls.gov/gran
 
 ### Browse the Collection
 
+<!--
+Do not change the first facet_by, but you can change the specific for any thereafter.
+You can add more facets by adding additional arguments to the collection_gallery.html file.
+-->
 {% include collection_gallery.html collection='datavis' 
-        facet_by='object_type' 
-        facet_by2 = 'pid' 
+        facet_by='id' 
+        facet_by2 = 'object_type' 
         facet_by3 = '_date'
         %}
       

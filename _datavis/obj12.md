@@ -1,8 +1,9 @@
 ---
+id: searchable
 pid: obj12
 artist: Bahādur Fīrūz, ʻAbd Allāh Khān
 location: Middle East and North Africa
-label: Excerpt from 'The Book of Horses' (فَرَس نامه [رسالة في الخيول)
+label: Excerpt from 'The Book of Horses'
 _date: 17th century
 object_type: manuscript
 current_location: Qatar National Library

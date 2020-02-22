@@ -90,11 +90,21 @@ This switches to programming in javascript.
     {% endif %}
   
 
-    // FIRST CONTAINER AGAIN; creates the sorting tags (top of page)
+    // First container, creates the "see all" tab.
+    // Do not change this!
     {% if include.facet_by %}
       {% unless subset %}
-        // Tells system that we're currently working with include.facet_by tags
         var facets = Array.from(new Set([{%- for item in collection -%}'{{ item[include.facet_by] | slugify }}'{% unless forloop.last %}, {% endunless %}{%- endfor -%}]));
+        buttonDiv.append(`<button class='btn facet' data-filter='${facets}'>show all</button>`);
+
+      {% endunless %}
+    {% endif %}
+
+    // Second Container
+    {% if include.facet_by2 %}
+      {% unless subset %}
+        // Tells system that we're currently working with include.facet_by tags
+        var facets = Array.from(new Set([{%- for item in collection -%}'{{ item[include.facet_by2] | slugify }}'{% unless forloop.last %}, {% endunless %}{%- endfor -%}]));
 
         // This puts in the buttons for each
         for (i in facets) {
@@ -104,24 +114,11 @@ This switches to programming in javascript.
       {% endunless %}
     {% endif %}
 
-    // SECOND CONTAINER; creates the sorting tags 
-    {% if include.facet_by2 %}
-      {% unless subset %}
-        var facets = Array.from(new Set([{%- for item in collection -%}'{{ item[include.facet_by2] | slugify }}'{% unless forloop.last %}, {% endunless %}{%- endfor -%}]));
-        
-        // this puts in the buttons for each
-        for (i in facets) {
-          buttonDiv.append(`<button class='btn facet' data-filter='${facets[i]}'>${facets[i]}</button>`);
-        }
-      {% endunless %}
-    {% endif %}
 
-
-    // THIRD CONTAINER; creates the sorting tags
+    // Third Container
     {% if include.facet_by3 %}
       {% unless subset %}
         var facets = Array.from(new Set([{%- for item in collection -%}'{{ item[include.facet_by3] | slugify }}'{% unless forloop.last %}, {% endunless %}{%- endfor -%}]));
-        buttonDiv.append(`<button class='btn facet' data-filter='${facets}'>show all</button>`);
 
         // this puts in the buttons for each
         for (i in facets) {
