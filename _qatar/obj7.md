@@ -9,7 +9,7 @@ current_location: The Museum of Islamic Art, Qatar
 source: https://commons.wikimedia.org/wiki/File:Unknown,_Iran,_16th_Century_-_Page_from_the_Shahnama_-_Google_Art_Project.jpg
 order: '06'
 layout: labels
-collection: datavis2
+collection: qatar
 thumbnail: "/img/logo_white.png"
 full: "/examplesrepo/img/logo_white.png"
 manifest: "/examplesrepo/img/logo_white.png"
