@@ -9,7 +9,7 @@ current_location: Qatar National Library
 source: https://www.wdl.org/en/item/10668/
 order: '11'
 layout: labels
-collection: datavis2
+collection: qatar
 thumbnail: "/img/logo_sepia.png"
 full: "/examplesrepo/img/logo_sepia.png"
 manifest: "/examplesrepo/img/logo_sepia.png"
