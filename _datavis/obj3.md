@@ -1,6 +1,5 @@
 ---
-id: searchable
-pid: obj3
+pid: obj1
 artist: Unknown
 location: Egypt
 label: Map of the World

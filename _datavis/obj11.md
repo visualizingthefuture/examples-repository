@@ -1,6 +1,5 @@
 ---
-id: searchable
-pid: obj11
+pid: obj1
 artist: Unknown
 location: Iran
 label: Portrait of Sheikh Ali Mirza

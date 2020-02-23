@@ -1,6 +1,5 @@
 ---
-id: searchable
-pid: obj5
+pid: obj1
 artist: Unknown
 location: Iran
 label: Panel from Iran

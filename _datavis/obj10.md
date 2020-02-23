@@ -1,6 +1,5 @@
 ---
-id: searchable
-pid: obj10
+pid: obj1
 artist: Unknown
 location: Iran
 label: Portrait of a King

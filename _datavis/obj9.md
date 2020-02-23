@@ -1,6 +1,5 @@
 ---
-id: searchable
-pid: obj9
+pid: obj1
 artist: Mihr 'Ali
 location: Iran
 label: Portrait of Fath 'Ali Shah

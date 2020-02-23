@@ -1,6 +1,5 @@
 ---
-id: searchable
-pid: obj4
+pid: obj1
 artist: Unknown
 location: Iran
 label: Faridun crosses the River Dijla, fol. 33v

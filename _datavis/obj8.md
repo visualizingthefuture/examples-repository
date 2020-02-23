@@ -1,6 +1,5 @@
 ---
-id: searchable
-pid: obj8
+pid: obj1
 artist: Unknown
 location: Iran
 label: Silk Tapestry Depicting the story of Leila and Majnun
