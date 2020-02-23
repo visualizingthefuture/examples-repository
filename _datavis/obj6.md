@@ -1,6 +1,5 @@
 ---
-id: searchable
-pid: obj6
+pid: obj1
 artist: Unknown
 location: Iran
 label: Diwan of Jami Manuscript

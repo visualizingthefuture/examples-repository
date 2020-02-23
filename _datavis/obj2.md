@@ -1,6 +1,5 @@
 ---
-id: searchable
-pid: obj2
+pid: obj1
 artist: Unknown
 location: Egypt
 label: Sulwan Al-Muta'a

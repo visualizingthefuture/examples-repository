@@ -1,6 +1,5 @@
 ---
-id: searchable
-pid: obj12
+pid: obj1
 artist: Bahādur Fīrūz, ʻAbd Allāh Khān
 location: Middle East and North Africa
 label: Excerpt from 'The Book of Horses'

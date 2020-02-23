@@ -1,6 +1,5 @@
 ---
-id: searchable
-pid: obj7
+pid: obj1
 artist: Unknown
 location: Iran
 label: Page from the Shahnama
