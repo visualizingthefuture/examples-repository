@@ -97,46 +97,13 @@ This switches to programming in javascript.
     {% if include.facet_by %}
       {% unless subset %}
         var facets = Array.from(new Set([{%- for item in collection -%}'{{ item[include.facet_by] | slugify }}'{% unless forloop.last %}, {% endunless %}{%- endfor -%}]));
-        buttonDiv.append(`<button class='btn facet' data-filter='${facets}'>show all</button>`);
+        buttonDiv.append(`<button class='btn facet active' data-filter='${facets}'>show all</button>`);
 
       {% endunless %}
     {% endif %}
 
-    // Second Container
-    {% if include.facet_by2 %}
-      {% unless subset %}
-        // Tells system that we're currently working with include.facet_byX tags
-        // creates an array for each subgroup within a metadata label. 
-        var facets = Array.from(new Set([{%- for item in collection -%}'{{ item[include.facet_by2] | slugify }}'{% unless forloop.last %}, {% endunless %}{%- endfor -%}]));
-
-        // This puts in the buttons for each
-        for (i in facets) {
-          buttonDiv.append(`<button class='btn facet' data-filter='${facets[i]}'>${facets[i]}</button>`);
-        }
-
-      {% endunless %}
-    {% endif %}
-
-
-    // Third Container
-    {% if include.facet_by3 %}
-      {% unless subset %}
-        // creates an array for each subgroup within a metadata label. 
-        var facets = Array.from(new Set([{%- for item in collection -%}'{{ item[include.facet_by3] | slugify }}'{% unless forloop.last %}, {% endunless %}{%- endfor -%}]));
-
-        // this puts in the buttons for each
-        for (i in facets) {
-          buttonDiv.append(`<button class='btn facet' data-filter='${facets[i]}'>${facets[i]}</button>`);
-        }
-    
-      {% endunless %}
-    {% endif %}
-
-//------------------------------------------------------------------------------------
-// TEST FOR CLICKING MULTIPLE TABS AT ONCE
-//------------------------------------------------------------------------------------
-    // Second Container
-    {% if include.facet_by3 %}
+    // Second container, creates all the other tabs by grouping each into it's own array.
+    {% if include.facet_by2 && include.facet_by3 %}
       {% unless subset %}
         // Tells system that we're currently working with include.facet_byX tags
         // creates an array for each subgroup within a metadata label. 
@@ -147,13 +114,19 @@ This switches to programming in javascript.
         for (i in facets) {
           buttonDiv.append(`<button class='btn facet' data-filter='${facets[i]}'>${facets[i]}</button>`);
         }
-
         for (i in facets2) {
-          buttonDiv.append(`<button class='btn facet' data-filter='${facets2[i]}'>${facet2[i]}</button>`);
+          buttonDiv.append(`<button class='btn facet' data-filter='${facets2[i]}'>${facets2[i]}</button>`);
         }
 
       {% endunless %}
     {% endif %}
+
+//------------------------------------------------------------------------------------
+// TEST FOR CLICKING MULTIPLE TABS AT ONCE
+//------------------------------------------------------------------------------------
+    // Clicking Multiples at once. 
+
+
 
 //-------------------------------------------------------------------------------------
 
@@ -166,9 +139,12 @@ This switches to programming in javascript.
  // it operates off of the functions at the top of page
   $(document).ready(function(){
     $(".facet").click(function(){
+
+      $('.facet').each(function(){ this.checked = true; });
+      $('.facet').each(function(){ this.checked = false; });
+
+      // Creates a global "all" function
       var filterValue = $(this).attr('data-filter');
-      $('.facet').removeClass('active');
-      $(this).addClass('active');
       if(filterValue == 'all') { $('.all').show('slow'); }
       else { $('.all').hide('slow'); $(`.${filterValue}`).show('slow'); }
       });
