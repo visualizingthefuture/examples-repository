@@ -1,8 +1,8 @@
 ---
 pid: obj
-label: Connect the Dots
-descripton: Simple and compelling way to show connections and relationships within a community of individuals.
-artist: Unknown
+title: Connect the Dots
+description: Simple and compelling way to show connections and relationships within a community of individuals.
+author: Unknown
 location: Iran
 _date: 19th century
 object_type: portrait
