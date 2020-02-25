@@ -1,8 +1,9 @@
 ---
-pid: obj1
+pid: obj
+label: Plotly in R
+descripton: Simple and compelling way to show connections and relationships within a community of individuals.
 artist: Unknown
 location: Iran
-label: Page from the Shahnama
 _date: 14th century
 object_type: manuscript
 current_location: The Museum of Islamic Art, Qatar
@@ -12,5 +13,4 @@ layout: labels
 collection: datavis
 thumbnail: "/img/logo_white.png"
 full: "/examplesrepo/img/logo_white.png"
-manifest: "/examplesrepo/img/logo_white.png"
 ---

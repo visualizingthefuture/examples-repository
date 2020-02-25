@@ -1,8 +1,9 @@
 ---
-pid: obj1
+pid: obj
+label: Map of the World
+descripton: Simple and compelling way to show connections and relationships within a community of individuals.
 artist: Unknown
 location: Egypt
-label: Map of the World
 _date: 15th century
 object_type: map
 current_location: The Museum of Islamic Art, Qatar
@@ -12,5 +13,4 @@ layout: labels
 collection: datavis
 thumbnail: "/img/logo_sepia.png"
 full: "/examplesrepo/img/logo_sepia.png"
-manifest: "/examplesrepo/img/logo_sepia.png"
 ---
