@@ -1,8 +1,8 @@
 ---
 pid: obj
-label: Data Visualization Techniques in R
-descripton: Simple and compelling way to show connections and relationships within a community of individuals.
-artist: Unknown
+title: Data Visualization Techniques in R
+description: Simple and compelling way to show connections and relationships within a community of individuals.
+author: Unknown
 location: Iran
 _date: 19th century
 object_type: portrait

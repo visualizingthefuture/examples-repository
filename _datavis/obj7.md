@@ -1,8 +1,8 @@
 ---
 pid: obj
-label: Plotly in R
-descripton: Simple and compelling way to show connections and relationships within a community of individuals.
-artist: Unknown
+title: Plotly in R
+description: Simple and compelling way to show connections and relationships within a community of individuals.
+author: Unknown
 location: Iran
 _date: 14th century
 object_type: manuscript

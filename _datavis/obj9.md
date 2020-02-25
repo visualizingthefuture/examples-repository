@@ -1,8 +1,8 @@
 ---
 pid: obj
-label: Template
-descripton: Simple and compelling way to show connections and relationships within a community of individuals.
-artist: Mihr 'Ali
+title: Template
+description: Simple and compelling way to show connections and relationships within a community of individuals.
+author: Unknown
 location: Iran
 _date: 17th century
 object_type: portrait

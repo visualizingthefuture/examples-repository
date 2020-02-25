@@ -1,8 +1,8 @@
 ---
 pid: obj
-label: Map of the World
-descripton: Simple and compelling way to show connections and relationships within a community of individuals.
-artist: Unknown
+title: Map of the World
+description: Simple and compelling way to show connections and relationships within a community of individuals.
+author: Unknown
 location: Egypt
 _date: 15th century
 object_type: map

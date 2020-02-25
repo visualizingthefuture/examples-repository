@@ -87,10 +87,10 @@ search:
       datavis:
         content: false # whether or not to index page content
         fields: # the metadata fields to index
-          - artist
+          - author
           - description
           - location
-          - label
+          - title
           - _date
           - object_type
           - current_location

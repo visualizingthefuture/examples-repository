@@ -1,8 +1,8 @@
 ---
 pid: obj
-label: Ancient Manuscripts
-descripton: Simple and compelling way to show connections and relationships within a community of individuals.
-artist: Unknown
+title: Ancient Manuscripts
+description: Simple and compelling way to show connections and relationships within a community of individuals.
+author: Unknown
 location: Iran
 _date: 16th century
 object_type: manuscript

@@ -1,8 +1,8 @@
 ---
 pid: obj
-label: Plotly in Python
-descripton: Simple and compelling way to show connections and relationships within a community of individuals.
-artist: Unknown
+title: Plotly in Python
+description: Simple and compelling way to show connections and relationships within a community of individuals.
+author: Unknown
 location: Iran
 _date: 15th century
 object_type: panel

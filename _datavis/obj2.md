@@ -1,8 +1,8 @@
 ---
 pid: obj
-label: Crawling Noise
-descripton: Simple and compelling way to show connections and relationships within a community of individuals.
-artist: Unknown
+title: Crawling Noise
+description: Simple and compelling way to show connections and relationships within a community of individuals.
+author: Unknown
 location: Egypt
 _date: 14th century
 object_type: manuscript

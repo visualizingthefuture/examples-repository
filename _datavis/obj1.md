@@ -1,8 +1,8 @@
 ---
 pid: obj
-label: Geospatial Visualization
-descripton: Simple and compelling way to show connections and relationships within a community of individuals.
-artist: Simple and compelling way to show connections and relationships within a community of individuals.
+title: Geospatial Visualization
+description: Simple and compelling way to show connections and relationships within a community of individuals.
+author: Unknown
 location: Turkey
 _date: 14th century
 object_type: manuscript
