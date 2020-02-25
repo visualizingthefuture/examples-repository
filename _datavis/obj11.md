@@ -1,8 +1,9 @@
 ---
-pid: obj1
+pid: obj
+label: Data Visualization Techniques in R
+descripton: Simple and compelling way to show connections and relationships within a community of individuals.
 artist: Unknown
 location: Iran
-label: Portrait of Sheikh Ali Mirza
 _date: 19th century
 object_type: portrait
 current_location: The Museum of Islamic Art, Qatar
@@ -12,5 +13,4 @@ layout: labels
 collection: datavis
 thumbnail: "/img/logo_black.png"
 full: "/examplesrepo/img/logo_black.png"
-manifest: "/examplesrepo/img/logo_black.png"
 ---

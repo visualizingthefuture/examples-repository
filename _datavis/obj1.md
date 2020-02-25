@@ -1,8 +1,9 @@
-
-pid: obj1
-artist: Al-Hajj Hafiz Muhammad Nuri
+---
+pid: obj
+label: Geospatial Visualization
+descripton: Simple and compelling way to show connections and relationships within a community of individuals.
+artist: Simple and compelling way to show connections and relationships within a community of individuals.
 location: Turkey
-label: The Dala'il al-Khayrat of al-Juzuli
 _date: 14th century
 object_type: manuscript
 current_location: The Museum of Islamic Art, Qatar
@@ -12,5 +13,4 @@ layout: labels
 collection: datavis
 thumbnail: "/img/logo_white.png"
 full: "/examplesrepo/img/logo_white.png"
-manifest: "/examplesrepo/img/logo_white.png"
 ---

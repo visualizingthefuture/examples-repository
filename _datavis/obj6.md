@@ -1,8 +1,9 @@
 ---
-pid: obj1
+pid: obj
+label: Ancient Manuscripts
+descripton: Simple and compelling way to show connections and relationships within a community of individuals.
 artist: Unknown
 location: Iran
-label: Diwan of Jami Manuscript
 _date: 16th century
 object_type: manuscript
 current_location: The Museum of Islamic Art, Qatar
@@ -12,5 +13,4 @@ layout: labels
 collection: datavis
 thumbnail: "/img/logo_sepia.png"
 full: "/examplesrepo/img/logo_sepia.png"
-manifest: "/examplesrepo/img/logo_sepia.png"
 ---
