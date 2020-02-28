@@ -1,7 +1,6 @@
 ---
 layout: exhibit
 title: 'Article B'
-author: Oscar Wilde 
 publish_date: 2018-11-15
 permalink: /featured/b/
 ---
