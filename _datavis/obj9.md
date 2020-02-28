@@ -3,7 +3,7 @@ pid: obj
 title: Template
 description: Simple and compelling way to show connections and relationships within a community of individuals.
 author: Unknown
-year: June 2017
+published: June 2017
 object_type: Network visualization
 topic: Social network analysis
 purpose: Research

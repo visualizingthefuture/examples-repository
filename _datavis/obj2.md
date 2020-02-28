@@ -3,7 +3,7 @@ pid: obj
 title: Crawling Noise
 description: Simple and compelling way to show connections and relationships within a community of individuals.
 author: Unknown
-year: January 2019
+published: January 2019
 object_type: Visualization builder
 topic: Computational social sciences
 purpose: Teaching

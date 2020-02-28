@@ -3,7 +3,7 @@ pid: obj
 title: ArcGIS Example
 description: Simple and compelling way to show connections and relationships within a community of individuals.
 author: Unknown
-year: January 2019
+published: January 2019
 object_type: Visualization builder
 topic: Humanities
 purpose: Teaching

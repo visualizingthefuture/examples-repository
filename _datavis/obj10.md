@@ -3,7 +3,7 @@ pid: obj
 title: Connect the Dots
 description: Simple and compelling way to show connections and relationships within a community of individuals.
 author: Unknown
-year: August 2018
+published: August 2018
 object_type: Network visualization
 topic: Social network analysis
 purpose: Research
