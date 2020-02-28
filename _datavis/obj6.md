@@ -14,5 +14,5 @@ order: '05'
 layout: labels
 collection: datavis
 thumbnail: "/img/logo_sepia.png"
-full: "/examplesrepo/img/logo_sepia.png"
+full: "/VisualizingTheFuture2/img/logo_sepia.png"
 ---
