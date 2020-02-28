@@ -113,9 +113,9 @@ search:
 menu:
   - label: 'Featured'
     sub:
-      - label: 'Featured Exhibit A'
+      - label: 'Featured Article A'
         link: '/featured/a/'
-      - label: 'Featured Exhibit B'
+      - label: 'Featured Article B'
         link: '/featured/b/'
   - label: 'Browse'
     sub:
