@@ -113,9 +113,9 @@ search:
 menu:
   - label: 'Featured'
     sub:
-      - label: 'Inline Parallax Image'
+      - label: 'Featured Exhibit A'
         link: '/featured/a/'
-      - label: 'Inline Image References'
+      - label: 'Featured Exhibit B'
         link: '/featured/b/'
   - label: 'Browse'
     link: '/collection/'
