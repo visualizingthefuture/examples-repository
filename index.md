@@ -19,8 +19,8 @@ You can add more facets by adding additional arguments to the collection_gallery
 -->
 {% include collection_gallery.html collection='datavis' 
         facet_by='pid'
-        facet_by2 = 'object_type' 
-        facet_by3 = 'topic'
-        facet_by4 = 'purpose'
+        facet_by2 = 'purpose' 
+        facet_by3 = 'object_type'
+        facet_by4 = 'topic'
         %}
       
