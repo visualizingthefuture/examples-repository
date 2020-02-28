@@ -118,7 +118,11 @@ menu:
       - label: 'Featured Exhibit B'
         link: '/featured/b/'
   - label: 'Browse'
-    link: '/collection/'
+    sub:
+      - label: 'Data Visualizations'
+        link: '/collection/'
+      - label: 'Data Sets'
+        link: '/collection/'
   - label: 'Search'
     link: '/search/'
   - label: 'Data'
@@ -126,6 +130,12 @@ menu:
 
 # --------------------------------------------------------------
 # SITE FOOTER SETTINGS
+ # - label: 'Browse'
+ #   sub:
+ #     - label: 'Browse Data Visualizations'
+ #       link: '/collection/datavis/'
+ #     - label: 'Browse Data Sets'
+ #       link: ''/collection/dataset/'
 # --------------------------------------------------------------
 #
 

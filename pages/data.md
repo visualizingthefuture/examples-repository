@@ -5,8 +5,8 @@ permalink: /data/
 collection: csv_file_data
 ---
 
-We are inspired by [FAIR data principles](https://journal.code4lib.org/articles/13427), and as such strives to make its collections findable, accessible, interoperable and reusable.
+We strive to make our collections findable, accessible, interoperable and reusable. I plan to turn this page into a one-stop shop for datasets and data visualizations hosted by this repository.
 
-The demo site comes with a specific `_include` called `interactive_metadata_table` to help you make pages like this one complete with interactive [DataTables](https://datatables.net/) and downloadable CSVs of collection metadata.
+This demo site comes with a specific `_include` called `interactive_metadata_table` to help you make pages like this one complete with interactive [DataTables](https://datatables.net/) and downloadable CSVs of collection metadata.
 
 {% include interactive_metadata_table.html collection=page.collection %}
