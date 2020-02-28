@@ -1,7 +1,6 @@
 ---
 layout: exhibit
 title: 'Article A'
-author: Michelangelo
 publish_date: 2018-11-15
 permalink: /featured/a/
 ---
