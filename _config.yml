@@ -20,8 +20,8 @@
 
 title:            'Examples Repository'
 description:      'Minimalist Examples Repository with Jekyll'
-url:              'https://minicomp.github.io'
-baseurl:          '/examplesrepo'
+url:              'https://amawest.github.io'
+baseurl:          '/VisualizingTheFuture2'
 copyright:        'Example copyright org, 2020'
 logo:             '/assets/logo.png'
 
