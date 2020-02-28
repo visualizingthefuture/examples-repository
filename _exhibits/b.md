@@ -3,7 +3,7 @@ layout: exhibit
 title: 'Exhibit B'
 author: Unknown
 publish_date: 2018-11-15
-permalink: /VisualizingTheFuture2/featured/b/
+permalink: /featured/b/
 ---
 
 Ut eleifend lacus at erat efficitur bibendum. Ut laoreet elit nec dolor molestie finibus. Vivamus justo risus, scelerisque nec dolor ut, pretium fringilla purus. Nam nisl erat, tristique ac libero vitae, bibendum pellentesque nulla. Praesent accumsan ut mauris ut euismod. Etiam mattis a justo eget blandit. Aliquam vitae magna eget nisi suscipit finibus id sit amet nulla.
