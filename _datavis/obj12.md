@@ -2,7 +2,7 @@
 title: Effective Pie Charts
 description: Simple and compelling way to show connections and relationships within a community of individuals.
 author: Unknown
-year: August 2018
+published: August 2018
 object_type: Network visualization
 topic: Social network analysis
 purpose: Research
@@ -10,8 +10,6 @@ source: https://www.wdl.org/en/item/10668/
 audience_level: Graduate
 audience_composition: General public
 additional_properties: None
-
-
 pid: obj
 order: '11'
 layout: labels

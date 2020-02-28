@@ -3,7 +3,7 @@ pid: obj
 title: Panel Data from Norway
 description: Simple and compelling way to show connections and relationships within a community of individuals.
 author: Unknown
-year: April 2016
+published: April 2016
 object_type: Teaching tool
 topic: Humanities
 purpose: Teaching
