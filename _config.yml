@@ -24,6 +24,9 @@ url:              'https://amawest.github.io'
 baseurl:          '/VisualizingTheFuture2'
 copyright:        'Example copyright org, 2020'
 logo:             '/assets/logo.png'
+integration_spreadsheet_key: 2PACX-1vQyKhSIT2MLqVEK6_2G7kuAKWQxir7gBFF-nhIYgVcjG4XBrzISF9JUb2b_ThXxmbPN2Xnk3ETHFZh2
+github_user: amawest
+github_repo: VisualizingTheFuture2
 
 # ---------------------------------------------------------------
 # BUILD SETTINGS
