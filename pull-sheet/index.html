@@ -4,20 +4,20 @@ title: Update Spreadsheet
 ---
 
 <!--These are JavaScript Libraries-->
-<script type="text/javascript" src="https://hack-education-data.github.io/master/js/jquery-latest.min.js"></script>
-<script type="text/javascript" src="https://hack-education-data.github.io/master/js/utility.js"></script>
-<script type="text/javascript" src="https://hack-education-data.github.io/master/js/cookies.js"></script>
-<script type="text/javascript" src="https://hack-education-data.github.io/master/js/tabletop.js"></script>
-<script type="text/javascript" src="https://hack-education-data.github.io/master/js/js-yaml.min.js"></script>
-<script type="text/javascript" src="https://hack-education-data.github.io/master/js/github.js"></script>
+<script type="text/javascript" src="https://contrafabulists-toolbox.github.io/master/javascript/jquery-latest.min.js"></script>
+<script type="text/javascript" src="https://contrafabulists-toolbox.github.io/master/javascript/utility.js"></script>
+<script type="text/javascript" src="https://contrafabulists-toolbox.github.io/master/javascript/cookies.js"></script>
+<script type="text/javascript" src="https://contrafabulists-toolbox.github.io/master/javascript/tabletop.js"></script>
+<script type="text/javascript" src="https://contrafabulists-toolbox.github.io/master/javascript/js-yaml.min.js"></script>
+<script type="text/javascript" src="https://contrafabulists-toolbox.github.io/master/javascript/github.js"></script>
 
-<h1>Update </h1>
+<h1>Update</h1>
 <script type="text/javascript">
 
     // Reset the cookie manually
     //Cookies.expire('token');
 
-    // URL: https://[user/org].github.io/[repo]/pull-spreadsheet/?key=your_key&worksheet=worksheet_name&token=your_personal_access_token&org=your_org&repo=your_repo&branch=your_branch
+    // URL: https://[user/org].github.io/[repo]/pull-sheet/?key=your_key&worksheet=worksheet_name&token=your_personal_access_token&org=your_org&repo=your_repo&branch=your_branch
 
     // Incoming Variables append
     var $key = getUrlVar('key');
@@ -86,11 +86,14 @@ title: Update Spreadsheet
             var github = new Github({token: $oAuthToken,auth: "oauth"});
             var repo = github.getRepo($org,$repo);
 
+            $writepath = '_data/' + $resource + '.yaml';
+
+            repo.write($branch,$writepath, $yaml_dump, 'Save', function(err) { });
+            console.log("writing 1:" + $writepath);
             repo.getTree($branch + '?recursive=true', function(err, tree) {
 
               $.each(tree, function(treeKey, treeValue) {
 
-                $writepath = '_data/' + $resource + '.yaml';
                 $path = treeValue['path'];
                 $sha = treeValue['sha'];
 
@@ -98,8 +101,8 @@ title: Update Spreadsheet
 
                 if($path==$writepath)
                   {
-                  repo.writemanual('master',$writepath, $yaml_dump, 'Save', $sha, function(err) { });
-                  console.log("writing " + $writepath);
+                  repo.writemanual($branch,$writepath, $yaml_dump, 'Save', $sha, function(err) { });
+                  console.log("writing 2:" + $writepath);
                   //alert("saved " + $writepath);
                   }
                 });
