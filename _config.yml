@@ -154,3 +154,5 @@ footer:
     - img: '/img/logo.png'
 
 # FIN
+
+theme: jekyll-theme-cayman
