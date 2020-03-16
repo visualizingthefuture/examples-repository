@@ -28,4 +28,4 @@ You can add more facets by adding additional arguments to the collection_gallery
       
 
 
-{{ site.data.Sheet1.myvar }}
+{% include Sheet1.yaml %}
