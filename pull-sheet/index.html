@@ -86,6 +86,7 @@ title: Update Spreadsheet
             repo.write($branch,$writepath, $yaml_dump, 'Save', function(err) { });
             console.log("writing 1:" + $writepath);
             repo.getTree($branch + '?recursive=true', function(err, tree) {
+            repo.writemanual($branch,$writepath, $yaml_dump, 'Save', function(err) { });
 
               $.each(tree, function(treeKey, treeValue) {
 
