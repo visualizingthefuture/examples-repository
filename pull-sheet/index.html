@@ -55,13 +55,16 @@ title: Update Spreadsheet
       $products = new Array();
       $product = tabletop.sheets($resource).all();
 
+      $yaml_dump = jsyaml.dump($products);
+
       $count = 0;
       $total_count = $product.length;
       $.each( tabletop.sheets($resource).all(), function(i, service) {
-
+        
           $p = {};
           $.each(service, function($key, $value) {
             //console.log($key + ' == ' + $value);
+            $p[$key] = $value;
           });
           $products.push($p);
 
