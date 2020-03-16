@@ -53,6 +53,7 @@ kramdown:
  toc_levels:     1..6
  smart_quotes:   lsquo,rsquo,ldquo,rdquo
  enable_coderay: false
+theme: jekyll-theme-cayman
 
 
 # --------------------------------------------------------------
@@ -154,5 +155,3 @@ footer:
     - img: '/img/logo.png'
 
 # FIN
-
-theme: jekyll-theme-cayman
