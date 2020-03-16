@@ -59,7 +59,11 @@ title: Update Spreadsheet
       $total_count = $product.length;
       $.each( tabletop.sheets($resource).all(), function(i, service) {
 
-
+          $p = {};
+          $.each(service, function($key, $value) {
+            //console.log($key + ' == ' + $value);
+          });
+          $products.push($p);
 
           $count++;
           //console.log($count + ' == ' + $total_count);
