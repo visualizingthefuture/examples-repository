@@ -54,11 +54,12 @@ title: Update Spreadsheet
 
       $products = new Array();
       $product = tabletop.sheets($resource).all();
+      
 
       $count = 0;
       $total_count = $product.length;
       $.each( tabletop.sheets($resource).all(), function(i, service) {
-
+        
           $p = {};
           $.each(service, function($key, $value) {
             //console.log($key + ' == ' + $value);
@@ -85,6 +86,7 @@ title: Update Spreadsheet
             repo.write($branch,$writepath, $yaml_dump, 'Save', function(err) { });
             console.log("writing 1:" + $writepath);
             repo.getTree($branch + '?recursive=true', function(err, tree) {
+            repo.writemanual($branch,$writepath, $yaml_dump, 'Save', function(err) { });
 
               $.each(tree, function(treeKey, treeValue) {
 
