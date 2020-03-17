@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Map of the World
-permalink: /data/obj1
+permalink: /data/obj3
 collection: csv_file_data
 ---
 

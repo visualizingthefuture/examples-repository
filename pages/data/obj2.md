@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Crawling Noise
-permalink: /data/obj1
+permalink: /data/obj2
 collection: csv_file_data
 ---
 
