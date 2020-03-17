@@ -1,4 +1,4 @@
-pid,artist,location,label,_date,object_type,current_location,source,order,layout,collection,thumbnail,full,manifest
+pifa,artist,location,label,_date,object_type,current_location,source,order,layout,collection,thumbnail,full,manifest
 obj1, Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
 obj2, Unknown, UM, Ex. 2, 2019, manuscript, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
 obj3, Unknown, UM, Ex. 3, 2019, map, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
