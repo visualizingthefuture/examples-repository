@@ -1,13 +1,2 @@
-artist,location,label,_date,object_type,current_location,source,order,layout,collection,thumbnail,full,manifest
-Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
-Unknown, UM, Ex. 2, 2019, manuscript, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
-Unknown, UM, Ex. 3, 2019, map, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
-Unknown, UM, Ex. 4, 2019, manuscript, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
-Unknown, UM, Ex. 5, 2019, panel, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
-Unknown, UM, Ex. 6, 2019, manuscript, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
-Unknown, UM, Ex. 7, 2019, manuscript, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
-Unknown, UM, Ex. 8, 2019, panel, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
-Unknown, UM, Ex. 9, 2019,portrait, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
-Unknown, UM, Ex. 10, 2019,portrait, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
-Unknown, UM, Ex. 11, 2019,portrait, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
-Unknown, UM, Ex. 12, 2019,manuscript, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
+data_link, title, date, source, collection, thumbnail, full
+x, x, x, x, x, x, x
