@@ -2,7 +2,7 @@
 layout: page
 title: Map of the World
 permalink: /data/obj3
-collection: csv_file_data
+collection: data_obj1
 ---
 
 {% include interactive_metadata_table.html collection=page.collection %}

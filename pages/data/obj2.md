@@ -2,7 +2,7 @@
 layout: page
 title: Crawling Noise
 permalink: /data/obj2
-collection: csv_file_data
+collection: data_obj1
 ---
 
 {% include interactive_metadata_table.html collection=page.collection %}
