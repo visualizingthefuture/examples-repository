@@ -1,7 +1,7 @@
 ---
 layout: page
 title: All Examples from the Collection
-permalink: /datasets/obj1/
+permalink: /data/obj1/
 collection: csv_file_data
 ---
 
