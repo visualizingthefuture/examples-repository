@@ -1,9 +1,9 @@
-artist,location,label,_date,object_type,current_location,source
-Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx
-Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx
-Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx
-Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx
-Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx
-Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx
-Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx
-data_link, title, date, source, collection, thumbnail, full
+artist,location,label,_date,object_type,current_location,source, xxx
+Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx, xxx
+Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx, xxx
+Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx, xxx
+Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx, xxx
+Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx, xxx
+Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx, xxx
+Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx, xxx
+data_link, title, date, source, collection, thumbnail, full, something else
