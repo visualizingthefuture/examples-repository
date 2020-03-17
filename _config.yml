@@ -129,8 +129,6 @@ menu:
         link: '/collection/'
   - label: 'Search'
     link: '/search/'
-  - label: 'Data'
-    link: '/data/'
 
 # --------------------------------------------------------------
 # SITE FOOTER SETTINGS
