@@ -1,7 +1,6 @@
 ---
 layout: page
 title: All Examples from the Collection
-permalink: /data/
 collection: csv_file_data
 ---
 
