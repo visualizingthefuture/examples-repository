@@ -1,4 +1,4 @@
-data_link, title, date, source, collection, thumbnail, full, xxx, xxx, xxx, xxx, xxx, xxx
+artist,location,label,_date,object_type,current_location,source,order,layout,collection,thumbnail,full,manifest
 Unknown, UM, Ex. 1, 2019, manuscript, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
 Unknown, UM, Ex. 2, 2019, manuscript, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
 Unknown, UM, Ex. 3, 2019, map, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx
