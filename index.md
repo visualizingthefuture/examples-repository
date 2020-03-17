@@ -27,5 +27,4 @@ You can add more facets by adding additional arguments to the collection_gallery
         %}
       
 
-
 {% include Sheet1.yaml %}
