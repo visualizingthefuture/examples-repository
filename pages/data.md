@@ -1,7 +1,7 @@
 ---
 layout: page
-title: All Examples from the Collection
-permalink: /data/
+title: Geospatial Visualization
+permalink: /data/obj1
 collection: csv_file_data
 ---
 
