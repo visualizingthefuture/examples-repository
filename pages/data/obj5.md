@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Map of the World
+title: Panel Data from Norway
 permalink: /data/obj5
 collection: data_obj5
 ---

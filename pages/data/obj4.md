@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Map of the World
+title: ArcGIS Example
 permalink: /data/obj4
 collection: data_obj4
 ---
