@@ -46,7 +46,6 @@ This switches to programming in javascript.
         {%- capture item_html -%}
         // specifies first 
           "<div class='gallery-item {{ item[include.facet_by] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}'/><div class='overlay'><p class='info'>{{ item.title }}</p></div></div></a></div>"
-          "<div class='gallery-item {{ item[include.facet_by2] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}'/><div class='overlay'><p class='info'>{{ item.title }}</p></div></div></a></div>"
         {%- endcapture -%}
         gallery.append({{ item_html | strip_newlines }});
       {% endfor %}
@@ -54,12 +53,28 @@ This switches to programming in javascript.
       {% for item in collection %}
         {%- capture item_html -%}
           "<div class='gallery-item {{ item[include.facet_by] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}' alt='{{ item.title }}'/><div class='overlay'><p class='info'>{{ item.title }}</p></div></div></a></div>"
-          "<div class='gallery-item {{ item[include.facet_by2] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}' alt='{{ item.title }}'/><div class='overlay'><p class='info'>{{ item.title }}</p></div></div></a></div>"
         {%- endcapture -%}
         gallery.append({{ item_html | strip_newlines }});
       {% endfor %}
     {% endif %}
 
+    // SECOND CONTAINER: gathers info so it can later populate the page.
+    {% if subset %}
+      {% for item in subset %}
+        {%- capture item_html -%}
+          // specifies second
+          "<div class='gallery-item {{ item[include.facet_by2] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}'/><div class='overlay'><p class='info'>{{ item.title }}</p></div></div></a></div>"
+        {%- endcapture -%}
+        gallery.append({{ item_html | strip_newlines }});
+      {% endfor %}
+    {% else %}
+      {% for item in collection %}
+        {%- capture item_html -%}
+          "<div class='gallery-item {{ item[include.facet_by2] | slugify }} all'><a href='{{ item.url | absolute_url }}'><div class='hovereffect'><img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}' alt='{{ item.title }}'/><div class='overlay'><p class='info'>{{ item.title }}</p></div></div></a></div>"
+        {%- endcapture -%}
+        gallery.append({{ item_html | strip_newlines }});
+      {% endfor %}
+    {% endif %}
 
     // THIRD CONTAINER: gathers info so it can later populate the page.
     {% if subset %}
