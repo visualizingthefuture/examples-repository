@@ -162,8 +162,7 @@ This switches to programming in javascript.
   $(document).ready(function(){
     $(".facet").click(function(){
 
-      $('.facet').removeClass('active');
-      $(this).addClass('active');
+      $('.facet').toggleClass('active');
 
       // Creates a global "all" function
       var filterValue = $(this).attr('data-filter');
