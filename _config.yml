@@ -21,6 +21,7 @@
 title:            'Examples Repository'
 description:      'Minimalist Examples Repository with Jekyll'
 url:              'https://amawest.github.io'
+# taking out the baseurl for a moment!
 baseurl:          '/VisualizingTheFuture2'
 copyright:        'Example copyright org, 2020'
 logo:             '/assets/logo.png'
