@@ -145,13 +145,6 @@ This switches to programming in javascript.
       {% endunless %}
     {% endif %}
 
-//------------------------------------------------------------------------------------
-// TEST FOR CLICKING MULTIPLE TABS AT ONCE
-//------------------------------------------------------------------------------------
-    // Clicking Multiples at once. 
-
-//-------------------------------------------------------------------------------------
-
  // GLOBAL FEATURES
  // 'SHOW ALL' Button: Follows the third container's definition of facet. 
  // buttonDiv.append(`<button class='btn facet active' data-filter='${facets}'>show all</button>`);
@@ -162,15 +155,22 @@ This switches to programming in javascript.
   $(document).ready(function(){
     $(".facet").click(function(){
 
-      $('.facet').toggleClass('active');
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+        } else {
+          $(this).addClass('active');
+        }
 
       // Creates a global "all" function
-      var filterValue = $(this).attr('data-filter');
-      if(filterValue == 'all') { $('.all').show('slow'); }
-      else { $('.all').hide('slow'); $(`.${filterValue}`).show('slow'); }
+      var filterValue = $('active').attr('data-filter');
+      if(filterValue == 'all') { 
+        $('.all').show('slow'); 
+        }
+      else { 
+        $('.all').hide('slow'); 
+        $(`.${filterValue}`).show('slow'); }
       });
     });
-    
   });
 </script>
 
