@@ -145,30 +145,30 @@ This switches to programming in javascript.
       {% endunless %}
     {% endif %}
 
+
  // GLOBAL FEATURES
  // 'SHOW ALL' Button: Follows the third container's definition of facet. 
  // buttonDiv.append(`<button class='btn facet active' data-filter='${facets}'>show all</button>`);
 
+ //         if ($(this).hasClass('active')) {
+ //            $('.facet').removeClass('active');
+ //         } else {
+ //           $(this).addClass('active');
+ //         }
+ 
  // DYNAMICISM; when you click a tag, it sorts below for items related to that tag
  // it operates off of the functions at the top of page
  
   $(document).ready(function(){
     $(".facet").click(function(){
 
-        if ($(this).hasClass('active')) {
-          $(this).removeClass('active');
-        } else {
-          $(this).addClass('active');
-        }
+      $('.facet').removeClass('active');
+      $(this).addClass('active');
 
       // Creates a global "all" function
-      var filterValue = $('this').attr('data-filter');
-      if(filterValue == 'all') { 
-        $('.all').show('slow'); 
-        }
-      else { 
-        $('.all').hide('slow'); 
-        $(`.${filterValue}`).show('slow'); }
+      var filterValue = $(this).attr('data-filter');
+      if(filterValue == 'all') { $('.all').show('slow'); }
+      else { $('.all').hide('slow'); $(`.${filterValue}`).show('slow'); }
       });
     });
   });
