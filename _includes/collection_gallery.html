@@ -160,12 +160,13 @@ This switches to programming in javascript.
  // it operates off of the functions at the top of page
  
   $(document).ready(function(){
-    $('.nav-list').click(function() {
-      
-      //console.log("Clicked")
+    $('.nav-list').on('click', 'li', function() {
+
       $('.nav-list li.active').removeClass('active');
       $(this).addClass('active');
-      });
+
+      
+    
 
       // Creates a global "all" function
       var filterValue = $(this).attr('data-filter');
@@ -173,7 +174,6 @@ This switches to programming in javascript.
       else { $('.all').hide('slow'); $(`.${filterValue}`).show('slow'); }
       });
     });
-
     
   });
 </script>
