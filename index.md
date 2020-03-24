@@ -4,7 +4,7 @@ show_title: false
 ---
 
 <p>
-  <img style="padding: 0 15px; float: right;" src="logo_large.png" width="40%" />
+  <img style="padding: 0 15px; float: right;" src="img/logo_white.png" width="40%" />
 </p>
 
 __What does a design process look like that acknowledges, from the beginning, that all digital platforms are ephemeral?__ What is the core conceptual labor at work in a digital repository, how might anticipating the broader lifespan of those ideas and labor help guide a development process? This case study follows the development of a repository of exemplary data visualization resources for library-based instruction.
@@ -25,3 +25,6 @@ You can add more facets by adding additional arguments to the collection_gallery
         facet_by3 = 'object_type'
         facet_by4 = 'topic'
         %}
+
+{% include faceted_search_option.html %}
+
