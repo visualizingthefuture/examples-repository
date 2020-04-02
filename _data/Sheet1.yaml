@@ -1,6 +1,7 @@
-- '---': >-
+- Project: >-
+    ---
 
-    pid: object
+    pid: obj
 
     title: Crawling Noise
 
@@ -33,6 +34,5 @@
     thumbnail: "/img/logo_black.png"
 
     full: "/VisualizingTheFuture2/img/logo_black.png"
-
 
     ---
