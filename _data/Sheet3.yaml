@@ -1,0 +1,33 @@
+- 'pid: ': 'title: '
+  obj: Geospatial Visualization
+- 'pid: ': 'description:'
+  obj: >-
+    Simple and compelling way to show connections and relationships within a
+    community of individuals.
+- 'pid: ': 'author: '
+  obj: Unknown
+- 'pid: ': 'published: '
+  obj: January 2019
+- 'pid: ': 'object_type: '
+  obj: Visualization builder
+- 'pid: ': 'topic: Computational social sciences'
+  obj: ''
+- 'pid: ': 'purpose: '
+  obj: Teaching
+- 'pid: ': 'source:'
+  obj: >-
+    https://commons.wikimedia.org/wiki/File:Al-Hajj_Hafiz_Muhammad_Nuri,_Turkey,_1801_-_The_Dala%27il_al-Khayrat_of_al-Juzuli_-_Google_Art_Project.jpg
+- 'pid: ': 'audience_level:'
+  obj: Secondary school
+- 'pid: ': 'audience_composition:'
+  obj: General public
+- 'pid: ': 'order:'
+  obj: ' ''00'''
+- 'pid: ': 'layout:'
+  obj: labels
+- 'pid: ': 'collection: '
+  obj: datavis
+- 'pid: ': 'thumbnail: '
+  obj: '"/img/logo_white.png"'
+- 'pid: ': 'full:'
+  obj: '"/VisualizingTheFuture2/img/logo_white.png"'
