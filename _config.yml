@@ -18,6 +18,8 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
+gdrive:
+  sheet: "google-sheet-to-github-website-links"
 title:            'Examples Repository'
 description:      'Minimalist Examples Repository with Jekyll'
 url:              'https://amawest.github.io'
