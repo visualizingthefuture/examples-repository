@@ -1,3 +1,4 @@
+---
 - '---': >-
     pid: obj
 
@@ -34,3 +35,5 @@
     full: "/VisualizingTheFuture2/img/logo_black.png"
 
     ---
+
+---
