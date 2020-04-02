@@ -1,5 +1,5 @@
 ---
-pid: obj
+pid: objhi
 title: Panel Data from Norway
 description: Simple and compelling way to show connections and relationships within a community of individuals.
 author: Unknown
