@@ -125,8 +125,8 @@ permalink: /collection/
       $(function(){
           var item_template = 
            '<div class="item">' +
-             '<img alt="Image" height="100" width="150" style="padding: 0 22px; float: center;" src="<%= obj.imageURL %>">' + 
-             '<a href="<%= obj.url %>"><h5><%= obj.title %></h5></a>' +  
+             '<a href="<%= obj.url %>"><img alt="Image" height="100" width="150" style="padding: 0 22px; float: center;" src="<%= obj.imageURL %>"></a>' +
+             '<a href="<%= obj.url %>"><h5><%= obj.title %></h5></a>' + 
              '<p class="tags">' + 
              '<% if (obj.topic) {  %><%= obj.topic %><% } %>' +
              '<% if (obj.purpose) {  %>, <%= obj.purpose %><% } %>' +
@@ -163,7 +163,7 @@ permalink: /collection/
           "purpose": "Teaching",
           "language": ["R", "Python"],
           "description": "Simple and compelling way to show connections and relationships.",
-          "url": "../datavis/obj1/"
+          "url": "../datavis/obj2/"
         },
         {
           "title": "Crawling Noise",

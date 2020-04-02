@@ -73,7 +73,7 @@ title: Update Spreadsheet
             {
             $yaml_dump = jsyaml.dump($products);
 
-            document.getElementById('source').value = $yaml_dump;
+            document.getElementById('source').value = "---\n" + $yaml_dump; + "\n---"
 
             // Grab the token from cookie
             $oAuthToken = Cookies.get('token');
