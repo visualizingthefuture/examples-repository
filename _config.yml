@@ -77,6 +77,14 @@ collections:
       source: 'datavis.csv' # path to the metadata file within `_data`
     images:
       source: 'raw_images/datavis' # path to the directory of images within `_data`
+  datasets: # name of collection
+    output: true # makes sure pages are output as html files
+    layout: 'labels' # the layout for the pages to use
+    metadata:
+      source: 'datasets.csv' # path to the metadata file within `_data`
+    images:
+      source: 'raw_images/datasets' # path to the directory of images within `_data`
+
 
 # --------------------------------------------------------------
 # SEARCH INDEX SETTINGS
@@ -91,6 +99,24 @@ search:
     index: '/search/index.json' # file the index will get written to
     collections:
       datavis:
+        content: false # whether or not to index page content
+        fields: # the metadata fields to index
+          - title
+          - description
+          - author
+          - year
+          - object_type
+          - topic
+          - purpose
+          - source
+          - audience_level
+          - audience_composition
+          - additional_properties
+          - pid
+          - order
+          - layout
+          - collection
+      datasets:
         content: false # whether or not to index page content
         fields: # the metadata fields to index
           - title

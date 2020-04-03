@@ -14,6 +14,6 @@ order: '02'
 layout: labels
 collection: datavis
 thumbnail: "/img/logo_sepia.png"
-full: "/VisualizingTheFuture2/img/logo_sepia.png"
-dataset: https://amawest.github.io/VisualizingTheFuture2/data/obj3
+full: "/examples-repository/img/logo_sepia.png"
+dataset: https://amawest.github.io/examples-repository/data/obj3
 ---

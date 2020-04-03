@@ -12,7 +12,7 @@ audience_level: Secondary school
 audience_composition: General public
 order: '00'
 layout: labels
-collection: datavis
+collection: datasets
 thumbnail: "/img/csv_design.png"
 full: "/VisualizingTheFuture2/img/csv_design.png"
 dataset: https://amawest.github.io/VisualizingTheFuture2/data/obj1
