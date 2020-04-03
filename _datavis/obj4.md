@@ -15,5 +15,5 @@ layout: labels
 collection: datavis
 thumbnail: "/img/logo_white.png"
 full: "/examples-repository/img/logo_white.png"
-dataset: https://amawest.github.io/examples-repository/data/obj4
+dataset: https://visualizingthefuture.github.io/examples-repository/data/obj4
 ---
