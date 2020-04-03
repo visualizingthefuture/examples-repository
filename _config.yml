@@ -128,7 +128,7 @@ menu:
       - label: 'Data Visualizations'
         link: '/datavis/'
       - label: 'Data Sets'
-        link: '/datavis/'
+        link: '/datasets/'
   - label: 'Search'
     link: '/search/'
 
