@@ -126,9 +126,9 @@ menu:
   - label: 'Browse'
     sub:
       - label: 'Data Visualizations'
-        link: '/collection/'
+        link: '/datavis/'
       - label: 'Data Sets'
-        link: '/collection/'
+        link: '/datavis/'
   - label: 'Search'
     link: '/search/'
 
