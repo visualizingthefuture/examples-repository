@@ -15,5 +15,5 @@ layout: labels
 collection: datavis
 thumbnail: "/img/logo_black.png"
 full: "/VisualizingTheFuture2/img/logo_black.png"
-dataset: https://amawest.github.io/VisualizingTheFuture2/data/obj5
+dataset: https://visualizingthefuture.github.io/examples-repository/data/obj5
 ---

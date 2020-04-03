@@ -172,11 +172,11 @@ menu:
 footer:
   links:
     - label: 'GitHub'
-      link: 'https://github.com/amawest/wax-1'
+      link: 'https://github.com/visualizingthefuture/examples-repository'
     - label: 'Credits'
       link: '/credits'
     - label: 'Website'
-      link: 'https://visualizingthefuture.github.io//'
+      link: 'https://visualizingthefuture.github.io/'
   logos:
     - img: '/img/logo.png'
 
