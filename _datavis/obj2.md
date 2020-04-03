@@ -14,6 +14,6 @@ order: '01'
 layout: labels
 collection: datavis
 thumbnail: "/img/logo_black.png"
-full: "/VisualizingTheFuture2/img/logo_black.png"
-dataset: https://amawest.github.io/VisualizingTheFuture2/data/obj2
+full: "/examples-repository/img/logo_black.png"
+dataset: https://amawest.github.io/examples-repository/data/obj2
 ---

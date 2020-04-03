@@ -12,10 +12,10 @@ audience_level: Secondary school
 audience_composition: General public
 order: '00'
 layout: labels
-collection: datavis
+collection: datasets
 thumbnail: "/img/csv_design.png"
-full: "/VisualizingTheFuture2/img/csv_design.png"
-dataset: https://amawest.github.io/VisualizingTheFuture2/data/obj1
+full: "/examples-repository/img/csv_design.png"
+dataset: https://amawest.github.io/examples-repository/data/obj3
 
 data_processing_completed: Tool relies on social network data - a list of individuals and connections (nodes and edges), Tool comes with three datasets provided, and offers the option for user to upload and visualize their own data
 data_types_included: Individual names - nodes with text labels,  Connections between individuals - edges expressed as ordered pairs of node labels

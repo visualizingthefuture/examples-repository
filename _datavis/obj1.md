@@ -14,8 +14,8 @@ order: '00'
 layout: labels
 collection: datavis
 thumbnail: "/img/logo_white.png"
-full: "/VisualizingTheFuture2/img/logo_white.png"
-dataset: https://amawest.github.io/VisualizingTheFuture2/data/obj1
+full: "/examples-repository/img/logo_white.png"
+dataset: https://amawest.github.io/examples-repository/data/obj1
 
 data_processing_completed: Tool relies on social network data - a list of individuals and connections (nodes and edges), Tool comes with three datasets provided, and offers the option for user to upload and visualize their own data
 data_types_included: Individual names - nodes with text labels,  Connections between individuals - edges expressed as ordered pairs of node labels
