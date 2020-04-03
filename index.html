@@ -2,28 +2,12 @@
 layout: page
 show_title: false
 ---
-
-<table>
-  <thead>
-    {% for row in site.data.google_sheet limit:1 %}
-      <tr>
-        {% for col in row %}<th>{{col}}</th>{% endfor %}
-      </tr>
-    {% endfor %}
-  </thead>
-  <tbody>
-    {% for row in site.data.google_sheet offset:1 %}
-      <tr>
-        {% for col in row %}<td>{{col}}</td>{% endfor %}
-      </tr>
-    {% endfor %}  
-  </tbody>
-</table>
-
 <p>
   <img style="padding: 0 15px; float: right;" src="img/logo_white.png" width="40%" />
 </p>
 
+Test
+ 
 <p style="font-size:18px" ><strong>What does a design process look like that acknowledges, from the beginning, 
    that all digital platforms are ephemeral?</strong> What is the core conceptual labor at
    work in a digital repository, how might anticipating the broader lifespan of those ideas 
