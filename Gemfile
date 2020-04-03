@@ -1,7 +1,3 @@
-group :jekyll_plugins do
-    gem 'jekyll-gdrive'
-  end
-
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
