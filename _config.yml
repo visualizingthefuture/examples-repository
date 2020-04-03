@@ -18,8 +18,6 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
-gdrive:
-  sheet: "google-sheet-to-github-website-links"
 title:            'Examples Repository'
 description:      'Minimalist Examples Repository with Jekyll'
 url:              'visualizingthefuture.github.io'
@@ -29,6 +27,8 @@ logo:             '/assets/logo.png'
 integration_spreadsheet_key: 1jLCQG-Z5gwpT7zgF0MT6ww3A-QBf1ktcZuTQhfyjxd0
 github_user: visualizingthefuture
 github_repo: examples-repository
+gdrive:
+  sheet: "google-sheet-to-github-website-links"
 
 # ---------------------------------------------------------------
 # BUILD SETTINGS
