@@ -20,7 +20,7 @@
 
 title:            'Examples Repository'
 description:      'Minimalist Examples Repository with Jekyll'
-url:              'visualizingthefuture.github.io'
+url:              'https://visualizingthefuture.github.io'
 baseurl:          '/examples-repository'
 copyright:        'Example copyright org, 2020'
 logo:             '/assets/logo.png'
