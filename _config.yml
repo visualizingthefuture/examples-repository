@@ -101,39 +101,17 @@ search:
       datavis:
         content: false # whether or not to index page content
         fields: # the metadata fields to index
+          - description
+          - language
+          - object_type
+          - topic
+          - purpose
+          - audience_level
+          - audience_composition
+          - additional_properties
+          - pid
+          - layout
           - label
-          - description
-          - author
-          - year
-          - object_type
-          - topic
-          - purpose
-          - source
-          - audience_level
-          - audience_composition
-          - additional_properties
-          - pid
-          - order
-          - layout
-          - collection
-      datasets:
-        content: false # whether or not to index page content
-        fields: # the metadata fields to index
-          - title
-          - description
-          - author
-          - year
-          - object_type
-          - topic
-          - purpose
-          - source
-          - audience_level
-          - audience_composition
-          - additional_properties
-          - pid
-          - order
-          - layout
-          - collection
 
 # --------------------------------------------------------------
 # SITE MENU SETTINGS

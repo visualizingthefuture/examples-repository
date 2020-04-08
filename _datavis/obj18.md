@@ -1,6 +1,5 @@
 ---
-pid: objhi
-title: Panel Data from Norway
+title: Plotly in R
 description: Simple and compelling way to show connections and relationships within a community of individuals.
 author: Unknown
 published: April 2016
@@ -13,7 +12,7 @@ audience_composition: General public
 order: '04'
 layout: labels
 collection: datavis
-thumbnail: "/img/logo_black.png"
-full: "/VisualizingTheFuture2/img/logo_black.png"
+thumbnail: "/img/logo_white.png"
+full: "/examples-repository/img/logo_white.png"
 dataset: https://visualizingthefuture.github.io/examples-repository/data/obj5
 ---

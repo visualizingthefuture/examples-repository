@@ -1,6 +1,5 @@
 ---
-pid: obj
-title: Crawling Noise
+title: Map of the World
 description: Simple and compelling way to show connections and relationships within a community of individuals.
 author: Unknown
 published: January 2019
@@ -13,7 +12,7 @@ audience_composition: General public
 order: '01'
 layout: labels
 collection: datavis
-thumbnail: "/img/logo_black.png"
-full: "/examples-repository/img/logo_black.png"
+thumbnail: "/img/logo_sepia.png"
+full: "/examples-repository/img/logo_sepia.png"
 dataset: https://visualizingthefuture.github.io/examples-repository/data/obj2
 ---
