@@ -16,9 +16,6 @@ permalink: /datavis/
       Faceted Search JavaScript Library
     </title>
     <style>
-      
-      /* These are the styles used specifically in the faceted search. */
-
       img {
         filter: alpha(opacity=100);
         opacity: 1;
@@ -32,13 +29,20 @@ permalink: /datavis/
         width: 200px;
         vertical-align: top;
       }
+      .facetsearch:hover {
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+      }
       .activeorderby,
       .activefacet {
-        color: rgb(69, 140, 216);
+        color: rgb(44, 110, 181);
       }
       .bottomline {
         padding: 15px 0 20px 0;
-        color: rgb(69, 140, 216);
+        color: rgb(0, 0, 0);
+      }
+      .bottomline:hover {
+        cursor: pointer;
       }
       .bottomline .orderby, 
       .bottomline .facettotalcount {
@@ -125,7 +129,6 @@ permalink: /datavis/
       <div id=facets></div>
       <div id=results></div>
     </div>
-    <script src="../assets/facetedsearchbar/jquery-1.6.2.js"></script>
     <script src="../assets/facetedsearchbar/underscore-1.1.7.js"></script>
     <script src="../assets/facetedsearchbar/facetedsearch.js"></script>
     <script>
@@ -164,7 +167,7 @@ permalink: /datavis/
       });
     </script>
     <script>
-      var example_items = [ {% include datavis_data.html %} ]
+      var example_items = [ {% include datavis_only.html %} ]
     </script>
   </body>
 </html>

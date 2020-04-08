@@ -4,6 +4,7 @@ title: Browse the Collection
 permalink: /datasets/
 ---
 
+
 <p>This site&#39;s sample collection comprises a set of objects, each of which is 
         represented by one or more images. The collection items in this demo are provided 
         by the <a href="https://clarkdatalabs.github.io/">Clark Data Labs</a> at the 
@@ -32,13 +33,20 @@ permalink: /datasets/
         width: 200px;
         vertical-align: top;
       }
+      .facetsearch:hover {
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+      }
       .activeorderby,
       .activefacet {
-        color: rgb(69, 140, 216);
+        color: rgb(44, 110, 181);
       }
       .bottomline {
         padding: 15px 0 20px 0;
-        color: rgb(69, 140, 216);
+        color: rgb(0, 0, 0);
+      }
+      .bottomline:hover {
+        cursor: pointer;
       }
       .bottomline .orderby, 
       .bottomline .facettotalcount {
@@ -54,15 +62,6 @@ permalink: /datasets/
       }
       .bottomline .deselectstartover {
         float: right;
-      } 
-      #language {
-        width: 400px;
-      }
-      #language .facetlist{
-        column-count: 2;
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        -o-column-count: 2;
       } 
       .item {
         width: 150px;
@@ -125,7 +124,6 @@ permalink: /datasets/
       <div id=facets></div>
       <div id=results></div>
     </div>
-    <script src="../assets/facetedsearchbar/jquery-1.6.2.js"></script>
     <script src="../assets/facetedsearchbar/underscore-1.1.7.js"></script>
     <script src="../assets/facetedsearchbar/facetedsearch.js"></script>
     <script>
@@ -135,11 +133,11 @@ permalink: /datasets/
           var item_template = 
            '<div class="item">' +
              '<a href="<%= obj.url %>"><img alt="Image" height="100" width="150" style="padding: 0 22px; float: center;" src="<%= obj.imageURL %>"></a>' +
-             '<a href="<%= obj.url %>"><h5><%= obj.title %></h5></a>' + 
+             '<a href="<%= obj.url %>"><h5><%= obj.label %></h5></a>' + 
              '<p class="tags">' + 
              '<% if (obj.topic) {  %><%= obj.topic %><% } %>' +
              '<% if (obj.purpose) {  %>, <%= obj.purpose %><% } %>' +
-             '<% if (obj.language) {  %>, <%= obj.language %><% } %>' +
+             '<% if (obj.filesize) {  %>, <%= obj.filesize %><% } %>' +
              '</p>' +
              '<p class="desc"><%= obj.description %></p>' +
            '</div>';
@@ -148,13 +146,14 @@ permalink: /datasets/
           facets           : { 
                               'topic'     : 'Topic',
                               'purpose'    : 'Purpose',
-                              'language'     : 'Language'
+                              'filesize'     : 'File size',
+                              'audience_level' : 'Audience'
           },  
           resultSelector   : '#results',
           facetSelector    : '#facets',
           resultTemplate   : item_template,
           paginationCount  : 50,
-          orderByOptions   : {'title': 'Alphabetical |', 'RANDOM': 'Random'},
+          orderByOptions   : {'label': 'Alphabetical |', 'RANDOM': 'Random'},
           facetSortOption  : { }
         }   
 
@@ -164,7 +163,7 @@ permalink: /datasets/
       });
     </script>
     <script>
-    var example_items = [ {% include dataset_data.html %} ]
+    var example_items = [ {% include dataset_only.html %} ]
     </script>
   </body>
 </html>

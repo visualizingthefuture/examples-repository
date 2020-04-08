@@ -1,6 +1,5 @@
 ---
-pid: obj
-title: Geospatial Visualization
+title: Chinese Zodiak Data
 description: Simple and compelling way to show connections and relationships within a community of individuals.
 author: Unknown
 published: January 2019

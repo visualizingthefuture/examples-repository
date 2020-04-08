@@ -1,6 +1,5 @@
 ---
-pid: obj
-title: ArcGIS Example
+title: Panel Data from Norway
 description: Simple and compelling way to show connections and relationships within a community of individuals.
 author: Unknown
 published: January 2019
@@ -13,7 +12,7 @@ audience_composition: General public
 order: '03'
 layout: labels
 collection: datavis
-thumbnail: "/img/logo_white.png"
-full: "/examples-repository/img/logo_white.png"
+thumbnail: "/img/logo_black.png"
+full: "/examples-repository/img/logo_black.png"
 dataset: https://visualizingthefuture.github.io/examples-repository/data/obj4
 ---

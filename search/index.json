@@ -3,6 +3,5 @@ layout: none
 ---
 
 [ 
-{% include datavis_data.html %}
-{% include dataset_data.html %} 
+{% include total_data.html %}
 ]

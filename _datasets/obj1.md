@@ -1,6 +1,5 @@
 ---
-pid: obj
-title: Geospatial Visualization
+title: Types of Flowers
 description: Simple and compelling way to show connections and relationships within a community of individuals.
 author: Unknown
 published: January 2019
@@ -15,7 +14,7 @@ layout: labels
 collection: datasets
 thumbnail: "/img/csv_design.png"
 full: "/VisualizingTheFuture2/img/csv_design.png"
-dataset: https://visualizingthefuture.github.io/examples-repository/data/obj1
+dataset: https://visualizingthefuture.github.io/examples-repository/data/obj2
 
 data_processing_completed: Tool relies on social network data - a list of individuals and connections (nodes and edges), Tool comes with three datasets provided, and offers the option for user to upload and visualize their own data
 data_types_included: Individual names - nodes with text labels,  Connections between individuals - edges expressed as ordered pairs of node labels
