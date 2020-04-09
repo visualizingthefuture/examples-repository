@@ -1,20 +1,19 @@
 ---
 title: World War II Data
-description: Simple and compelling way to show connections and relationships within a community of individuals.
+description: World War II casualties by country.
+object_type: data
 author: Unknown
 published: January 2019
-object_type: Visualization builder
-topic: Computational social sciences
+topic: Social science
 purpose: Teaching
 source: https://commons.wikimedia.org/wiki/File:Al-Hajj_Hafiz_Muhammad_Nuri,_Turkey,_1801_-_The_Dala%27il_al-Khayrat_of_al-Juzuli_-_Google_Art_Project.jpg
 audience_level: Secondary school
 audience_composition: General public
-order: '00'
 layout: labels
 collection: datasets
 thumbnail: "/img/csv_design.png"
 full: "/examples-repository/img/csv_design.png"
-dataset: https://visualizingthefuture.github.io/examples-repository/data/obj1
+dataset: https://visualizingthefuture.github.io/examples-repository/data/example
 
 data_processing_completed: Tool relies on social network data - a list of individuals and connections (nodes and edges), Tool comes with three datasets provided, and offers the option for user to upload and visualize their own data
 data_types_included: Individual names - nodes with text labels,  Connections between individuals - edges expressed as ordered pairs of node labels

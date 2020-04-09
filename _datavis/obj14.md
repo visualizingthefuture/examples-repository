@@ -14,5 +14,5 @@ layout: labels
 collection: datavis
 thumbnail: "/img/logo_sepia.png"
 full: "/examples-repository/img/logo_sepia.png"
-dataset: https://visualizingthefuture.github.io/examples-repository/data/obj2
+dataset: https://visualizingthefuture.github.io/examples-repository/data/obj3
 ---

@@ -9,12 +9,11 @@ purpose: Teaching
 source: https://commons.wikimedia.org/wiki/File:Al-Hajj_Hafiz_Muhammad_Nuri,_Turkey,_1801_-_The_Dala%27il_al-Khayrat_of_al-Juzuli_-_Google_Art_Project.jpg
 audience_level: Secondary school
 audience_composition: General public
-order: '00'
 layout: labels
 collection: datasets
 thumbnail: "/img/csv_design.png"
 full: "/VisualizingTheFuture2/img/csv_design.png"
-dataset: https://visualizingthefuture.github.io/examples-repository/data/obj2
+dataset: https://visualizingthefuture.github.io/examples-repository/data/example
 
 data_processing_completed: Tool relies on social network data - a list of individuals and connections (nodes and edges), Tool comes with three datasets provided, and offers the option for user to upload and visualize their own data
 data_types_included: Individual names - nodes with text labels,  Connections between individuals - edges expressed as ordered pairs of node labels
