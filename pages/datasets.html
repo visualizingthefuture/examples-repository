@@ -8,7 +8,15 @@ permalink: /datasets/
 <p>This site&#39;s sample collection comprises a set of objects, each of which is 
         represented by one or more images. The collection items in this demo are provided 
         by the <a href="https://clarkdatalabs.github.io/">Clark Data Labs</a> at the 
-        University of Michigan and the <a href="https://visualizingthefuture.github.io//">Visualizing the Future</a> Fellowship community. </p>
+        University of Michigan and the <a href="https://visualizingthefuture.github.io//">Visualizing the Future</a> Fellowship community.</p>
+
+<p>Use the <b>filtered selection tool</b> (below) to sort through data in the repository.</p>
+
+
+<!-- 
+  <hr>
+  <p style="font-size:27px; margin: 0px 0px 0px 0px;">Select Filters</p> 
+--> 
 
 <!DOCTYPE html>
 <html>
@@ -43,7 +51,7 @@ permalink: /datasets/
       }
       .bottomline {
         padding: 15px 0 20px 0;
-        color: rgb(0, 0, 0);
+        color: rgba(0, 0, 0, 0.76);
       }
       .bottomline:hover {
         cursor: pointer;
@@ -63,10 +71,11 @@ permalink: /datasets/
       .bottomline .deselectstartover {
         float: right;
       } 
+      /* This affects the individual examples. */
       .item {
         width: 150px;
-        height: 320px;
-        margin: 0 10px 10px 0;
+        height: 290px;
+        margin: 0 50px 50px 0;
         display: inline-block;
         vertical-align: top;
       }
@@ -127,7 +136,6 @@ permalink: /datasets/
     <script src="../assets/facetedsearchbar/underscore-1.1.7.js"></script>
     <script src="../assets/facetedsearchbar/facetedsearch.js"></script>
     <script>
-      /* This is where you can add a link to a code snippet... */
       /* The code below also affects image sizing and alignment (currently center aligned) */
       $(function(){
           var item_template = 
