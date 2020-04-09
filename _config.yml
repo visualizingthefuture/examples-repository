@@ -19,10 +19,10 @@
 # ~> https://jekyllrb.com/docs/configuration/options/
 
 title:            'Examples Repository'
-description:      'Minimalist Examples Repository with Jekyll'
+description:      'Web Design by Amanda West'
 url:              'https://visualizingthefuture.github.io'
 baseurl:          '/examples-repository'
-copyright:        'Example copyright org, 2020'
+copyright:        'Visualizing the Future, 2020'
 logo:             '/assets/logo.png'
 integration_spreadsheet_key: 1jLCQG-Z5gwpT7zgF0MT6ww3A-QBf1ktcZuTQhfyjxd0
 github_user: visualizingthefuture
