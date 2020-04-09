@@ -5,3 +5,4 @@ layout: none
 [ 
 {% include total_data.html %}
 ]
+
