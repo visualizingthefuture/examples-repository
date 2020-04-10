@@ -112,6 +112,20 @@ search:
           - pid
           - layout
           - label
+        datasets:
+        content: false # whether or not to index page content
+        fields: # the metadata fields to index
+          - description
+          - language
+          - object_type
+          - topic
+          - purpose
+          - audience_level
+          - audience_composition
+          - additional_properties
+          - pid
+          - layout
+          - label
 
 # --------------------------------------------------------------
 # SITE MENU SETTINGS
