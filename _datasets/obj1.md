@@ -12,7 +12,7 @@ audience_composition: General public
 layout: labels
 collection: datasets
 thumbnail: "/img/csv_design.png"
-full: "/VisualizingTheFuture2/img/csv_design.png"
+full: "/examples-repository/img/csv_design.png"
 dataset: https://visualizingthefuture.github.io/examples-repository/data/example
 
 data_processing_completed: Tool relies on social network data - a list of individuals and connections (nodes and edges), Tool comes with three datasets provided, and offers the option for user to upload and visualize their own data
