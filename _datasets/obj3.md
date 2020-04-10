@@ -14,7 +14,6 @@ collection: datasets
 thumbnail: "/img/csv_design.png"
 full: "/examples-repository/img/csv_design.png"
 dataset: https://visualizingthefuture.github.io/examples-repository/data/example
-
 data_processing_completed: Tool relies on social network data - a list of individuals and connections (nodes and edges), Tool comes with three datasets provided, and offers the option for user to upload and visualize their own data
 data_types_included: Individual names - nodes with text labels,  Connections between individuals - edges expressed as ordered pairs of node labels
 ethical_quandaries: Privacy concerns with gathering social network information, how do we track or gather evidence of connections between individuals, Does that data collection process violate the privacy of individuals
