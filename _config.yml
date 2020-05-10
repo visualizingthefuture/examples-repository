@@ -135,6 +135,8 @@ search:
 # submenu via `sub`.
 
 menu:
+  - label: 'User Guide'
+    link: '/howtoguide/'
   - label: 'Featured'
     sub:
       - label: 'Featured Article A'
@@ -167,9 +169,5 @@ footer:
       link: 'https://github.com/visualizingthefuture/examples-repository'
     - label: 'Credits'
       link: '/credits'
-    - label: 'Website'
-      link: 'https://visualizingthefuture.github.io/'
-  logos:
-    - img: '/img/logo.png'
 
 # FIN
