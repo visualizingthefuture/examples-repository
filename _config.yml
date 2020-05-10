@@ -164,7 +164,6 @@ menu:
 #
 
 footer:
-  links:
     - label: 'GitHub'
       link: 'https://github.com/visualizingthefuture/examples-repository'
     - label: 'Credits'
