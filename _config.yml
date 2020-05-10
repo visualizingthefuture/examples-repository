@@ -19,7 +19,6 @@
 # ~> https://jekyllrb.com/docs/configuration/options/
 
 title:            'Examples Repository'
-description:      'Web Design by Amanda West'
 url:              'https://visualizingthefuture.github.io'
 baseurl:          '/examples-repository'
 copyright:        'Visualizing the Future, 2020'
@@ -135,7 +134,7 @@ search:
 # submenu via `sub`.
 
 menu:
-  - label: 'Guide'
+  - label: 'User Guide'
     link: '/howtoguide/'
   - label: 'Featured'
     sub:
@@ -164,6 +163,7 @@ menu:
 #
 
 footer:
+  links:
     - label: 'GitHub'
       link: 'https://github.com/visualizingthefuture/examples-repository'
     - label: 'Credits'
