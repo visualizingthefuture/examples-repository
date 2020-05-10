@@ -135,7 +135,7 @@ search:
 # submenu via `sub`.
 
 menu:
-  - label: 'User Guide'
+  - label: 'Guide'
     link: '/howtoguide/'
   - label: 'Featured'
     sub:
