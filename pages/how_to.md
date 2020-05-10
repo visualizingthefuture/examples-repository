@@ -1,6 +1,6 @@
 ---
 layout: exhibit
-title: 'How to guide to using this site'
+title: 'How-to guide to using this site'
 publish_date: 2020-5-10
 permalink: /howtoguide/
 ---
