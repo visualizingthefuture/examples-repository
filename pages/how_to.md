@@ -1,7 +1,7 @@
 ---
 layout: exhibit
 title: 'How to guide to using this site'
-publish_date: 2018-11-15
+publish_date: 2020-5-10
 permalink: /howtoguide/
 ---
 
