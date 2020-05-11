@@ -37,7 +37,7 @@ permalink: /datasets/
         opacity: 0.8;
       }
       .facetsearch {
-        display: inline-block;
+        display: list-item;
         width: 200px;
         vertical-align: top;
       }
@@ -152,15 +152,9 @@ permalink: /datasets/
         settings = { 
           items            : example_items,
           facets           : { 
-                              'topic'     : 'Topic'
-          },  
-          facets           : { 
-                              'purpose'    : 'Purpose'
-          },  
-          facets           : { 
-                              'filesize'     : 'File size'
-          },  
-          facets           : { 
+                              'topic'     : 'Topic',
+                              'purpose'    : 'Purpose',
+                              'filesize'     : 'File size',
                               'audience_level' : 'Audience'
           },  
           resultSelector   : '#results',
