@@ -9,15 +9,12 @@ The beta version of this website comprises a set of objects, each of which is in
 
 Currently, the site is comprised of two overarching object types: data visualizations and data sets. By clicking the "Search" tab, one may navigate through all visualizations or examples. This is most useful if one knows the name of the data set or visualization they are searching for, or some other qualifying information. A few examples would be searching by title, programming language, audience level, or topic (i.e. mathematics, biology, economics).
 
-By navigating to the "Browse" tab, one can filter results by either visualization or by data set. All data sets on the website house downloadable CSVs or a link to where a CSV may be found. <em>All</em> examples include author, source, topic, short description, etc. 
+By navigating to the "Browse" tab, one can filter results by either visualization or by data set. All data sets on the website house downloadable CSVs or a link to where a CSV may be found. <em>All</em> examples include author, source, topic, short description, etc.[^1]
 
-Furthermore, the "Browse" section includes a variety of faceting tools. One can sort alphabetically or incorporate multiple facets into their search. For example, by clicking on "ArcGIS" in the data visualization browse tab, on
+Furthermore, the "Browse" section includes a variety of faceting tools. One can sort alphabetically or incorporate multiple facets into their search. For example, by clicking on "HTML" in the data visualization browse tab, one can then see that examples tagged as "HTML" visualizations cover topics in anthropology, biology, or mathematics, and purposes of classroom example, exam practice, or project (of course, these are only beta version examples).[^2]
 
+<< Include Centered Image Here >>
 
-
-Ut eleifend lacus at erat efficitur bibendum. Ut laoreet elit nec dolor molestie finibus. Vivamus justo risus, scelerisque nec dolor ut, pretium fringilla purus. Nam nisl erat, tristique ac libero vitae, bibendum pellentesque nulla. Praesent accumsan ut mauris ut euismod. Etiam mattis a justo eget blandit. Aliquam vitae magna eget nisi suscipit finibus id sit amet nulla.[^1]
-
-Duis commodo ligula libero, a pharetra ligula posuere sit amet. Sed ipsum dolor, elementum eget nisl eget, sagittis vestibulum augue. Donec tincidunt mauris et nunc sagittis, nec consectetur lorem tristique. Nulla tincidunt magna ut ullamcorper consectetur. Nulla mi urna, feugiat sed massa non, ullamcorper efficitur dolor.[^2] Sed luctus, massa eget pharetra posuere, nibh sem eleifend lectus, lobortis molestie ante libero non metus. Aenean et est sit amet est pulvinar convallis vel non tortor. Nunc semper commodo fringilla. Proin eget metus eget felis faucibus aliquet. Cras ultrices turpis id nibh cursus fringilla. Aenean nec magna turpis. Suspendisse egestas tellus iaculis ante pharetra imperdiet ac at odio.
 
 ---
 ### Notes
