@@ -134,7 +134,7 @@ search:
 # submenu via `sub`.
 
 menu:
-  - label: 'Guide'
+  - label: 'User Guide'
     link: '/howtoguide/'
   - label: 'Search'
     link: '/search/'
@@ -144,7 +144,7 @@ menu:
         link: '/datavis/'
       - label: 'Browse Data Sets'
         link: '/datasets/'
-        
+
 # --------------------------------------------------------------
 #  - label: 'Featured'
 #    sub:
