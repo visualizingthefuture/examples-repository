@@ -3,16 +3,15 @@ layout: default
 permalink: /datavis/
 ---
 
-<p style="margin: 0px 0px 0px 0px;">Use the <b>filtered selection tool</b> (below) to sort through all visualization examples in the repository.</p>
+<p style="margin: 0px 0px 0px 0px;">Use the <b>filtered selection tool</b> (below) to sort through all available data sets.</p>
 
-<!-- 
-  <p>This site&#39;s sample collection comprises a set of objects, each of which is 
+<!--
+<p>This site&#39;s sample collection comprises a set of objects, each of which is 
         represented by one or more images. The collection items in this demo are provided 
         by the <a href="https://clarkdatalabs.github.io/">Clark Data Labs</a> at the 
         University of Michigan and the <a href="https://visualizingthefuture.github.io//">Visualizing the Future</a> Fellowship community.</p>
 
-  <hr>
-  <p style="font-size:27px; margin: 0px 0px 0px 0px;">Select Filters</p> 
+<p>Use the <b>filtered selection tools</b> to sort through data in the repository.</p>
 --> 
 
 <!DOCTYPE html>
@@ -77,13 +76,13 @@ permalink: /datavis/
       }
       .bottomline .deselectstartover {
         float: right;
-        margin-right: 75px;
+        margin-right: 50px;
         font-weight: bold;
         color: rgba(0, 0,0);
       } 
       .bottomline .deselectstartover:hover {
         float: right;
-        margin-right: 75px;
+        margin-right: 50px;
         text-decoration: underline;
         font-weight: bold;
         color: rgba(0, 0,0);
@@ -116,26 +115,15 @@ permalink: /datavis/
         text-align: center;
         cursor: pointer;
       }
-      /* If one wanted multiple columns for one facet: */
-      /* 
-      #language {
-        width: 400px;
-      }
-      #language .facetlist{
-        column-count: 2;
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        -o-column-count: 2;
-      } 
-      */
+      
       * {
         margin: 0;
         padding: 0;
       }
       body {
-        padding: 20px;
+        padding: 0px;
         font-family: sans-serif;
-        font-size: 17px;
+        font-size: 15px;
       }
       #wrapper, #documentation {
         margin: 0 auto;
@@ -165,7 +153,6 @@ permalink: /datavis/
     <script src="../assets/facetedsearchbar/underscore-1.1.7.js"></script>
     <script src="../assets/facetedsearchbar/facetedsearch.js"></script>
     <script>
-      /* This is where you can add a link to a code snippet... */
       /* The code below also affects image sizing and alignment (currently center aligned) */
       $(function(){
           var item_template = 
@@ -175,7 +162,7 @@ permalink: /datavis/
              '<p class="tags">' + 
              '<% if (obj.topic) {  %><%= obj.topic %><% } %>' +
              '<% if (obj.purpose) {  %>, <%= obj.purpose %><% } %>' +
-             '<% if (obj.language) {  %>, <%= obj.language %><% } %>' +
+             '<% if (obj.filesize) {  %>, <%= obj.filesize %><% } %>' +
              '</p>' +
              '<p class="desc"><%= obj.description %></p>' +
            '</div>';
@@ -184,7 +171,7 @@ permalink: /datavis/
           facets           : { 
                               'topic'     : 'Topic',
                               'purpose'    : 'Purpose',
-                              'language'     : 'Language',
+                              'filesize'     : 'File size',
                               'audience_level' : 'Audience'
           },  
           resultSelector   : '#results',
@@ -201,7 +188,7 @@ permalink: /datavis/
       });
     </script>
     <script>
-      var example_items = [ {% include datavis_only.html %} ]
+    var example_items = [ {% include datavis_only.html %} ]
     </script>
   </body>
 </html>
