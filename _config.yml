@@ -144,12 +144,15 @@ menu:
         link: '/datavis/'
       - label: 'Browse Data Sets'
         link: '/datasets/'
-  - label: 'Featured'
-    sub:
-      - label: 'Featured Article A'
-        link: '/featured/a/'
-      - label: 'Featured Article B'
-        link: '/featured/b/'
+        
+# --------------------------------------------------------------
+#  - label: 'Featured'
+#    sub:
+#      - label: 'Featured Article A'
+#        link: '/featured/a/'
+#      - label: 'Featured Article B'
+#        link: '/featured/b/'
+# --------------------------------------------------------------
 
 # --------------------------------------------------------------
 # SITE FOOTER SETTINGS
