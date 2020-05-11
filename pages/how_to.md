@@ -14,12 +14,11 @@ Currently, the site is comprised of two overarching object types: data visualiza
 **Browse**
 By navigating to the "Browse" tab, one can filter results by either visualization or by data set. All data sets on the website house downloadable CSVs or a link to where a CSV may be found. <em>All</em> examples include author, source, topic, short description, etc.[^1]
 
+  <img style="float: left;" src="../img/how_to_photo.png" />
+  
 Furthermore, the "Browse" section includes a variety of faceting tools. One can sort alphabetically or incorporate multiple facets into their search. For example, by clicking on "HTML" in the data visualization browse tab, one can then see that examples tagged as "HTML" visualizations cover topics in anthropology, biology, or mathematics, and purposes of classroom example, exam practice, or project Of course, HTML isn't a platform used to create visualizations, this is only a beta version. Clicking values with numbers (i.e., (2)) next to their name narrows the search, and clicking values with + (i.e., (+) widens the search).[^2]
 
-  <img style="float: left;" src="../img/how_to_photo.png" />
 
-<br>
-<br>
 ---
 ### Notes
 
