@@ -54,9 +54,6 @@ permalink: /datasets/
       .bottomline:hover {
         cursor: pointer;
       }
-      .bottomline .deselectstartover {
-        float: left;
-      } 
       .bottomline .orderby, 
       .bottomline .facettotalcount {
         display: inline-block;
@@ -68,8 +65,16 @@ permalink: /datasets/
       }
       .bottomline .orderby-title {
         margin: 0 0 0 10px;
-        float: right;
       }
+      .bottomline .deselectstartover {
+        float: right;
+        color: rgba(0, 0,0);
+      } 
+      .bottomline .deselectstartover:hover {
+        float: right;
+        color: rgb(44, 110, 181);
+        text-decoration: underline;
+      } 
       /* This affects the individual examples. */
       .item {
         width: 150px;
