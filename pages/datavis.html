@@ -34,7 +34,7 @@ permalink: /datavis/
         opacity: 0.8;
       }
       .facetsearch {
-        display: inline-block;
+        display: inline-block; /* "list-item" changes to LHS, but search results fall below. */
         width: 200px;
         vertical-align: top;
       }
@@ -50,23 +50,44 @@ permalink: /datavis/
         padding: 15px 0 20px 0;
         color: rgba(0, 0, 0, 0.76);
       }
-      .bottomline:hover {
-        cursor: pointer;
-      }
       .bottomline .orderby, 
       .bottomline .facettotalcount {
         display: inline-block;
+        color: rgba(0, 0,0);
       }
       .bottomline .orderby ul,
       .bottomline .orderby li {
         display: inline;
         padding: 0;
+        color: rgba(0, 0,0);
+        font-weight: bold;
+        cursor: pointer;
       }
+      .bottomline .orderby ul:hover,
+      .bottomline .orderby li:hover {
+        display: inline;
+        padding: 0;
+        text-decoration: underline;
+        font-weight: bold;
+        color: rgba(0, 0,0);
+      } 
       .bottomline .orderby-title {
         margin: 0 0 0 10px;
+        color: rgba(0, 0,0);
       }
       .bottomline .deselectstartover {
         float: right;
+        margin-right: 50px;
+        font-weight: bold;
+        color: rgba(0, 0,0);
+      } 
+      .bottomline .deselectstartover:hover {
+        float: right;
+        margin-right: 50px;
+        text-decoration: underline;
+        font-weight: bold;
+        color: rgba(0, 0,0);
+        cursor: pointer;
       } 
       /* This affects the individual examples. */
       .item {
