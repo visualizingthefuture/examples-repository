@@ -18,7 +18,8 @@ Furthermore, the "Browse" section includes a variety of faceting tools. One can 
 
   <img style="float: left;" src="../img/how_to_photo.png" />
 
-
+<br>
+<br>
 ---
 ### Notes
 
