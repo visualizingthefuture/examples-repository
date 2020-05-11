@@ -21,7 +21,9 @@ By navigating to the "Browse" tab, one can filter results by either visualizatio
   <img style="float: left;" src="../img/how_to_photo.png" />
   
 <br>
-Furthermore, the "Browse" section includes a variety of faceting tools. One can sort alphabetically or incorporate multiple facets into their search. For example, by clicking on "HTML" in the data visualization browse tab, one can then see that examples tagged as "HTML" visualizations cover topics in anthropology, biology, or mathematics, and purposes of classroom example, exam practice, or project Of course, HTML isn't a platform used to create visualizations, this is only a beta version. Clicking values with numbers (i.e., (2)) next to their name narrows the search, and clicking values with + (i.e., (+) widens the search).[^2]
+Furthermore, the "Browse" section includes a variety of faceting tools. One can sort alphabetically or incorporate multiple facets into their search. For example, by clicking on "HTML" in the data visualization browse tab, one can then see that examples tagged as "HTML" visualizations cover topics in anthropology, biology, or mathematics, and purposes of classroom example, exam practice, or class projects. Of course, HTML isn't a platform used to create visualizations as this is only a beta version. 
+<br>
+Clicking values with numbers (i.e., (2)) next to their name narrows the search, and clicking values with + (i.e., (+) widens the search).[^2]
 <br>
 
 ---
