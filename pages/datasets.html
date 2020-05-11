@@ -151,19 +151,19 @@ permalink: /datasets/
              '<p class="desc"><%= obj.description %></p>' +
            '</div>';
         settings = { 
-          items            : example_items,
-          facets           : { 
-                              'topic'     : 'Topic',
-                              'purpose'    : 'Purpose',
-                              'filesize'     : 'File size',
-                              'audience_level' : 'Audience'
-          },  
+          items            : example_items,  
           resultSelector   : '#results',
           facetSelector    : '#facets',
           resultTemplate   : item_template,
           paginationCount  : 50,
           orderByOptions   : {'label': 'Alphabetical |', 'RANDOM': 'Random'},
-          facetSortOption  : { }
+          facetSortOption  : { },
+          facets           : { 
+                              'topic'     : 'Topic',
+                              'purpose'    : 'Purpose',
+                              'filesize'     : 'File size',
+                              'audience_level' : 'Audience'
+          }
         }   
 
         // Various facet functionalities
