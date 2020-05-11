@@ -35,40 +35,26 @@ permalink: /datasets/
         filter: alpha(opacity=80);
         opacity: 0.8;
       }
-      .facetsearch {
-        display: list-item;
-        width: 200px;
-        vertical-align: bottom;
-        font-size: 15px;
-      }
-      .facetsearch:hover {
-        color: rgb(0, 0, 0);
-        cursor: pointer;
-      }
-      .activeorderby,
-      .activefacet {
-        color: rgb(44, 110, 181);
-      }
-      .topline {
+      .bottomline {
         padding: 15px 0 20px 0;
         color: rgba(0, 0, 0, 0.76);
       }
-      .topline:hover {
+      .bottomline:hover {
         cursor: pointer;
       }
-      .topline .orderby, 
-      .topline .facettotalcount {
+      .bottomline .orderby, 
+      .bottomline .facettotalcount {
         display: inline-block;
       }
-      .topline .orderby ul,
-      .topline .orderby li {
+      .bottomline .orderby ul,
+      .bottomline .orderby li {
         display: inline;
         padding: 0;
       }
-      .topline .orderby-title {
+      .bottomline .orderby-title {
         margin: 0 0 0 10px;
       }
-      .topline .deselectstartover {
+      .bottomline .deselectstartover {
         float: right;
       } 
       /* This affects the individual examples. */
@@ -97,6 +83,20 @@ permalink: /datasets/
         display: block;
         text-align: center;
         cursor: pointer;
+      }
+      .facetsearch {
+        display: list-item;
+        width: 200px;
+        vertical-align: bottom;
+        font-size: 15px;
+      }
+      .facetsearch:hover {
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+      }
+      .activeorderby,
+      .activefacet {
+        color: rgb(44, 110, 181);
       }
       
       * {
