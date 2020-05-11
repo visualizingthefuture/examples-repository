@@ -136,20 +136,20 @@ search:
 menu:
   - label: 'Guide'
     link: '/howtoguide/'
+  - label: 'Search'
+    link: '/search/'
+  - label: 'Browse'
+    sub:
+      - label: 'Browse Data Visualizations'
+        link: '/datavis/'
+      - label: 'Browse Data Sets'
+        link: '/datasets/'
   - label: 'Featured'
     sub:
       - label: 'Featured Article A'
         link: '/featured/a/'
       - label: 'Featured Article B'
         link: '/featured/b/'
-  - label: 'Browse'
-    sub:
-      - label: 'Data Visualizations'
-        link: '/datavis/'
-      - label: 'Data Sets'
-        link: '/datasets/'
-  - label: 'Search'
-    link: '/search/'
 
 # --------------------------------------------------------------
 # SITE FOOTER SETTINGS
