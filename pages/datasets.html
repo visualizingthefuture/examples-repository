@@ -10,7 +10,7 @@ permalink: /datasets/
         by the <a href="https://clarkdatalabs.github.io/">Clark Data Labs</a> at the 
         University of Michigan and the <a href="https://visualizingthefuture.github.io//">Visualizing the Future</a> Fellowship community.</p>
 
-<p>Use the <b>filtered selection tool</b> (below) to sort through data in the repository.</p>
+<p>Use the <b>filtered selection tools</b> to sort through data sets in the repository.</p>
 
 
 <!-- 
@@ -50,7 +50,28 @@ permalink: /datasets/
       .activefacet {
         color: rgb(44, 110, 181);
       }
-
+      .bottomline {
+        padding: 15px 0 20px 0;
+        color: rgba(0, 0, 0, 0.76);
+      }
+      .bottomline:hover {
+        cursor: pointer;
+      }
+      .bottomline .orderby, 
+      .bottomline .facettotalcount {
+        display: inline-block;
+      }
+      .bottomline .orderby ul,
+      .bottomline .orderby li {
+        display: inline;
+        padding: 0;
+      }
+      .bottomline .orderby-title {
+        margin: 0 0 0 10px;
+      }
+      .bottomline .deselectstartover {
+        float: right;
+      } 
       /* This affects the individual examples. */
       .item {
         width: 150px;
