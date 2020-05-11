@@ -11,10 +11,6 @@ permalink: /datasets/
         <br>
         <br>
         Use the <b>filtered selection tools</b> to sort through data sets in the repository.</p>
-<!-- 
-  <hr>
-  <p style="font-size:27px; margin: 0px 0px 0px 0px;">Select Filters</p> 
---> 
 
 <!DOCTYPE html>
 <html>
@@ -84,8 +80,7 @@ permalink: /datasets/
         cursor: pointer;
       }
       .facetsearch {
-        display: list-item;
-        margin: 0 0 0 0;
+        display: block-inline; /* "list-item" changes to LHS, but search results fall below. */
         width: 200px;
         vertical-align: bottom;
         font-size: 15px;
@@ -129,10 +124,9 @@ permalink: /datasets/
     </style>
   </head>
   <body>
-    
+    <div id=wrapper></div>
       <div id=facets></div>
       <div id=results></div>
-      <div id=wrapper></div>
     </div>
     <script src="../assets/facetedsearchbar/underscore-1.1.7.js"></script>
     <script src="../assets/facetedsearchbar/facetedsearch.js"></script>
