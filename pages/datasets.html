@@ -39,7 +39,7 @@ permalink: /datasets/
       .facetsearch {
         display: inline-block;
         width: 200px;
-        vertical-align: bottom;
+        vertical-align: top;
       }
       .facetsearch:hover {
         color: rgb(0, 0, 0);
@@ -152,9 +152,15 @@ permalink: /datasets/
         settings = { 
           items            : example_items,
           facets           : { 
-                              'topic'     : 'Topic',
-                              'purpose'    : 'Purpose',
-                              'filesize'     : 'File size',
+                              'topic'     : 'Topic'
+          },  
+          facets           : { 
+                              'purpose'    : 'Purpose'
+          },  
+          facets           : { 
+                              'filesize'     : 'File size'
+          },  
+          facets           : { 
                               'audience_level' : 'Audience'
           },  
           resultSelector   : '#results',
