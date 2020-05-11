@@ -34,26 +34,26 @@ permalink: /datasets/
         filter: alpha(opacity=80);
         opacity: 0.8;
       }
-      .upperline {
+      .bottomline {
         padding: 15px 0 20px 0;
         color: rgba(0, 0, 0, 0.76);
       }
-      .upperline:hover {
+      .bottomline:hover {
         cursor: pointer;
       }
-      .upperline .orderby, 
-      .upperline .facettotalcount {
+      .bottomline .orderby, 
+      .bottomline .facettotalcount {
         display: inline-block;
       }
-      .upperline .orderby ul,
-      .upperline .orderby li {
+      .bottomline .orderby ul,
+      .bottomline .orderby li {
         display: inline;
         padding: 0;
       }
-      .upperline .orderby-title {
+      .bottomline .orderby-title {
         margin: 0 0 0 10px;
       }
-      .upperline .deselectstartover {
+      .bottomline .deselectstartover {
         float: right;
       } 
       /* This affects the individual examples. */
@@ -129,10 +129,10 @@ permalink: /datasets/
     </style>
   </head>
   <body>
-    <div id=wrapper>
+    
       <div id=facets></div>
       <div id=results></div>
-    </div>
+      <div id=wrapper></div>
     <script src="../assets/facetedsearchbar/underscore-1.1.7.js"></script>
     <script src="../assets/facetedsearchbar/facetedsearch.js"></script>
     <script>
