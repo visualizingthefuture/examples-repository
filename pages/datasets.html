@@ -62,7 +62,16 @@ permalink: /datasets/
       .bottomline .orderby li {
         display: inline;
         padding: 0;
+        font-weight: bold;
       }
+      .bottomline .orderby ul:hover,
+      .bottomline .orderby li:hover {
+        display: inline;
+        padding: 0;
+        color: rgb(44, 110, 181);
+        text-decoration: underline;
+        font-weight: bold;
+      } 
       .bottomline .orderby-title {
         margin: 0 0 0 10px;
       }
@@ -169,7 +178,7 @@ permalink: /datasets/
           facetSelector    : '#facets',
           resultTemplate   : item_template,
           paginationCount  : 50,
-          orderByOptions   : {'label': 'Alphabetical |', 'RANDOM': 'Random'},
+          orderByOptions   : {'label': 'Alphabetical'},
           facetSortOption  : { }
         }   
 
