@@ -4,13 +4,17 @@ title: Browse the Collection
 permalink: /datasets/
 ---
 
-<p style="padding: 0 0;" > This site&#39;s sample collection comprises a set of objects, each of which is 
+
+<p>This site&#39;s sample collection comprises a set of objects, each of which is 
         represented by one or more images. The collection items in this demo are provided 
         by the <a href="https://clarkdatalabs.github.io/">Clark Data Labs</a> at the 
-        University of Michigan and the <a href="https://visualizingthefuture.github.io//">Visualizing the Future</a> Fellowship community.
-        <br>
-        <br>
-        Use the <b>filtered selection tools</b> to sort through data sets in the repository.</p>
+        University of Michigan and the <a href="https://visualizingthefuture.github.io//">Visualizing the Future</a> Fellowship community.</p>
+
+<p>Use the <b>filtered selection tools</b> to sort through data in the repository.</p>
+<!-- 
+  <hr>
+  <p style="font-size:27px; margin: 0px 0px 0px 0px;">Select Filters</p> 
+--> 
 
 <!DOCTYPE html>
 <html>
@@ -29,6 +33,19 @@ permalink: /datasets/
       img:hover {
         filter: alpha(opacity=80);
         opacity: 0.8;
+      }
+      .facetsearch {
+        display: inline-block; /* "list-item" changes to LHS, but search results fall below. */
+        width: 200px;
+        vertical-align: top;
+      }
+      .facetsearch:hover {
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+      }
+      .activeorderby,
+      .activefacet {
+        color: rgb(44, 110, 181);
       }
       .bottomline {
         padding: 15px 0 20px 0;
@@ -79,20 +96,6 @@ permalink: /datasets/
         text-align: center;
         cursor: pointer;
       }
-      .facetsearch {
-        display: inline-block; /* "list-item" changes to LHS, but search results fall below. */
-        width: 200px;
-        vertical-align: top;
-        font-size: 15px;
-      }
-      .facetsearch:hover {
-        color: rgb(0, 0, 0);
-        cursor: pointer;
-      }
-      .activeorderby,
-      .activefacet {
-        color: rgb(44, 110, 181);
-      }
       
       * {
         margin: 0;
@@ -124,7 +127,7 @@ permalink: /datasets/
     </style>
   </head>
   <body>
-    <div id=wrapper></div>
+    <div id=wrapper>
       <div id=facets></div>
       <div id=results></div>
     </div>
@@ -145,19 +148,19 @@ permalink: /datasets/
              '<p class="desc"><%= obj.description %></p>' +
            '</div>';
         settings = { 
-          items            : example_items,  
-          resultSelector   : '#results',
-          facetSelector    : '#facets',
-          resultTemplate   : item_template,
-          paginationCount  : 50,
-          orderByOptions   : {'label': 'Alphabetical |', 'RANDOM': 'Random'},
-          facetSortOption  : { },
+          items            : example_items,
           facets           : { 
                               'topic'     : 'Topic',
                               'purpose'    : 'Purpose',
                               'filesize'     : 'File size',
                               'audience_level' : 'Audience'
-          }
+          },  
+          resultSelector   : '#results',
+          facetSelector    : '#facets',
+          resultTemplate   : item_template,
+          paginationCount  : 50,
+          orderByOptions   : {'label': 'Alphabetical |', 'RANDOM': 'Random'},
+          facetSortOption  : { }
         }   
 
         // Various facet functionalities
