@@ -3,6 +3,6 @@ layout: none
 ---
 
 [ 
-{% include data_total.html %}
+{% include total_data.html %}
 ]
 
