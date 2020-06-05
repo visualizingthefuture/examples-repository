@@ -1,7 +1,7 @@
 ;(function(){
 
 /**
- * Please note that when passing in custom templates for 
+ * Please note that when passing in custom templates for
  * listItemTemplate and orderByTemplate to keep the classes as
  * they are used in the code at other locations as well.
  */
@@ -34,7 +34,7 @@ var defaults = {
 }
 
 /**
- * This is the first function / variable that gets exported into the 
+ * This is the first function / variable that gets exported into the
  * jQuery namespace. Pass in your own settings (see above) to initialize
  * the faceted search
  */
@@ -52,7 +52,7 @@ jQuery.facetelize = function(usersettings) {
 }
 
 /**
- * This is the second function / variable that gets exported into the 
+ * This is the second function / variable that gets exported into the
  * jQuery namespace. Use it to update everything if you messed with
  * the settings object
  */
@@ -68,7 +68,7 @@ jQuery.facetUpdate = function() {
  */
 
 /**
- * initializes all facets and their individual filters 
+ * initializes all facets and their individual filters
  */
 function initFacetCount() {
   _.each(settings.facets, function(facettitle, facet) {
@@ -114,7 +114,7 @@ function resetFacetCount() {
 }
 
 /**
- * Filters all items from the settings according to the currently 
+ * Filters all items from the settings according to the currently
  * set filters and stores the results in the settings.currentResults.
  * The number of items in each filter from each facet is also updated
  */
@@ -164,7 +164,7 @@ function filter() {
 
 /**
  * Orders the currentResults according to the settings.state.orderBy variable
- */ 
+ */
 function order() {
   if (settings.state.orderBy) {
     $(".activeorderby").removeClass("activeorderby");
@@ -208,7 +208,7 @@ function createFacetUI() {
   var itemtemplate  = _.template(settings.listItemTemplate);
   var titletemplate = _.template(settings.facetTitleTemplate);
   var containertemplate = _.template(settings.facetContainer);
-  
+
   $(settings.facetSelector).html("");
   _.each(settings.facets, function(facettitle, facet) {
     var facetHtml     = $(containertemplate({id: facet}));
@@ -237,6 +237,7 @@ function createFacetUI() {
     updateFacetUI();
     updateResults();
   });
+  // TODO: move bottom container to top of results?
   // Append total result count
   var bottom = $(settings.bottomContainer);
   countHtml = _.template(settings.countTemplate, {count: settings.currentResults.length});
@@ -315,11 +316,14 @@ function updateResults() {
   showMoreResults();
 }
 
+// TODO: try to get "bottom" inside the results div at the top,
+// rather than just inside the wrapper
+
 var moreButton;
 function showMoreResults() {
-  var showNowCount = 
-      settings.enablePagination ? 
-      Math.min(settings.currentResults.length - settings.state.shownResults, settings.paginationCount) : 
+  var showNowCount =
+      settings.enablePagination ?
+      Math.min(settings.currentResults.length - settings.state.shownResults, settings.paginationCount) :
       settings.currentResults.length;
   var itemHtml = "";
   var template = _.template(settings.resultTemplate);
@@ -334,7 +338,8 @@ function showMoreResults() {
   $(settings.resultSelector).append(itemHtml);
   if (!moreButton) {
     moreButton = $(settings.showMoreTemplate).click(showMoreResults);
-    $(settings.resultSelector).after(moreButton);
+    //$(settings.resultSelector).after(moreButton);
+    $(settings.resultSelector).append(moreButton);
   }
   if (settings.state.shownResults == 0) {
     moreButton.show();
