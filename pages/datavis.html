@@ -28,6 +28,13 @@ permalink: /datavis/
         filter: alpha(opacity=80);
         opacity: 0.8;
       }
+      .facetlist {
+        list-style-type: '\2612';
+        line-height: 1.5rem;
+      }
+      .unselected {
+        list-style-type: '\2610';
+      }
       .facetsearch {
         display: inline-block; /* "list-item" changes to LHS, but search results fall below. */
         width: 160px;
@@ -42,43 +49,47 @@ permalink: /datavis/
         color: rgb(44, 110, 181);
       }
       .bottomline {
+        padding: 15px 0 0px 0;
+        color: rgba(0, 0, 0, 0.76);
+      }
+      .topline {
         padding: 15px 0 20px 0;
         color: rgba(0, 0, 0, 0.76);
       }
-      .bottomline .orderby,
-      .bottomline .facettotalcount {
+      .orderby,
+      .facettotalcount {
         display: inline-block;
         color: rgba(0, 0,0);
       }
-      .bottomline .orderby ul,
-      .bottomline .orderby li {
+      .orderby ul,
+      .orderby li {
         display: inline;
         padding: 0;
         color: rgba(0, 0,0);
         font-weight: bold;
         cursor: pointer;
       }
-      .bottomline .orderby ul:hover,
-      .bottomline .orderby li:hover {
+      .orderby ul:hover,
+      .orderby li:hover {
         display: inline;
         padding: 0;
         text-decoration: underline;
         font-weight: bold;
         color: rgba(0, 0,0);
       }
-      .bottomline .orderby-title {
-        margin: 0 0 0 10px;
+      .orderby-title {
+        margin: 0 0 0 30px;
         color: rgba(0, 0,0);
       }
-      .bottomline .deselectstartover {
-        float: right;
-        margin-right: 50px;
+      .deselectstartover {
+        /*float: right;
+        margin-right: 50px;*/
         font-weight: bold;
         color: rgba(0, 0,0);
       }
-      .bottomline .deselectstartover:hover {
-        float: right;
-        margin-right: 50px;
+      .deselectstartover:hover {
+        /*float: right;
+        margin-right: 50px;*/
         text-decoration: underline;
         font-weight: bold;
         color: rgba(0, 0,0);
@@ -86,9 +97,9 @@ permalink: /datavis/
       }
       /* This affects the individual examples. */
       .item {
-        width: 150px;
+        width: 170px;
         /*height: 290px;*/
-        margin: 0 20px 20px 0;
+        margin: 0 23px 20px 0;
         display: inline-block;
         vertical-align: top;
       }
@@ -104,9 +115,9 @@ permalink: /datavis/
         border: 1px solid #AAA;
         border-radius: 15px;
         background-color: #DDD;
-        margin: 0 0 10px 0;
+        margin: 0 0 10px 220px;
         padding: 10px;
-        width: 100%;
+        width: 580px;
         display: block;
         text-align: center;
         cursor: pointer;
