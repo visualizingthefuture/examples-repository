@@ -2,15 +2,14 @@
   <div class='wax-inline-container'>
     <div class='row'>
       <div class='col'>
-        <p class='footer-title'>{{ site.title }}</p>
-        <p class='footer-copyright'>
+        <p class='footer-links'><b>{{ site.title }}</b><br>
           &copy; {{ site.copyright }}<br>
           Template from <a href='https://github.com/minicomp/wax/'>Minicomp/Wax</a>
         </p>
       </div>
       <div class='col'>
-        <p class='footer-title'>Links</p><br>
         <p class='footer-links'>
+          <b>Links</b><br>
           {% for item in site.footer.links %}
             <a href='{{ item.link | absolute_url }}'>
               {{ item.label }}
