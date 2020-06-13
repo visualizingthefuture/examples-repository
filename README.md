@@ -1,71 +1,10 @@
-## Welcome to GitHub Pages
-
-Youcan use the [editor on GitHub](https://github.com/Contrafabulists/think-tanks/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Contrafabulists/think-tanks/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
-# minicomp/wax 🐝
-[![Gem Version](https://badge.fury.io/rb/wax_theme.svg)](https://badge.fury.io/rb/wax_tasks)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Build Status](https://travis-ci.org/mnyrop/wax.svg?branch=master)](https://travis-ci.org/minicomp/wax)
-[![Depfu](https://badges.depfu.com/badges/9d4da973f2cd2680c11ca34738c2dfb2/overview.svg)](https://depfu.com/github/minicomp/wax?project_id=10550)
-[![Gem Downloads](https://img.shields.io/gem/dt/wax_theme.svg?color=046d0b)](https://badge.fury.io/rb/wax_theme)
-[![Join the chat at https://gitter.im/minicomp/wax](https://badges.gitter.im/minicomp/wax.svg)](https://gitter.im/minicomp/wax?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-![License](https://img.shields.io/github/license/minicomp/wax_tasks.svg?color=c6a1e0) 
-
-
-
-
-
-__Wax is an extensible workflow for producing scholarly exhibitions with minimal computing principles.__<br>
-It's comprised of: __a few Ruby gems__ for processing image data and associated metadata ([wax_tasks](https://github.com/minicomp/wax_tasks/), [wax_iiif](https://github.com/minicomp/wax_iiif/)), __a Jekyll theme__ ([wax_theme](https://github.com/minicomp/wax/)), and (hopefully soon!) a lot of __documentation and recipes__ for creating, deploying, and maintaining digital exhibitions.
-
+# VST Examples Repository
 
 - [Prerequisites](#Prerequisites)
-- [Getting Started](#Getting-Started)
-
-<br>
-
-<a href="https://minicomp.github.io/wax/">
-  <img src="https://raw.githubusercontent.com/minicomp/wiki/master/assets/wax_screen.gif"/>
-</a>
-
-<br>
+- [Making modifications](#Modify)
+- [Support & contact information](#Support)
 
 # Prerequisites
-
 
 You'll need `Ruby >= 2.4` with `bundler` installed. Check your versions with:
 
@@ -92,65 +31,60 @@ $ gs -version
   Copyright (C) 2017 Artifex Software, Inc.  All rights reserved.
 ```
 
-
-# Getting Started
-
-__There are a few ways to get started with Wax, depending on your needs.__ Downloading the demo is suggested for new users so you can see how a full Wax site would work. __Advanced Jekyllers__ can start from a clean Jekyll install.
-
-### Downloading the demo
+## Downloading the demo
 
 1. Change directory into where you'd like your site, e.g., your Desktop:
     ```sh
     cd ~/Desktop
     ```
-2. Download the zip file from the [wax github repository](https://github.com/minicomp/wax/). The option to download the zip file should be on the button labeled "Clone or download." Your browser will save the file where it normally saves downloads.
+2. Download the zip file from the [Visualizing the Future github repository](https://github.com/visualizingthefuture/examples-repository). The option to download the zip file should be on the button labeled "Clone or download." Your browser will save the file where it normally saves downloads.
 
 3. Move the zip file to the location you will use. In our example, to the Desktop.
 
 4. Unzip the file. This can be done through your operating system graphic user interface, or in the terminal:
     ```sh
-    unzip wax-master.zip
+    unzip examples-repository.zip
     ```
     You can delete the zip file once you're done.
 
-5. Rename the directory and go inside the project folder:
-    ```sh
-    mv wax-master my-project
-    cd wax-master
-    ```
 
-6. Install the gems:
+5. Go inside the project folder and install the gems:
     ```sh
     bundle install
     ```
-7. Run the demo site:
+6. To check, see if you can run the demo site:
     ```sh
     bundle exec jekyll serve
     ```
-After the last step the terminal will provide you with a localhost URL for you to see your local copy of the site on your browser. This is the site you will make changes to in order to make your own.
+After the last step the terminal will provide you with a localhost URL for you to see your local copy of the site on your browser. 
 
-#### Option 2: Start from scratch (Advanced)
+# Modify 
 
-1. Make a new Jekyll site and cd into it:
-  ```sh
-  jekyll new ~/Desktop/wax_site
-  cd ~/Desktop/wax_site
-  ```
-2. Add this line to your Jekyll site's Gemfile:
-  ```sh
-  gem "wax_theme"
-  ```
-3. And add this line to your Jekyll site's \_config.yml:
-  ```sh
-  theme: wax_theme
-  ```
-4. Install the dependencies:
-  ```sh
-  bundle install
-  ```
-5. Serve the site locally
-  ```sh
-  bundle exec jekyll serve
-  ```
+## Method 1: Locally (Recommended)
 
- When the demo site is serving correctly you're ready to swap in your own content and configuration to make your own exhibition site.
+To start hosting a local server, you'll want to run this line in the terminal: 
+
+```markdown
+bundle exec jekyll serve
+
+```
+This should provide you with a localhost URL. You can now make changes locally (using an IDE such as Visual Studio code). Changes will automatically update to the local server while you code. Once you're satisfied with the changes you made, push them all at once to the Github account through Github Desktop. 
+
+## Method 2: From Github (Online)
+You can also use the [editor on GitHub](https://github.com/Contrafabulists/think-tanks/edit/master/README.md) to maintain and preview the content for this website. This doesn't require installing Ruby or cloning the repository but it can take longer to write new lines of code. 
+
+Whenever you "commit" a change, GitHub Pages will automatically run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site. 
+
+# Support
+
+Having trouble with Pages? Feel free to lodge a new issue or contact Amanda West and amawest@umich.edu. 
+
+You can also try checking out the [documentation](https://help.github.com/categories/github-pages-basics/) or [contact Github support](https://github.com/contact). 
+
+[![Gem Version](https://badge.fury.io/rb/wax_theme.svg)](https://badge.fury.io/rb/wax_tasks)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Build Status](https://travis-ci.org/mnyrop/wax.svg?branch=master)](https://travis-ci.org/minicomp/wax)
+[![Depfu](https://badges.depfu.com/badges/9d4da973f2cd2680c11ca34738c2dfb2/overview.svg)](https://depfu.com/github/minicomp/wax?project_id=10550)
+[![Gem Downloads](https://img.shields.io/gem/dt/wax_theme.svg?color=046d0b)](https://badge.fury.io/rb/wax_theme)
+[![Join the chat at https://gitter.im/minicomp/wax](https://badges.gitter.im/minicomp/wax.svg)](https://gitter.im/minicomp/wax?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+![License](https://img.shields.io/github/license/minicomp/wax_tasks.svg?color=c6a1e0) 
