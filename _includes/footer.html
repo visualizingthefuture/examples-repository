@@ -2,22 +2,21 @@
   <div class='wax-inline-container'>
     <div class='row'>
       <div class='col'>
-        <p class='footer-title'>{{ site.title }}</p>
-        <p class='footer-description'>{{ site.description }}</p>
-        <p class='footer-copyright'>
+        <p class='footer-links'><b>{{ site.title }}</b><br>
           &copy; {{ site.copyright }}<br>
-          Built with <a href='https://github.com/minicomp/wax/'>Minicomp/Wax</a>
+          Template from <a href='https://github.com/minicomp/wax/'>Minicomp/Wax</a>
         </p>
       </div>
       <div class='col'>
-        <p class='footer-title'>Links</p>
         <p class='footer-links'>
+          <b>Links</b><br>
           {% for item in site.footer.links %}
             <a href='{{ item.link | absolute_url }}'>
               {{ item.label }}
             </a>
           {% unless forloop.last %} / {% endunless %}
-          {% endfor %}
+          {% endfor %}<br>
+          Built by <a href='https://amawest.github.io/#About'>Amanda West</a>
         </p>
       </div>
     </div>
