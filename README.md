@@ -77,7 +77,7 @@ You can also use the [editor on GitHub](https://github.com/Contrafabulists/think
 Whenever you "commit" a change, GitHub Pages will automatically run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site. 
 
 # Pages
-All of the files that work on connection to the functioning of each page and what they do. This section is a work-in-progress (it will take awhile to piece out the interconnectedness of every css, js, html, and md file working together), but nonetheless a good thing to have for further reference as this repo grows. 
+All of the files that work on connection to the functioning of each page and what they do. 
 
 ## Main Page
 Relevant files: 
