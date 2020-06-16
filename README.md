@@ -88,6 +88,7 @@ Relevant files:
 ```
 
 ## User Guide
+Relevant files: 
 ```
 - pages
     - how_to.md
