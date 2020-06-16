@@ -75,6 +75,64 @@ You can also use the [editor on GitHub](https://github.com/Contrafabulists/think
 
 Whenever you "commit" a change, GitHub Pages will automatically run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site. 
 
+# Pages
+All of the files that work on connection to the functioning of each page and what they do. This section is a work-in-progress (it will take awhile to piece out the interconnectedness of every css, js, html, and md file working together), but nonetheless a good thing to have for further reference as this repo grows. 
+
+## Main Page
+Relevant files: 
+```
+- index.html
+- img
+    - logo_white.png
+```
+
+## User Guide
+```
+- pages
+    - how_to.md
+- img
+    - how_to_photo.png
+```
+
+## Search
+Relevant files: 
+``` 
+- config.yml 
+- search folder
+    - index.json
+- pages 
+    - search.md
+- includes 
+    - search_box.html
+    - total_data.html
+```
+
+
+## Browse
+Relevant files: 
+``` 
+- config.yml 
+- _datasets
+    - (relevant objects)
+- _datavis
+    - (relevant objects)
+- pages 
+    - datasets.html
+    - datavis.html
+- includes 
+    - dataset_data.html
+    - datavis_data.html
+    - faceted_search_option.html
+```
+
+## Exhibits
+Relevant files: 
+```
+- _exhibits 
+    - a.md
+    - b.md
+```
+
 # Support
 
 Having trouble with Pages? Feel free to lodge a new issue or contact Amanda West and amawest@umich.edu. 
