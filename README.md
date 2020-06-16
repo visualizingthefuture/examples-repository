@@ -2,6 +2,7 @@
 
 - [Prerequisites](#Prerequisites)
 - [Making modifications](#Modify)
+- [Pages in this repository](#Pages)
 - [Support & contact information](#Support)
 
 # Prerequisites
