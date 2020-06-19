@@ -5,7 +5,7 @@
 - [Pages in this repository](#Pages)
 - [Support & contact information](#Support)
 
-# Prerequisites
+## Prerequisites
 
 You'll need `Ruby >= 2.4` with `bundler` installed. Check your versions with:
 
@@ -32,7 +32,7 @@ $ gs -version
   Copyright (C) 2017 Artifex Software, Inc.  All rights reserved.
 ```
 
-## Downloading the demo
+### Downloading the demo
 
 1. Change directory into where you'd like your site, e.g., your Desktop:
     ```sh
@@ -59,9 +59,9 @@ $ gs -version
     ```
 After the last step the terminal will provide you with a localhost URL for you to see your local copy of the site on your browser. 
 
-# Modify 
+## Modify 
 
-## Method 1: Locally (Recommended)
+### Method 1: Locally (Recommended)
 
 To start hosting a local server, you'll want to run this line in the terminal: 
 
@@ -71,15 +71,27 @@ bundle exec jekyll serve
 ```
 This should provide you with a localhost URL. You can now make changes locally (using an IDE such as Visual Studio code). Changes will automatically update to the local server while you code. Once you're satisfied with the changes you made, push them all at once to the Github account through Github Desktop. 
 
-## Method 2: From Github (Online)
+### Method 2: From Github (Online)
 You can also use the [editor on GitHub](https://github.com/Contrafabulists/think-tanks/edit/master/README.md) to maintain and preview the content for this website. This doesn't require installing Ruby or cloning the repository but it can take longer to write new lines of code. 
 
 Whenever you "commit" a change, GitHub Pages will automatically run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site. 
 
-# Pages
+### Running (raking) tasks to prepare site data/metadata
+
+Wax, the underlying Jekyll framework powering this site, has a few additional ways of Doing Things that impact the process of modifying code. In particular, Wax requires that a user go through a set of **tasks** to transform data held in a .csv file into elements of the site such as metadata, images, search index, etc. 
+
+Wax describes a list of main tasks [in their documentation](https://minicomp.github.io/wiki/wax/running-the-tasks/)
+
+We will add more information on what tasks to rake and in what order here. For now, please keep in mind that the last task, which **must come after raking the collections**, is to generate the search index.
+
+To accomplish this, navigate to the `examples-repository` folder in your command line/terminal and run the command: `bundle exec rake wax:search main` This command will update the `search/index.json` file.
+
+(Look for more updates here soon!)
+
+## Pages
 All of the files that work on connection to the functioning of each page and what they do. 
 
-## Main Page
+### Main Page
 Relevant files: 
 ```
 - index.html
@@ -87,7 +99,7 @@ Relevant files:
     - logo_white.png
 ```
 
-## User Guide
+### User Guide
 Relevant files: 
 ```
 - pages
@@ -96,7 +108,7 @@ Relevant files:
     - how_to_photo.png
 ```
 
-## Search
+### Search
 Relevant files: 
 ``` 
 - config.yml 
@@ -110,7 +122,7 @@ Relevant files:
 ```
 
 
-## Browse
+### Browse
 Relevant files: 
 ``` 
 - config.yml 
@@ -127,7 +139,7 @@ Relevant files:
     - faceted_search_option.html
 ```
 
-## Exhibits
+### Exhibits
 Relevant files: 
 ```
 - _exhibits 
@@ -135,7 +147,7 @@ Relevant files:
     - b.md
 ```
 
-# Support
+## Support
 
 Having trouble with Pages? Feel free to lodge a new issue or contact Amanda West and amawest@umich.edu. 
 
