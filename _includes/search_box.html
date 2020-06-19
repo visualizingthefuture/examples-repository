@@ -6,7 +6,7 @@
   {%- for collection in config.collections -%}
     {%- for field in collection[1].fields -%}
       {{ field }}{% unless forloop.last %}|||{% endunless %}
-    {%- endfor -%}
+    {%- endfor -%} 
   {%- endfor -%}
 {%- endcapture -%}
 {% assign fields = fields | split: '|||' | uniq %}
