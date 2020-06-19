@@ -2,6 +2,7 @@
 
 - [Prerequisites](#Prerequisites)
 - [Making modifications](#Modify)
+- [Pages in this repository](#Pages)
 - [Support & contact information](#Support)
 
 # Prerequisites
@@ -74,6 +75,65 @@ This should provide you with a localhost URL. You can now make changes locally (
 You can also use the [editor on GitHub](https://github.com/Contrafabulists/think-tanks/edit/master/README.md) to maintain and preview the content for this website. This doesn't require installing Ruby or cloning the repository but it can take longer to write new lines of code. 
 
 Whenever you "commit" a change, GitHub Pages will automatically run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site. 
+
+# Pages
+All of the files that work on connection to the functioning of each page and what they do. 
+
+## Main Page
+Relevant files: 
+```
+- index.html
+- img
+    - logo_white.png
+```
+
+## User Guide
+Relevant files: 
+```
+- pages
+    - how_to.md
+- img
+    - how_to_photo.png
+```
+
+## Search
+Relevant files: 
+``` 
+- config.yml 
+- search folder
+    - index.json
+- pages 
+    - search.md
+- includes 
+    - search_box.html
+    - total_data.html
+```
+
+
+## Browse
+Relevant files: 
+``` 
+- config.yml 
+- _datasets
+    - (relevant objects)
+- _datavis
+    - (relevant objects)
+- pages 
+    - datasets.html
+    - datavis.html
+- includes 
+    - dataset_data.html
+    - datavis_data.html
+    - faceted_search_option.html
+```
+
+## Exhibits
+Relevant files: 
+```
+- _exhibits 
+    - a.md
+    - b.md
+```
 
 # Support
 
