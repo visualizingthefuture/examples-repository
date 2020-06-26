@@ -208,6 +208,7 @@ function toggleFilter(key, value) {
 function createFacetUI() {
   $(settings.facetSelector).html("");
 
+  // "bottom" div used to be at bottom of filters, but is now added first
   var bottom = $(settings.bottomContainer);
   $(settings.facetSelector).append(bottom);
   // Append deselect filters button

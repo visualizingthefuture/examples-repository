@@ -29,11 +29,11 @@ permalink: /datavis/
         opacity: 0.8;
       }
       .facetlist {
-        list-style-type: '\2612';
+        /*list-style-type: '\2612';*/
         line-height: 1.5rem;
       }
       .unselected {
-        list-style-type: '\2610';
+        /*list-style-type: '\2610';*/
       }
       .facetsearch {
         display: inline-block; /* "list-item" changes to LHS, but search results fall below. */
@@ -177,21 +177,19 @@ permalink: /datavis/
       $(function(){
           var item_template =
            '<div class="item">' +
-             '<a href="<%= obj.url %>"><img alt="Image" src="<%= obj.imageURL %>"></a>' +
-             '<a href="<%= obj.url %>"><h5><%= obj.label %></h5></a>' +
+             '<a href="/examples-repository<%= obj.permalink %>"><img alt="<%= obj.label %>" src="/examples-repository/<%= obj.thumbnail %>"></a>' +
+             '<a href="/examples-repository<%= obj.permalink %>"><h5><%= obj.label %></h5></a>' +
              '<p class="tags">' +
-             '<% if (obj.topic) {  %><%= obj.topic %><% } %>' +
-             '<% if (obj.purpose) {  %>, <%= obj.purpose %><% } %>' +
-             '<% if (obj.filesize) {  %>, <%= obj.filesize %><% } %>' +
+             '<% if (obj.data_domain) {  %><%= obj.data_domain %><% } %>' +
              '</p>' +
              '<p class="desc"><%= obj.description %></p>' +
            '</div>';
         settings = {
           items            : example_items,
           facets           : {
-                              'topic'     : 'Topic',
-                              'purpose'    : 'Purpose',
-                              'language'     : 'Language',
+                              'data_domain'     : 'Topic',
+                              'vis_type'    : 'Visualization Type',
+                              'original_context'     : 'Original Context',
                               'audience_level' : 'Audience'
           },
           resultSelector   : '#results',
