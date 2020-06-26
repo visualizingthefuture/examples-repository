@@ -13,9 +13,10 @@ var defaults = {
   facetSelector      : '#facets',
   facetContainer     : '<div class=facetsearch id=<%= id %> ></div>',
   facetTitleTemplate : '<h3 class=facettitle><%= title %></h3>',
-  facetListContainer : '<div class=facetlist></div>',
-  listItemTemplate   : '<div class=facetitem id="<%= id %>"><%= name %> <span class=facetitemcount>(<%= count %>)</span></div>',
+  facetListContainer : '<ul class=facetlist></ul>',
+  listItemTemplate   : '<li class=facetitem id="<%= id %>"><%= name %> <span class=facetitemcount>(<%= count %>)</span></li>',
   bottomContainer    : '<div class=bottomline></div>',
+  topContainer       : '<div class=topline></div>',
   orderByTemplate    : '<div class=orderby><span class="orderby-title">Sort by: </span><ul><% _.each(options, function(value, key) { %>'+
                        '<li class=orderbyitem id=orderby_<%= key %>>'+
                        '<%= value %> </li> <% }); %></ul></div>',
@@ -28,7 +29,7 @@ var defaults = {
                          orderBy : false,
                          filters : {}
                        },
-  showMoreTemplate   : '<a id=showmorebutton>Show more</a>',
+  showMoreTemplate   : '<p><a id=showmorebutton>Show more</a></p>',
   enablePagination   : true,
   paginationCount    : 20
 }
@@ -205,11 +206,22 @@ function toggleFilter(key, value) {
  * This function is only called once, it creates the facets ui.
  */
 function createFacetUI() {
+  $(settings.facetSelector).html("");
+
+  // "bottom" div used to be at bottom of filters, but is now added first
+  var bottom = $(settings.bottomContainer);
+  $(settings.facetSelector).append(bottom);
+  // Append deselect filters button
+  var deselect = $(settings.deselectTemplate).click(function(event){
+    settings.state.filters = {};
+    jQuery.facetUpdate();
+  });
+  $(bottom).append(deselect);
+
   var itemtemplate  = _.template(settings.listItemTemplate);
   var titletemplate = _.template(settings.facetTitleTemplate);
   var containertemplate = _.template(settings.facetContainer);
 
-  $(settings.facetSelector).html("");
   _.each(settings.facets, function(facettitle, facet) {
     var facetHtml     = $(containertemplate({id: facet}));
     var facetItem     = {title: facettitle};
@@ -237,37 +249,7 @@ function createFacetUI() {
     updateFacetUI();
     updateResults();
   });
-  // TODO: move bottom container to top of results?
-  // Append total result count
-  var bottom = $(settings.bottomContainer);
-  countHtml = _.template(settings.countTemplate, {count: settings.currentResults.length});
-  $(bottom).append(countHtml);
-  // generate the "order by" options:
-  var ordertemplate = _.template(settings.orderByTemplate);
-  var itemHtml = $(ordertemplate({'options': settings.orderByOptions}));
-  $(bottom).append(itemHtml);
-  $(settings.facetSelector).append(bottom);
-  $('.orderbyitem').each(function(){
-    var id = this.id.substr(8);
-    if (settings.state.orderBy == id) {
-      $(this).addClass("activeorderby");
-    }
-  });
-  // add the click event handler to each "order by" item:
-  $('.orderbyitem').click(function(event){
-    var id = this.id.substr(8);
-    settings.state.orderBy = id;
-    $(settings.facetSelector).trigger("facetedsearchorderby", id);
-    settings.state.shownResults = 0;
-    order();
-    updateResults();
-  });
-  // Append deselect filters button
-  var deselect = $(settings.deselectTemplate).click(function(event){
-    settings.state.filters = {};
-    jQuery.facetUpdate();
-  });
-  $(bottom).append(deselect);
+
   $(settings.facetSelector).trigger("facetuicreated");
 }
 
@@ -312,12 +294,40 @@ function updateFacetUI() {
  * Updates the the list of results according to the filters that have been set
  */
 function updateResults() {
-  $(settings.resultSelector).html(settings.currentResults.length == 0 ? settings.noResults : "");
+
+  $(settings.resultSelector).html("");
+
+  if (settings.currentResults.length == 0) {
+    $(settings.resultSelector).append(settings.noResults)
+  }
+  else {
+    // Append total result count
+    var top = $(settings.topContainer);
+    countHtml = _.template(settings.countTemplate, {count: settings.currentResults.length});
+    $(top).append(countHtml);
+    // generate the "order by" options:
+    var ordertemplate = _.template(settings.orderByTemplate);
+    var itemHtml = $(ordertemplate({'options': settings.orderByOptions}));
+    $(top).append(itemHtml);
+    $(settings.resultSelector).append(top);
+    $('.orderbyitem').each(function(){
+      var id = this.id.substr(8);
+      if (settings.state.orderBy == id) {
+        $(this).addClass("activeorderby");
+      }
+    });
+    // add the click event handler to each "order by" item:
+    $('.orderbyitem').click(function(event){
+      var id = this.id.substr(8);
+      settings.state.orderBy = id;
+      $(settings.resultSelector).trigger("facetedsearchorderby", id);
+      settings.state.shownResults = 0;
+      order();
+      updateResults();
+    });
+  }
   showMoreResults();
 }
-
-// TODO: try to get "bottom" inside the results div at the top,
-// rather than just inside the wrapper
 
 var moreButton;
 function showMoreResults() {
@@ -338,8 +348,10 @@ function showMoreResults() {
   $(settings.resultSelector).append(itemHtml);
   if (!moreButton) {
     moreButton = $(settings.showMoreTemplate).click(showMoreResults);
-    //$(settings.resultSelector).after(moreButton);
-    $(settings.resultSelector).append(moreButton);
+    $(settings.resultSelector).after(moreButton);
+    //TODO: would like to use "append" to get button inside results div,
+    //but on clearing filters or sorting, the button vanishes
+    //$(settings.resultSelector).append(moreButton);
   }
   if (settings.state.shownResults == 0) {
     moreButton.show();

@@ -100,17 +100,21 @@ search:
       datavis:
         content: false # whether or not to index page content
         fields: # the metadata fields to index
+          - pid
+          - label
+          - date_of_upload
+          - creator
+          - date_of_creation
+          - source_url
           - description
-          - language
-          - object_type
-          - topic
-          - purpose
+          - vis_type
+          - data_domain
+          - original_context
           - audience_level
           - audience_composition
-          - additional_properties
-          - pid
-          - layout
-          - label
+          - pedagogical_description
+          - addl_data_props
+          - ethical_quandries
       datasets:
         content: false # whether or not to index page content
         fields: # the metadata fields to index
