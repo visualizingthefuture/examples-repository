@@ -1,0 +1,5 @@
+Made the following edits to filenames. May need to change back later?
+
+mv fontawesome-webfont.eot\?v\=4.0.3 fontawesome-webfont.eotv4.0.3
+mv fontawesome-webfont.svg\?v\=4.0.3 fontawesome-webfont.svgv4.0.3
+mv fontawesome-webfont.svg\?v\=4.0.3 fontawesome-webfont.ttfv4.0.3
