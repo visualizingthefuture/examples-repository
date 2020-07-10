@@ -90,7 +90,7 @@ Wax, the underlying Jekyll framework powering this site, has a few additional wa
 
 Wax describes a list of main tasks [in their documentation](https://minicomp.github.io/wiki/wax/running-the-tasks/).
 
-Note: There is a [documented issue](https://github.com/minicomp/wax/issues/82) where Wax cannot process .csv files that begin with the invisible character <U+FEFF> (BOM). This may be more likely to occur when using Excel to generate or modify .csv files, so if you are having trouble getting Wax to read your .csv file in the rake step for building derivatives or pages, you may need to search for and replace this character or find some other way to clean your .csv ([example using vim](https://gist.github.com/szydan/b225749445b3602083ed)).
+Note: There is a [documented issue](https://github.com/minicomp/wax/issues/82) where Wax cannot process .csv files that begin with the invisible character <U+FEFF> (BOM). This may be more likely to occur when using Excel to generate or modify .csv files, so if you are having trouble getting Wax to read your .csv file in the rake step for building derivatives or pages, you may need to search for and replace this character or find some other way to clean your .csv ([example using vim](https://gist.github.com/szydan/b225749445b3602083ed)). Windows users: open the csv in Notepad and save as type:"All Files" with the original filename.csv, select Encoding:"UTF-8" and save to rewrite the original file.
 
 We will add more information on what tasks to rake and in what order here. For now, please keep in mind that the last task, which **must come after raking the collections**, is to generate the search index.
 
