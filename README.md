@@ -57,42 +57,54 @@ $ gs -version
     ```sh
     bundle exec jekyll serve
     ```
-After the last step the terminal will provide you with a localhost URL for you to see your local copy of the site on your browser. 
+After the last step the terminal will provide you with a localhost URL for you to see your local copy of the site on your browser.
 
-## Modify 
+## Modify
 
 ### Method 1: Locally (Recommended)
 
-To start hosting a local server, you'll want to run this line in the terminal: 
+To start hosting a local server, you'll want to run this line in the terminal:
 
 ```markdown
 bundle exec jekyll serve
 
 ```
-This should provide you with a localhost URL. You can now make changes locally (using an IDE such as Visual Studio code). Changes will automatically update to the local server while you code. Once you're satisfied with the changes you made, push them all at once to the Github account through Github Desktop. 
+This should provide you with a localhost URL. You can now make changes locally (using an IDE such as Visual Studio code). Changes will automatically update to the local server while you code. Once you're satisfied with the changes you made, push them all at once to the Github account through Github Desktop.
 
 ### Method 2: From Github (Online)
-You can also use the [editor on GitHub](https://github.com/Contrafabulists/think-tanks/edit/master/README.md) to maintain and preview the content for this website. This doesn't require installing Ruby or cloning the repository but it can take longer to write new lines of code. 
+You can also use the [editor on GitHub](https://github.com/Contrafabulists/think-tanks/edit/master/README.md) to maintain and preview the content for this website. This doesn't require installing Ruby or cloning the repository but it can take longer to write new lines of code.
 
-Whenever you "commit" a change, GitHub Pages will automatically run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site. 
+Whenever you "commit" a change, GitHub Pages will automatically run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site.
+
+### Adding or modifying a collections
+
+(See also: [Wax's Preparing your collection data page](https://minicomp.github.io/wiki/wax/preparing-your-collection-data/).)
+
+To create a new collection, you will first create a .csv file of metadata for collection objects. The file should be created in the "\_data" directory. The file must contain a column called "pid" that lists unique identifiers for each collection object. Wax developers recommend avoiding Excel to create/edit this .csv file.
+
+If you have raw image files for your collection objects, create a directory matching the exact name of the collection .csv file in the "\_data/raw_images" directory. In that collection directory, include raw image files for each pid, using the pid as the name of the file. An example can also have multiple raw files, in which case you can create a subdirectory with the same name as the pid.
 
 ### Running (raking) tasks to prepare site data/metadata
 
-Wax, the underlying Jekyll framework powering this site, has a few additional ways of Doing Things that impact the process of modifying code. In particular, Wax requires that a user go through a set of **tasks** to transform data held in a .csv file into elements of the site such as metadata, images, search index, etc. 
+Wax, the underlying Jekyll framework powering this site, has a few additional ways of Doing Things that impact the process of modifying code. In particular, Wax requires that a user go through a set of **tasks** to transform data held in a .csv file into elements of the site such as metadata, images, search index, etc.
 
-Wax describes a list of main tasks [in their documentation](https://minicomp.github.io/wiki/wax/running-the-tasks/)
+Wax describes a list of main tasks [in their documentation](https://minicomp.github.io/wiki/wax/running-the-tasks/).
+
+Note: There is a [documented issue](https://github.com/minicomp/wax/issues/82) where Wax cannot process .csv files that begin with the invisible character <U+FEFF> (BOM). This may be more likely to occur when using Excel to generate or modify .csv files, so if you are having trouble getting Wax to read your .csv file in the rake step for building derivatives or pages, you may need to search for and replace this character or find some other way to clean your .csv ([example using vim](https://gist.github.com/szydan/b225749445b3602083ed)).
 
 We will add more information on what tasks to rake and in what order here. For now, please keep in mind that the last task, which **must come after raking the collections**, is to generate the search index.
 
 To accomplish this, navigate to the `examples-repository` folder in your command line/terminal and run the command: `bundle exec rake wax:search main` This command will update the `search/index.json` file.
 
+If you modify the metadata of an existing collection object (e.g., change a metadata value, add a column to existing rows), you cannot simply rerun the wax:pages task. The old pages will not be overwritten. You should first delete the .md files from the collection directory (that is, the top-level directory that starts with "\_" and ends with the name of the collection). Then you should be able to rerun the wax:pages task and have the new metadata show up. (Of course, you would also then update the search configuration to take into account any new fields and rerun the wax:search task.)
+
 (Look for more updates here soon!)
 
 ## Pages
-All of the files that work on connection to the functioning of each page and what they do. 
+All of the files that work on connection to the functioning of each page and what they do.
 
 ### Main Page
-Relevant files: 
+Relevant files:
 ```
 - index.html
 - img
@@ -100,7 +112,7 @@ Relevant files:
 ```
 
 ### User Guide
-Relevant files: 
+Relevant files:
 ```
 - pages
     - how_to.md
@@ -109,49 +121,49 @@ Relevant files:
 ```
 
 ### Search
-Relevant files: 
-``` 
-- config.yml 
+Relevant files:
+```
+- config.yml
 - search folder
     - index.json
-- pages 
+- pages
     - search.md
-- includes 
+- includes
     - search_box.html
     - total_data.html
 ```
 
 
 ### Browse
-Relevant files: 
-``` 
-- config.yml 
+Relevant files:
+```
+- config.yml
 - _datasets
     - (relevant objects)
 - _datavis
     - (relevant objects)
-- pages 
+- pages
     - datasets.html
     - datavis.html
-- includes 
+- includes
     - dataset_data.html
     - datavis_data.html
     - faceted_search_option.html
 ```
 
 ### Exhibits
-Relevant files: 
+Relevant files:
 ```
-- _exhibits 
+- _exhibits
     - a.md
     - b.md
 ```
 
 ## Support
 
-Having trouble with Pages? Feel free to lodge a new issue or contact Amanda West and amawest@umich.edu. 
+Having trouble with Pages? Feel free to lodge a new issue or contact Amanda West and amawest@umich.edu.
 
-You can also try checking out the [documentation](https://help.github.com/categories/github-pages-basics/) or [contact Github support](https://github.com/contact). 
+You can also try checking out the [documentation](https://help.github.com/categories/github-pages-basics/) or [contact Github support](https://github.com/contact).
 
 [![Gem Version](https://badge.fury.io/rb/wax_theme.svg)](https://badge.fury.io/rb/wax_tasks)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
@@ -159,4 +171,4 @@ You can also try checking out the [documentation](https://help.github.com/catego
 [![Depfu](https://badges.depfu.com/badges/9d4da973f2cd2680c11ca34738c2dfb2/overview.svg)](https://depfu.com/github/minicomp/wax?project_id=10550)
 [![Gem Downloads](https://img.shields.io/gem/dt/wax_theme.svg?color=046d0b)](https://badge.fury.io/rb/wax_theme)
 [![Join the chat at https://gitter.im/minicomp/wax](https://badges.gitter.im/minicomp/wax.svg)](https://gitter.im/minicomp/wax?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-![License](https://img.shields.io/github/license/minicomp/wax_tasks.svg?color=c6a1e0) 
+![License](https://img.shields.io/github/license/minicomp/wax_tasks.svg?color=c6a1e0)
