@@ -22,7 +22,7 @@ pedagogical_description: Example data visualizations are presented with correspo
 addl_data_props: 
 ethical_quandries: 
 order: '4'
-layout: labels
+layout: labels_datavis
 collection: datavis
 thumbnail: img/derivatives/simple/dv5/thumbnail.jpg
 full: img/derivatives/simple/dv5/full.jpg

@@ -19,7 +19,7 @@ pedagogical_description: Demonstrates the power of visual encoding to make the v
 addl_data_props: 
 ethical_quandries: 
 order: '1'
-layout: labels
+layout: labels_datavis
 collection: datavis
 thumbnail: img/derivatives/simple/dv2/thumbnail.jpg
 full: img/derivatives/simple/dv2/full.jpg

@@ -20,7 +20,7 @@ addl_data_props:
 ethical_quandries: This dataset is a great way for people to think about development,
   access to housing, and issues in urban studies.
 order: '2'
-layout: labels
+layout: labels_datavis
 collection: datavis
 thumbnail: img/derivatives/simple/dv3/thumbnail.jpg
 full: img/derivatives/simple/dv3/full.jpg

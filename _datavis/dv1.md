@@ -16,7 +16,7 @@ pedagogical_description: Good example of making choices about what and how to vi
 addl_data_props: 
 ethical_quandries: 
 order: '0'
-layout: labels
+layout: labels_datavis
 collection: datavis
 thumbnail: img/derivatives/simple/dv1/thumbnail.jpg
 full: img/derivatives/simple/dv1/full.jpg

@@ -18,7 +18,7 @@ ethical_quandries: 'Transparency -- links to the original bills so that users ca
   read about it further. But how would they handle representing bipartisan legislation?
   Also, uncertain if this visualization is web accessible. '
 order: '5'
-layout: labels
+layout: labels_datavis
 collection: datavis
 thumbnail: img/derivatives/simple/dv6/thumbnail.jpg
 full: img/derivatives/simple/dv6/full.jpg

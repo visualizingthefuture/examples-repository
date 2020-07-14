@@ -24,7 +24,7 @@ ethical_quandries: 'Questions about representation (e.g. who is represented and 
   count port to troop population size? Can we know if one area was more dangerous
   than another?) '
 order: '3'
-layout: labels
+layout: labels_datavis
 collection: datavis
 thumbnail: img/derivatives/simple/dv4/thumbnail.jpg
 full: img/derivatives/simple/dv4/full.jpg
