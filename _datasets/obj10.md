@@ -1,6 +1,6 @@
 ---
 title: British Election Data
-description: Simple and compelling way to show connections and relationships within a community of individuals.
+description: (test dataset) Simple and compelling way to show connections and relationships within a community of individuals.
 author: Unknown
 published: January 2019
 object_type: Visualization builder
