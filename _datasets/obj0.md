@@ -1,6 +1,6 @@
 ---
 title: World War II Data
-description: World War II casualties by country.
+description: (test dataset) World War II casualties by country.
 object_type: data
 author: Unknown
 published: January 2019
