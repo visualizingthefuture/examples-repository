@@ -5,16 +5,24 @@ layout: default
 {%- assign the_collection = site[page.collection] -%}
 {% assign num = the_collection | size %}
 
+<h1>{{ page.title }}</h1>
+
 <div><p>{{ page.welcome }}</p></div>
 
 <div id='wax-gallery-{{ page.collection }}-container' class='wax-gallery-container full-width'>
   <div class='wax-inline-container'>
+    <div style="float: left; width: 250px;">
+    <h2 style="margin-top: 0;">Filters</h2>
     {% for facet in page.facet_by %}
+    <h3>{{ facet }}</h3>
     <div id="{{ page.collection }}-{{ facet }}-buttons" class="facet-buttons"></div>
     {% endfor %}
-    <div id="count"><span>{{ num }}</span>&nbsp;proposals selected</div>
-    <hr/>
-    <div id="wax-gallery-{{ page.collection }}" class="wax-gallery"></div>
+    </div>
+    <div style="margin-left: 260px;">
+      <h2>Results</h2>
+      <div><span id="count">{{ num }}</span>&nbsp;examples selected</div>
+    <div id="wax-gallery-{{ page.collection }}" class="wax-gallery" ></div>
+    </div>
     </div>
 </div>
 
@@ -56,10 +64,12 @@ layout: default
             $(this).addClass('active');
             if(filterValue == 'all') { $('.all').show('slow'); }
             else { $('.all').hide('slow'); $(`.${filterValue}`).show('slow'); }
+            var allItems = $(".gallery-item:visible");
+            document.getElementById("count").innerHTML = allItems.length;
           });
         });
 
-      //add filter code, update number of results
+      // TODO: prevent other buttons from clearing when you click a new one
     {% endif %}
   });
 </script>

@@ -1,6 +1,6 @@
 ---
 layout: gallery-page-multi-facet
-title: Gallery
+title: Data Visualization Gallery
 class: gallery
 permalink: /gallery/
 collection: datavis
