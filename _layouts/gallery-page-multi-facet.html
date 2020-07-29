@@ -71,7 +71,9 @@ layout: default
 
         {% for item in the_collection %}
         var element = document.getElementById("{{ item.pid }}");
-          element.classList.add("{{ item[facet] | slugify }}");
+          {% for facet_option in item[facet] %}
+          element.classList.add("{{ facet_option | slugify }}");
+          {% endfor %}
         {% endfor %}
 
       {% endfor %}
