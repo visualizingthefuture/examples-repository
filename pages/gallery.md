@@ -10,4 +10,5 @@ facet_by:
     - original_context
     - audience_level
 welcome: Testing original Wax collection browsing layout.
+item_include: datavis_gallery_item.html 
 ---

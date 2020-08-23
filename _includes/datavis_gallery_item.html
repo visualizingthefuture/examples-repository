@@ -1,0 +1,10 @@
+<div id={{ item.pid }} class='gallery-item'>
+  <a href='{{ item.url | absolute_url }}'>
+    <div class='hovereffect'>
+      <img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}' alt='{{ item.label }}'/>
+      <div class='overlay'>
+        <p class='info'>{{ item.label }}</p>
+      </div>
+    </div>
+  </a>
+</div>
