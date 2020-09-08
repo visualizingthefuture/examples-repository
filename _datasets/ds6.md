@@ -1,7 +1,7 @@
 ---
 pid: ds6
 label: Averaged Gapminder data from ggplot2-DF18 workshop
-date_of_upload: 7/10/2020
+date_of_upload: 7/10/20
 creator: Gapminder
 date_of_creation: '2020'
 source_url: https://github.com/amzoss/ggplot2-DF18/blob/master/data/gapminder_avg.csv
@@ -25,8 +25,9 @@ addl_data_props: includes data where the range covers a wide span and has skew (
 ethical_quandries: 
 linked_vis: 
 linked_instr_mtl: https://github.com/amzoss/ggplot2-DF18, https://www.gapminder.org/for-teachers/
-order: '6'
+order: '5'
 layout: labels_datasets
 collection: datasets
-thumbnail: img/table_design.png
+thumbnail: img/derivatives/simple/ds6/thumbnail.jpg
+full: img/derivatives/simple/ds6/full.jpg
 ---

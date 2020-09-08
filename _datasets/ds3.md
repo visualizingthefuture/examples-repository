@@ -1,10 +1,10 @@
 ---
 pid: ds3
 label: Estimated Use of Water in the United States County-Level Data for 2015
-date_of_upload: 7/10/2020
+date_of_upload: 7/10/20
 creator: Dieter, C.A., Linsey, K.S., Caldwell, R.R., Harris, M.A., Ivahnenko, T.I.,
   Lovelace, J.K., Maupin, M.A., and Barber, N.L.
-date_of_creation: 6/19/2018
+date_of_creation: 6/19/18
 source_url: https://doi.org/10.5066/F7TB15V5
 description: A dataset of water-use estimates for 2015, aggregated to the county level
   in the US, from the U.S. Geological Survey (USGS) National Water Use Science Project.
@@ -25,8 +25,9 @@ addl_data_props: Uses "--" as a no data placeholder
 ethical_quandries: 
 linked_vis: Water use in the U.S., 2015 https://owi.usgs.gov/vizlab/water-use-15/#view=NC&category=thermoelectric
 linked_instr_mtl: Code and documentation available at https://github.com/USGS-VIZLAB/water-use-15
-order: '5'
+order: '4'
 layout: labels_datasets
 collection: datasets
-thumbnail: img/table_design.png
+thumbnail: img/derivatives/simple/ds3/thumbnail.jpg
+full: img/derivatives/simple/ds3/full.jpg
 ---
