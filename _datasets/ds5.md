@@ -1,7 +1,7 @@
 ---
 pid: ds5
 label: 'Good, Evil, Ugly, Beautiful: Help Us Make a ‘Game of Thrones’ Chart'
-date_of_upload: 7/10/2020
+date_of_upload: 7/10/20
 creator: Gregor Aisch, Damon Darlin, Rich Harris, Josh Katz, Adam Pearce and Kevin
   Quealy
 date_of_creation: '2017'
@@ -25,8 +25,9 @@ addl_data_props: Ratings of morality and beauty go from 0 to 1.
 ethical_quandries: 
 linked_vis: 
 linked_instr_mtl: https://github.com/amzoss/ggplot2-DF18
-order: '3'
+order: '2'
 layout: labels_datasets
 collection: datasets
-thumbnail: img/table_design.png
+thumbnail: img/derivatives/simple/ds5/thumbnail.jpg
+full: img/derivatives/simple/ds5/full.jpg
 ---

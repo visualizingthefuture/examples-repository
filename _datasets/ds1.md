@@ -1,7 +1,7 @@
 ---
 pid: ds1
 label: Time to Statham punch
-date_of_upload: 7/10/2020
+date_of_upload: 7/10/20
 creator: Matt Haughey
 date_of_creation: '2020'
 source_url: http://time.to.stathampun.ch/
@@ -23,8 +23,9 @@ addl_data_props: Some "infinity" values, which are basically N/A. Time column co
 ethical_quandries: 
 linked_vis: 
 linked_instr_mtl: https://github.com/amzoss/ggplot2-DF18
-order: '2'
+order: '1'
 layout: labels_datasets
 collection: datasets
-thumbnail: img/table_design.png
+thumbnail: img/derivatives/simple/ds1/thumbnail.jpg
+full: img/derivatives/simple/ds1/full.jpg
 ---

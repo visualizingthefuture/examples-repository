@@ -1,7 +1,7 @@
 ---
 pid: ds4
 label: 'Seattle Pet Licenses '
-date_of_upload: 7/10/2020
+date_of_upload: 7/10/20
 creator: 'City of Seattle: FAS - Seattle Animal Shelter'
 date_of_creation: '2020'
 source_url: https://data.seattle.gov/Community/Seattle-Pet-Licenses/jguv-t9rb/data
@@ -26,8 +26,9 @@ addl_data_props:
 ethical_quandries: 
 linked_vis: 
 linked_instr_mtl: 
-order: '4'
+order: '3'
 layout: labels_datasets
 collection: datasets
-thumbnail: img/table_design.png
+thumbnail: img/derivatives/simple/ds4/thumbnail.jpg
+full: img/derivatives/simple/ds4/full.jpg
 ---
