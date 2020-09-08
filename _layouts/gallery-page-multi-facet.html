@@ -210,8 +210,11 @@ layout: default
         }
         if (intersection.length > 0) {
           intersection.show('slow');
+          updateFacetCounts();
         }
-        updateFacetCounts();
+        else {
+          updateFacetCounts();
+        }
       }
 
     {% endif %}
