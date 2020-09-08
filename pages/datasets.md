@@ -9,6 +9,6 @@ facet_by:
     - data_type
     - original_context
     - audience_level
-welcome: Testing original Wax collection browsing layout.
+welcome: Browse our dataset examples below.
 item_include: datasets_gallery_item.html
 ---
