@@ -1,9 +1,12 @@
 ---
 layout: exhibit
 title: 'How-to guide to using this site'
-publish_date: 2020-5-10
+publish_date: 2020-9-8
 permalink: /howtoguide/
 ---
+
+*Note: this documentation reflects the alpha build of the repository which is currently undergoing redesign in September 2020. Please expect some specifics of e.g. interface interaction to shift. This note will be removed when user guide is caught up with the current build.*
+<br>
 
 **Summary**
 <br>
