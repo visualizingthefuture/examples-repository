@@ -9,6 +9,6 @@ facet_by:
     - vis_type
     - original_context
     - audience_level
-welcome: Testing original Wax collection browsing layout.
+welcome: Browse our data visualization examples below.
 item_include: datavis_gallery_item.html 
 ---
