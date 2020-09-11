@@ -40,7 +40,7 @@ layout: default
         <div><span id="count">{{ num }}</span>&nbsp;examples selected</div>
         <div id="wax-gallery-{{ page.collection }}" class="wax-gallery" >
           {% for item in the_collection %}
-            {% include {{ page.item_include }} %}
+              {% include {{ page.item_include }} %}
           {% endfor %}
         </div>
       </div>

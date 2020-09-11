@@ -1,7 +1,7 @@
 ---
 pid: ds2
 label: United States of America (Measles) Dataset - Project Tycho
-date_of_upload: 7/10/2020
+date_of_upload: 7/10/20
 creator: Van Panhuis W., Cross A., Burke D.
 date_of_creation: 1-Apr-18
 source_url: http://doi.org/10.25337/T7/ptycho.v2.0/US.14189004
@@ -28,8 +28,9 @@ addl_data_props: Missing data from certain states for certain time periods. The 
 ethical_quandries: 
 linked_vis: 
 linked_instr_mtl: 
-order: '1'
+order: '0'
 layout: labels_datasets
 collection: datasets
-thumbnail: img/table_design.png
+thumbnail: img/derivatives/simple/ds2/thumbnail.jpg
+full: img/derivatives/simple/ds2/full.jpg
 ---
