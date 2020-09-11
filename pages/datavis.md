@@ -10,5 +10,5 @@ facet_by:
     - original_context
     - audience_level
 welcome: Browse our data visualization examples below.
-item_include: datavis_gallery_item.html 
+item_include: datavis_gallery_item.html
 ---
