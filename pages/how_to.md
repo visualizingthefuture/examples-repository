@@ -8,7 +8,7 @@ permalink: /howtoguide/
 *Note: this documentation reflects the alpha build of the repository which is currently undergoing redesign in September 2020. Please expect some specifics of e.g. interface interaction to shift. This note will be removed when user guide is caught up with the current build.*
 
 ## Summary    
-The Teach Vis by Example repository is a space for the data visualization teaching community to find, share, and contribute exemplary data visualizations + visualization-ready datasets. The beta version of this website comprises a set of sample data visualization and data set objects, including related images and metadata. The collection items in this demo were suggested by the [Visualizing the Future](https://visualizingthefuture.github.io/) fellows and organizers.
+The Teach Viz by Example repository is a space for the data visualization teaching community to find, share, and contribute exemplary data visualizations + visualization-ready datasets. The beta version of this website comprises a set of sample data visualization and data set objects, including related images and metadata. The collection items in this demo were suggested by the [Visualizing the Future](https://visualizingthefuture.github.io/) fellows and organizers.
 
 ## Browse
 After navigating to the "Browse" drop-down in the menu, you can select to browse either the visualization collection or the dataset collection. Each collection has slightly different properties. For example, on the visualization Browse page, you can see thumbnail images of the visualization examples.<!--[^1]-->
