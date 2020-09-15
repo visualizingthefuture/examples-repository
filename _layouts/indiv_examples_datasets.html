@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% comment %}
-  The block below controls the image viewer
+  The block below controls the image viewer. Note this is currently disabled in code.
 {% endcomment %}
 
 <h3 alt="{{ page.label }}" class='item-label'>{{ page.label }}</h3>
@@ -13,6 +13,12 @@ layout: default
 {% elsif layout.image_viewer %}
   {% assign viewer = layout.image_viewer %}
 {% endif %}
+
+{% comment %}
+  Disable viewer.
+{% endcomment %}
+
+{% assign viewer = False %}
 
 {% if viewer %}
 
