@@ -18,7 +18,7 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
-title:            'Teach Vis by Example'
+title:            'Teach Viz by Example'
 url:              'https://visualizingthefuture.github.io'
 baseurl:          '/examples-repository'
 copyright:        'Visualizing the Future, 2020'
