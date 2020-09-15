@@ -5,7 +5,7 @@ class: gallery
 permalink: /datasets/
 collection: datasets
 facet_by:
-    - data_domain
+    - subject_area
     - data_type
     - original_context
     - audience_level

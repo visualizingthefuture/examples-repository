@@ -5,7 +5,7 @@ class: gallery
 permalink: /datavis/
 collection: datavis
 facet_by:
-    - data_domain
+    - subject_area
     - vis_type
     - original_context
     - audience_level
