@@ -21,6 +21,12 @@
       {% endif %}
     {% endif %}
       <dt>{{ item.label }}</dt>
-      <dd>{{ value | strip }}</dd>
+      {% if value.first %}
+          {% for v in value %} 
+            <dd>{{ v | strip }}</dd>
+          {% endfor %}
+      {% else %}
+        <dd>{{ value | strip }}</dd>
+      {% endif %}
   {% endfor %}
 </dl>
