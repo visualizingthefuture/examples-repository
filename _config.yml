@@ -73,14 +73,14 @@ collections:
     output: true # makes sure pages are output as html files
     layout: 'labels_datavis' # the layout for the pages to use
     metadata:
-      source: 'datavis.csv' # path to the metadata file within `_data`
+      source: 'datavis.json' # path to the metadata file within `_data`
     images:
       source: 'raw_images/datavis' # path to the directory of images within `_data`
   datasets: # name of collection
     output: true # makes sure pages are output as html files
     layout: 'labels_datasets' # the layout for the pages to use
     metadata:
-      source: 'datasets.csv' # path to the metadata file within `_data`
+      source: 'datasets.json' # path to the metadata file within `_data`
     images:
       source: 'raw_images/datasets' # path to the directory of images within `_data`
 
@@ -108,27 +108,45 @@ search:
           - source_url
           - description
           - vis_type
-          - data_domain
+          - subject_area
           - original_context
           - audience_level
           - audience_composition
           - pedagogical_description
           - addl_data_props
           - ethical_quandries
+          - data_processing
+          - data_type
+          - geospatial_std
+          - language_tool
+          - linked_code
+          - linked_example
+          - linked_instr_mtl
       datasets:
         content: false # whether or not to index page content
         fields: # the metadata fields to index
+          - pid
+          - label
+          - date_of_upload
+          - creator
+          - date_of_creation
+          - source_url
           - description
-          - language
-          - object_type
-          - topic
-          - purpose
+          - vis_type
+          - subject_area
+          - original_context
           - audience_level
           - audience_composition
-          - additional_properties
-          - pid
-          - layout
-          - label
+          - pedagogical_description
+          - addl_data_props
+          - ethical_quandries
+          - data_processing
+          - data_type
+          - geospatial_std
+          - language_tool
+          - linked_code
+          - linked_example
+          - linked_instr_mtl
 
 # --------------------------------------------------------------
 # SITE MENU SETTINGS

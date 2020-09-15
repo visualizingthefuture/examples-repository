@@ -1,23 +1,31 @@
 ---
-pid: dv2
-label: Gun Deaths in Florida
-date_of_upload: 6/26/20
-creator: C.Chan
-date_of_creation: 16-Feb-14
-source_url: https://www.businessinsider.com/gun-deaths-in-florida-increased-with-stand-your-ground-2014-2
-description: Visualization of the number of gun deaths in Florida from 1990-2013
-vis_type: line chart
-data_domain: safety
-original_context: news article
-audience_level: Adult beginner (high school and older)
+approved_date: 6/26/2020
 audience_composition: General
+audience_level: Adult beginner (high school and older)
+creator: C.Chan
+data_processing: ''
+data_type: ''
+date_of_creation: February 16, 2014
+description: Visualization of the number of gun deaths in Florida from 1990-2013
+ethical_quandries: ''
+example_type: data visualization
+geospatial_std: ''
+label: Gun Deaths in Florida
+language_tool: ''
+linked_code: ''
+linked_example: ''
+linked_instr_mtl: ''
+original_context: news article
 pedagogical_description: Demonstrates the power of visual encoding to make the visualization
   harder to interpret. The creator tried to use the metaphor of dripping blood and
   flipped the y-axis but it's easier to see the rise in gun deaths when the y-axis
   is in the more traditional direction. Flipped version of the chart is later in the
   article.
-addl_data_props: 
-ethical_quandries: 
+pid: dv2
+source_url: https://www.businessinsider.com/gun-deaths-in-florida-increased-with-stand-your-ground-2014-2
+subject_area: safety
+timestamp: 5/12/2020
+vis_type: line chart
 order: '1'
 layout: labels_datavis
 collection: datavis

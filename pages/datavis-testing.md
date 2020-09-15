@@ -1,11 +1,11 @@
 ---
-layout: gallery-page-multi-facet
+layout: gallery-page-multi-facet-testing
 title: Data Visualization Gallery
 class: gallery
-permalink: /datavis/
+permalink: /datavis-testing/
 collection: datavis
 facet_by:
-    - subject_area
+    - data_domain
     - vis_type
     - original_context
     - audience_level
