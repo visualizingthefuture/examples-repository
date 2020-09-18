@@ -72,6 +72,7 @@ collections:
   datavis: # name of collection
     output: true # makes sure pages are output as html files
     layout: 'labels_datavis' # the layout for the pages to use
+    dictionary: 'data_dictionary'
     metadata:
       source: 'datavis.json' # path to the metadata file within `_data`
     images:
@@ -79,6 +80,7 @@ collections:
   datasets: # name of collection
     output: true # makes sure pages are output as html files
     layout: 'labels_datasets' # the layout for the pages to use
+    dictionary: 'data_dictionary'
     metadata:
       source: 'datasets.json' # path to the metadata file within `_data`
     images:

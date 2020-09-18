@@ -4,6 +4,9 @@ layout: default
 
 {%- assign the_collection = site[page.collection] -%}
 {% assign num = the_collection | size %}
+{% assign col_metadata = site.collections | where: 'label', page.collection | first %}
+{% assign labels = site.data[col_metadata.dictionary] %}
+
 
 <h1>{{ page.title }}</h1>
 
@@ -15,7 +18,12 @@ layout: default
       <div id="filter-container" class="col-4" style="background-color: #eae7de;">
         <h2>Filters</h2>
         {% for facet in page.facet_by %}
-        <h3>{{ facet }}</h3>
+        {% if labels.size %}
+          {% assign dict_entry = labels | where: 'field_name', facet | first %}
+          <h3>{{ dict_entry.field_label }}</h3>
+        {% else %}
+          <h3>{{ facet }}</h3>
+        {% endif %}
         <div id="{{ page.collection }}-{{ facet }}-buttons" >
           {% assign options = the_collection | map: facet | compact | uniq | sort_natural %}
           {% for option in options %}

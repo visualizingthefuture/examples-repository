@@ -1,0 +1,48 @@
+---
+- field_name: pid
+  field_label: 'Item Identifier'
+- field_name: approved_date
+  field_label: 'Approved Date'
+- field_name: timestamp
+  field_label: 'Submission Timestamp'
+- field_name: label
+  field_label: 'Title'
+- field_name: creator
+  field_label: 'Creator'
+- field_name: date_of_creation
+  field_label: 'Date of Creation'
+- field_name: source_url
+  field_label: 'Source URL'
+- field_name: description
+  field_label: 'Description'
+- field_name: example_type
+  field_label: 'Example Type'
+- field_name: subject_area
+  field_label: 'Subject Area'
+- field_name: original_context
+  field_label: 'Original Context'
+- field_name: audience_level
+  field_label: 'Audience Level'
+- field_name: audience_composition
+  field_label: 'Audience Composition'
+- field_name: pedagogical_description
+  field_label: 'Pedagogical Description'
+- field_name: ethical_quandries
+  field_label: 'Ethical Quandries'
+- field_name: data_processing
+  field_label: 'Data Processing'
+- field_name: language_tool
+  field_label: 'Language Tool'
+- field_name: linked_code
+  field_label: 'Linked Code'
+- field_name: linked_instr_mtl
+  field_label: 'Linked Instructional Materials'
+- field_name: linked_example
+  field_label: 'Linked Examples'
+- field_name: data_type
+  field_label: 'Data Types'
+- field_name: geospatial_std
+  field_label: 'Geospatial Standards'
+- field_name: vis_type
+  field_label: 'Visualization Types'
+---
