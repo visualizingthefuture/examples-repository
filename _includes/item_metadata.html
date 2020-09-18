@@ -22,9 +22,13 @@
     {% endif %}
       <dt>{{ item.label }}</dt>
       {% if value.first %}
-          {% for v in value %} 
-            <dd>{{ v | strip }}</dd>
+        <dd>
+          <ul>
+          {% for v in value %}
+            <li>{{ v | strip }}</li>
           {% endfor %}
+          </ul>
+        </dd>
       {% else %}
         <dd>{{ value | strip }}</dd>
       {% endif %}
