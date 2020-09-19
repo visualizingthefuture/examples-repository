@@ -39,7 +39,7 @@
       "animation"
     ],
     "order": "2",
-    "layout": "labels_datavis",
+    "layout": "indiv_example",
     "collection": "datavis",
     "thumbnail": "img/derivatives/simple/dv3/thumbnail.jpg",
     "full": "img/derivatives/simple/dv3/full.jpg"
@@ -69,7 +69,7 @@
     "timestamp": "5/12/2020",
     "vis_type": "line chart",
     "order": "1",
-    "layout": "labels_datavis",
+    "layout": "indiv_example",
     "collection": "datavis",
     "thumbnail": "img/derivatives/simple/dv2/thumbnail.jpg",
     "full": "img/derivatives/simple/dv2/full.jpg"
@@ -113,7 +113,7 @@
       "map / spatial data"
     ],
     "order": "0",
-    "layout": "labels_datavis",
+    "layout": "indiv_example",
     "collection": "datavis",
     "thumbnail": "img/derivatives/simple/dv1/thumbnail.jpg",
     "full": "img/derivatives/simple/dv1/full.jpg"
@@ -142,7 +142,10 @@
     "language_tool": "",
     "linked_code": "",
     "linked_example": "ds3",
-    "linked_instr_mtl": "Code and accompanying dataset available on GitHub - https://github.com/USGS-VIZLAB/water-use-15 and in report/circular -  https://pubs.er.usgs.gov/publication/cir1441",
+    "linked_instr_mtl": [
+      "https://github.com/USGS-VIZLAB/water-use-15",
+      "https://pubs.er.usgs.gov/publication/cir1441"
+    ],
     "original_context": "public data",
     "pedagogical_description": "Example data visualizations are presented with corresponding dataset and code linked on the page, programming and data visualizations created using GitHub and Java, Jenkins, CSS, Docker, Rstudio/R, data visualizations can be recreated from data using multiple tools/programs and compared with original source and include examples of design principles and best practices in use.",
     "pid": "dv5",
@@ -158,7 +161,7 @@
       "map / spatial data"
     ],
     "order": "4",
-    "layout": "labels_datavis",
+    "layout": "indiv_example",
     "collection": "datavis",
     "thumbnail": "img/derivatives/simple/dv5/thumbnail.jpg",
     "full": "img/derivatives/simple/dv5/full.jpg"
@@ -197,7 +200,7 @@
       "dashboard"
     ],
     "order": "3",
-    "layout": "labels_datavis",
+    "layout": "indiv_example",
     "collection": "datavis",
     "thumbnail": "img/derivatives/simple/dv4/thumbnail.jpg",
     "full": "img/derivatives/simple/dv4/full.jpg"
@@ -234,7 +237,7 @@
     "timestamp": "6/8/2020",
     "vis_type": "animation",
     "order": "5",
-    "layout": "labels_datavis",
+    "layout": "indiv_example",
     "collection": "datavis",
     "thumbnail": "img/derivatives/simple/dv6/thumbnail.jpg",
     "full": "img/derivatives/simple/dv6/full.jpg"

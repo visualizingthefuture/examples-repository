@@ -24,7 +24,7 @@ label: Estimated Use of Water in the United States County-Level Data for 2015
 language_tool: ''
 linked_code: ''
 linked_example: dv5
-linked_instr_mtl: Code and documentation available at https://github.com/USGS-VIZLAB/water-use-15
+linked_instr_mtl: https://github.com/USGS-VIZLAB/water-use-15
 original_context: public data
 pedagogical_description: Good examples of field dictionaries and abbreviations in
   action, FIPS codes and other location/geography codes/shorthand, cleaned dataset
@@ -38,6 +38,6 @@ subject_area:
 timestamp: 5/12/2020
 vis_type: ''
 order: '2'
-layout: labels_datasets
+layout: indiv_example
 collection: datasets
 ---

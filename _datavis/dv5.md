@@ -22,8 +22,9 @@ label: Water Use in the U.S.
 language_tool: ''
 linked_code: ''
 linked_example: ds3
-linked_instr_mtl: Code and accompanying dataset available on GitHub - https://github.com/USGS-VIZLAB/water-use-15
-  and in report/circular -  https://pubs.er.usgs.gov/publication/cir1441
+linked_instr_mtl:
+- https://github.com/USGS-VIZLAB/water-use-15
+- https://pubs.er.usgs.gov/publication/cir1441
 original_context: public data
 pedagogical_description: Example data visualizations are presented with corresponding
   dataset and code linked on the page, programming and data visualizations created
@@ -41,7 +42,7 @@ vis_type:
 - pie chart or donut chart
 - map / spatial data
 order: '4'
-layout: labels_datavis
+layout: indiv_example
 collection: datavis
 thumbnail: img/derivatives/simple/dv5/thumbnail.jpg
 full: img/derivatives/simple/dv5/full.jpg

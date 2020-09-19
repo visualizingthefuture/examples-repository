@@ -34,6 +34,6 @@ subject_area: health
 timestamp: 5/12/2020
 vis_type: ''
 order: '1'
-layout: labels_datasets
+layout: indiv_example
 collection: datasets
 ---

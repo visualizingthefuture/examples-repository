@@ -33,6 +33,6 @@ subject_area: entertainment
 timestamp: 5/12/2020
 vis_type: ''
 order: '4'
-layout: labels_datasets
+layout: indiv_example
 collection: datasets
 ---

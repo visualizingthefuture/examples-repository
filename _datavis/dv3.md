@@ -38,7 +38,7 @@ vis_type:
 - map / spatial data
 - animation
 order: '2'
-layout: labels_datavis
+layout: indiv_example
 collection: datavis
 thumbnail: img/derivatives/simple/dv3/thumbnail.jpg
 full: img/derivatives/simple/dv3/full.jpg

@@ -34,7 +34,7 @@ vis_type:
 - line chart
 - map / spatial data
 order: '0'
-layout: labels_datavis
+layout: indiv_example
 collection: datavis
 thumbnail: img/derivatives/simple/dv1/thumbnail.jpg
 full: img/derivatives/simple/dv1/full.jpg

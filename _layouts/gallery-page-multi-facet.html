@@ -20,7 +20,7 @@ layout: default
         <div class="row">
         {% for facet in page.facet_by %}
         <div class="col-md-12 col-sm-6 col-xs-12">
-        <h3>
+        <h3 style="margin-top: 1rem;">
         {% if labels.size %}
           {% assign dict_entry = labels | where: 'field_name', facet | first %}
           {{ dict_entry.field_label }}

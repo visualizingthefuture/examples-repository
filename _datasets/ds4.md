@@ -34,6 +34,6 @@ subject_area: recreation and lifestyle
 timestamp: 5/12/2020
 vis_type: ''
 order: '3'
-layout: labels_datasets
+layout: indiv_example
 collection: datasets
 ---

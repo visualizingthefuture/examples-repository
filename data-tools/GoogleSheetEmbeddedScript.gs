@@ -87,7 +87,7 @@ function cleanListColumns() {
   var sheet = spreadsheet.getSheetByName('datavis');
 
   var headers = [
-    'pid','approved_date','timestamp','title','creator','date_of_creation',
+    'pid','approved_date','timestamp','label','creator','date_of_creation',
     'source_url','description','example_type','subject_area','original_context',
     'audience_level','audience_composition','pedagogical_description','ethical_quandries',
     'data_processing','language_tool','linked_code','linked_instr_mtl','linked_example',
@@ -108,13 +108,6 @@ function cleanListColumns() {
   spreadsheet.insertSheet('datasets');
   var sheet = spreadsheet.getSheetByName('datasets');
 
-  var headers = [
-    'pid','approved_date','timestamp','title','creator','date_of_creation',
-    'source_url','description','example_type','subject_area','original_context',
-    'audience_level','audience_composition','pedagogical_description','ethical_quandries',
-    'data_processing','language_tool','linked_code','linked_instr_mtl','linked_example',
-    'data_type','geospatial_std','vis_type'
-  ];
   sheet.getRange('A1:W1').setValues([headers]);
 
   var datasets_submissions = submissions.filter(example => (example[8] == 'dataset' | example[8] == 'both dataset and data visualization') & example[0] != "");
@@ -130,13 +123,6 @@ function cleanListColumns() {
   spreadsheet.insertSheet('other');
   var sheet = spreadsheet.getSheetByName('other');
 
-  var headers = [
-    'pid','approved_date','timestamp','title','creator','date_of_creation',
-    'source_url','description','example_type','subject_area','original_context',
-    'audience_level','audience_composition','pedagogical_description','ethical_quandries',
-    'data_processing','language_tool','linked_code','linked_instr_mtl','linked_example',
-    'data_type','geospatial_std','vis_type'
-  ];
   sheet.getRange('A1:W1').setValues([headers]);
 
   var other_submissions = submissions.filter(example => example[8] != 'data visualization' & example[8] != 'dataset' & example[0] != "");

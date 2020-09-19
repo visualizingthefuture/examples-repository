@@ -3,35 +3,27 @@ layout: default
 image_viewer: 'openseadragon'
 pagination: true
 meta:
-  - label: 'Title'
-    value: page.label
-  - label: 'Creator'
-    value: page.creator
-  - label: 'Description'
-    value: page.description
-  - label: 'Visualization Type'
-    value: page.vis_type
-  - label: 'Topic'
-    value: page.data_domain
-  - label: 'Original Context'
-    value: page.original_context
-  - label: 'Date of Creation'
-    value: page.date_of_creation
-  - label: 'Date of Upload'
-    value: page.date_of_upload
-  - label: 'Audience Level'
-    value: page.audience_level
-  - label: 'Audience Composition'
-    value: page.audience_composition
-  - label: 'Pedagogical Description'
-    value: page.pedagogical_description
-  - label: 'Additional Data Properties'
-    value: page.addl_data_props
-  - label: 'Ethical Quandries'
-    value: page.ethical_quandries
-  - label: 'Source'
-    value: page.source_url
-    type:  link
+  - label
+  - creator
+  - date_of_creation
+  - source_url
+  - description
+  - example_type
+  - vis_type
+  - subject_area
+  - original_context
+  - audience_level
+  - audience_composition
+  - pedagogical_description
+  - ethical_quandries
+  - data_processing
+  - language_tool
+  - linked_code
+  - data_type
+  - geospatial_std
+  - linked_instr_mtl
+  - linked_example
+  - approved_date
 ---
 
 <div class='item-view' style="margin-bottom: 20px;">
@@ -64,16 +56,18 @@ meta:
     {% endif %}
 {% endif %}
 
-
 {% comment %}
   The block below controls the item metadata table
 {% endcomment %}
+
+{% assign col_metadata = site.collections | where: 'label', page.collection | first %}
+{% assign labels = site.data[col_metadata.dictionary] %}
 
 {% if layout.meta.size %}
   {% assign metadata = layout.meta %}
 {% elsif page.meta.size %}
   {% assign metadata = page.meta %}
 {% endif %}
-{% if metadata.size %}
-  {% include item_metadata.html meta=metadata %}
+{% if metadata.size and labels.size %}
+  {% include item_metadata.html meta=metadata labels=labels %}
 {% endif %}
