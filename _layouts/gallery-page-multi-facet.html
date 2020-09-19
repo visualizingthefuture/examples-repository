@@ -15,9 +15,11 @@ layout: default
 <div id='wax-gallery-{{ page.collection }}-container' class='wax-gallery-container full-width'>
   <div class='wax-inline-container'>
     <div class="row">
-      <div id="filter-container" class="col-4" style="background-color: #eae7de;">
+      <div id="filter-container" class="col-md-4" style="background-color: #eae7de;">
         <h2>Filters</h2>
+        <div class="row">
         {% for facet in page.facet_by %}
+        <div class="col-md-12 col-sm-6 col-xs-12">
         <h3>
         {% if labels.size %}
           {% assign dict_entry = labels | where: 'field_name', facet | first %}
@@ -39,9 +41,11 @@ layout: default
           <button id='{{ facet }}-select' class='btn btn-light selectAll' data-filter='{{ facet }}' style='margin: 10px;'>select all</button>
 
         </div>
+        </div>
         {% endfor %}
+        </div>
       </div>
-      <div id="results-container" class="col-8">
+      <div id="results-container" class="col-md-8">
         <h2>Results</h2>
         <div><span id="count">{{ num }}</span>&nbsp;examples selected</div>
         <div id="wax-gallery-{{ page.collection }}" class="wax-gallery" >
