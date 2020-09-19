@@ -18,12 +18,14 @@ layout: default
       <div id="filter-container" class="col-4" style="background-color: #eae7de;">
         <h2>Filters</h2>
         {% for facet in page.facet_by %}
+        <h3>
         {% if labels.size %}
           {% assign dict_entry = labels | where: 'field_name', facet | first %}
-          <h3>{{ dict_entry.field_label }}</h3>
+          {{ dict_entry.field_label }}
         {% else %}
-          <h3>{{ facet }}</h3>
+          {{ facet }}
         {% endif %}
+        </h3>
         <div id="{{ page.collection }}-{{ facet }}-buttons" >
           {% assign options = the_collection | map: facet | compact | uniq | sort_natural %}
           {% for option in options %}
