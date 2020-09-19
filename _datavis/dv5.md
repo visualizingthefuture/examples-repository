@@ -40,7 +40,6 @@ vis_type:
 - bar chart
 - pie chart or donut chart
 - map / spatial data
-- interactive quiz; mixed map and pie chart
 order: '4'
 layout: labels_datavis
 collection: datavis

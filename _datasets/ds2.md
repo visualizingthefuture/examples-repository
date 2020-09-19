@@ -36,6 +36,4 @@ vis_type: ''
 order: '1'
 layout: labels_datasets
 collection: datasets
-thumbnail: img/derivatives/simple/ds2/thumbnail.jpg
-full: img/derivatives/simple/ds2/full.jpg
 ---
