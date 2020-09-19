@@ -40,6 +40,4 @@ vis_type: ''
 order: '2'
 layout: labels_datasets
 collection: datasets
-thumbnail: img/derivatives/simple/ds3/thumbnail.jpg
-full: img/derivatives/simple/ds3/full.jpg
 ---

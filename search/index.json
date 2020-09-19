@@ -176,8 +176,7 @@ layout: none
     "vis_type": [
       "bar chart",
       "pie chart or donut chart",
-      "map / spatial data",
-      "interactive quiz; mixed map and pie chart"
+      "map / spatial data"
     ],
     "collection": "datavis",
     "thumbnail": "img/derivatives/simple/dv5/thumbnail.jpg",
@@ -244,10 +243,7 @@ layout: none
     "language_tool": "",
     "linked_code": "",
     "linked_example": "",
-    "linked_instr_mtl": [
-      "https://github.com/amzoss/ggplot2-DF18",
-      "https://www.gapminder.org/for-teachers/"
-    ],
+    "linked_instr_mtl": "https://github.com/amzoss/ggplot2-DF18, https://www.gapminder.org/for-teachers/",
     "original_context": "educational",
     "pedagogical_description": "Can be used to produce a well-known visualization, can discuss the logistical challenges of measuring the health and wealth of nations, uses data most people can relate to, can introduce log scale",
     "pid": "ds6",
@@ -263,7 +259,6 @@ layout: none
     ],
     "vis_type": "",
     "collection": "datasets",
-    "thumbnail": "img/derivatives/simple/ds6/thumbnail.jpg",
     "permalink": "/datasets/ds6",
     "lunr_id": 6
   },
@@ -297,7 +292,6 @@ layout: none
     "subject_area": "health",
     "vis_type": "",
     "collection": "datasets",
-    "thumbnail": "img/derivatives/simple/ds2/thumbnail.jpg",
     "permalink": "/datasets/ds2",
     "lunr_id": 7
   },
@@ -334,7 +328,6 @@ layout: none
     ],
     "vis_type": "",
     "collection": "datasets",
-    "thumbnail": "img/derivatives/simple/ds3/thumbnail.jpg",
     "permalink": "/datasets/ds3",
     "lunr_id": 8
   },
@@ -367,7 +360,6 @@ layout: none
     "subject_area": "recreation and lifestyle",
     "vis_type": "",
     "collection": "datasets",
-    "thumbnail": "img/derivatives/simple/ds4/thumbnail.jpg",
     "permalink": "/datasets/ds4",
     "lunr_id": 9
   },
@@ -399,7 +391,6 @@ layout: none
     "subject_area": "entertainment",
     "vis_type": "",
     "collection": "datasets",
-    "thumbnail": "img/derivatives/simple/ds5/thumbnail.jpg",
     "permalink": "/datasets/ds5",
     "lunr_id": 10
   },
@@ -413,8 +404,7 @@ layout: none
     "data_processing": "None",
     "data_type": [
       "1 or more categorical variables",
-      "1 or more date/time variables",
-      "could convert time variable to number of minutes or seconds"
+      "1 or more date/time variables"
     ],
     "date_of_creation": "2020",
     "description": "Small dataset of movies starring Jason Statham and how long it takes for him to punch someone.",
@@ -432,7 +422,6 @@ layout: none
     "subject_area": "entertainment",
     "vis_type": "",
     "collection": "datasets",
-    "thumbnail": "img/derivatives/simple/ds1/thumbnail.jpg",
     "permalink": "/datasets/ds1",
     "lunr_id": 11
   }

@@ -9,7 +9,6 @@ data_processing: None
 data_type:
 - 1 or more categorical variables
 - 1 or more date/time variables
-- could convert time variable to number of minutes or seconds
 date_of_creation: '2020'
 description: Small dataset of movies starring Jason Statham and how long it takes
   for him to punch someone.
@@ -33,6 +32,4 @@ vis_type: ''
 order: '0'
 layout: labels_datasets
 collection: datasets
-thumbnail: img/derivatives/simple/ds1/thumbnail.jpg
-full: img/derivatives/simple/ds1/full.jpg
 ---
