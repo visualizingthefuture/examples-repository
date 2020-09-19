@@ -23,7 +23,9 @@ label: Averaged Gapminder data from ggplot2-DF18 workshop
 language_tool: ''
 linked_code: ''
 linked_example: ''
-linked_instr_mtl: https://github.com/amzoss/ggplot2-DF18, https://www.gapminder.org/for-teachers/
+linked_instr_mtl:
+- https://github.com/amzoss/ggplot2-DF18
+- https://www.gapminder.org/for-teachers/
 original_context: educational
 pedagogical_description: Can be used to produce a well-known visualization, can discuss
   the logistical challenges of measuring the health and wealth of nations, uses data
@@ -40,6 +42,6 @@ subject_area:
 timestamp: 5/12/2020
 vis_type: ''
 order: '5'
-layout: labels_datasets
+layout: indiv_example
 collection: datasets
 ---

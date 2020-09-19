@@ -164,7 +164,10 @@ layout: none
     "language_tool": "",
     "linked_code": "",
     "linked_example": "ds3",
-    "linked_instr_mtl": "Code and accompanying dataset available on GitHub - https://github.com/USGS-VIZLAB/water-use-15 and in report/circular -  https://pubs.er.usgs.gov/publication/cir1441",
+    "linked_instr_mtl": [
+      "https://github.com/USGS-VIZLAB/water-use-15",
+      "https://pubs.er.usgs.gov/publication/cir1441"
+    ],
     "original_context": "public data",
     "pedagogical_description": "Example data visualizations are presented with corresponding dataset and code linked on the page, programming and data visualizations created using GitHub and Java, Jenkins, CSS, Docker, Rstudio/R, data visualizations can be recreated from data using multiple tools/programs and compared with original source and include examples of design principles and best practices in use.",
     "pid": "dv5",
@@ -243,7 +246,10 @@ layout: none
     "language_tool": "",
     "linked_code": "",
     "linked_example": "",
-    "linked_instr_mtl": "https://github.com/amzoss/ggplot2-DF18, https://www.gapminder.org/for-teachers/",
+    "linked_instr_mtl": [
+      "https://github.com/amzoss/ggplot2-DF18",
+      "https://www.gapminder.org/for-teachers/"
+    ],
     "original_context": "educational",
     "pedagogical_description": "Can be used to produce a well-known visualization, can discuss the logistical challenges of measuring the health and wealth of nations, uses data most people can relate to, can introduce log scale",
     "pid": "ds6",
@@ -317,7 +323,7 @@ layout: none
     "language_tool": "",
     "linked_code": "",
     "linked_example": "dv5",
-    "linked_instr_mtl": "Code and documentation available at https://github.com/USGS-VIZLAB/water-use-15",
+    "linked_instr_mtl": "https://github.com/USGS-VIZLAB/water-use-15",
     "original_context": "public data",
     "pedagogical_description": "Good examples of field dictionaries and abbreviations in action, FIPS codes and other location/geography codes/shorthand, cleaned dataset with accompanying visualizations. Is a good example of government data protocols and regulations in action.",
     "pid": "ds3",

@@ -27,7 +27,7 @@ subject_area: safety
 timestamp: 5/12/2020
 vis_type: line chart
 order: '1'
-layout: labels_datavis
+layout: indiv_example
 collection: datavis
 thumbnail: img/derivatives/simple/dv2/thumbnail.jpg
 full: img/derivatives/simple/dv2/full.jpg

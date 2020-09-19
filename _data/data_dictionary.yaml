@@ -2,7 +2,7 @@
 - field_name: pid
   field_label: 'Item Identifier'
 - field_name: approved_date
-  field_label: 'Approved Date'
+  field_label: 'Date Added'
 - field_name: timestamp
   field_label: 'Submission Timestamp'
 - field_name: label
@@ -13,6 +13,7 @@
   field_label: 'Date of Creation'
 - field_name: source_url
   field_label: 'Source URL'
+  type: link
 - field_name: description
   field_label: 'Description'
 - field_name: example_type
@@ -35,10 +36,13 @@
   field_label: 'Language Tool'
 - field_name: linked_code
   field_label: 'Linked Code'
+  type: link
 - field_name: linked_instr_mtl
   field_label: 'Linked Instructional Materials'
+  type: link
 - field_name: linked_example
   field_label: 'Linked Examples'
+  type: internal
 - field_name: data_type
   field_label: 'Data Types'
 - field_name: geospatial_std

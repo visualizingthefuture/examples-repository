@@ -31,7 +31,7 @@ subject_area: law
 timestamp: 6/8/2020
 vis_type: animation
 order: '5'
-layout: labels_datavis
+layout: indiv_example
 collection: datavis
 thumbnail: img/derivatives/simple/dv6/thumbnail.jpg
 full: img/derivatives/simple/dv6/full.jpg
