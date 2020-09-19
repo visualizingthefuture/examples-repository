@@ -2,10 +2,10 @@
 layout: default
 ---
 
-{%- assign the_collection = site[page.collection] -%}
-{% assign num = the_collection | size %}
 {% assign col_metadata = site.collections | where: 'label', page.collection | first %}
 {% assign labels = site.data[col_metadata.dictionary] %}
+{% assign the_collection = col_metadata.docs %}
+{% assign num = the_collection | size %}
 
 
 <h1>{{ page.title }}</h1>

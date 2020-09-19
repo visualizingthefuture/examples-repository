@@ -1,5 +1,5 @@
 ---
-layout: indiv_examples_datavis
+layout: default
 image_viewer: 'openseadragon'
 pagination: true
 meta:
@@ -33,3 +33,47 @@ meta:
     value: page.source_url
     type:  link
 ---
+
+<div class='item-view' style="margin-bottom: 20px;">
+  <span class='pagination-link' id='prevlink'></span>
+  <div style="display:inline;">
+  <h1 alt="{{ page.label }}" class='item-label' style="text-align: center;">{{ page.label }}</h1>
+  </div>
+  <span class='pagination-link' id='nextlink'></span>
+</div>
+{% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
+
+{% comment %}
+  The block below controls the image viewer
+{% endcomment %}
+
+{% if page.image_viewer %}
+  {% assign viewer = page.image_viewer %}
+{% elsif layout.image_viewer %}
+  {% assign viewer = layout.image_viewer %}
+{% endif %}
+
+{% if viewer and page.full %}
+    {% if viewer == 'openseadragon' %}
+    <div style="width: 100%; margin-bottom: 20px;">
+      <a href="{{ page.full | absolute_url }}">
+      <img class="img-fluid mx-auto" style="display: block;"
+            src="{{ page.full | absolute_url }}" />
+      </a>
+    </div>
+    {% endif %}
+{% endif %}
+
+
+{% comment %}
+  The block below controls the item metadata table
+{% endcomment %}
+
+{% if layout.meta.size %}
+  {% assign metadata = layout.meta %}
+{% elsif page.meta.size %}
+  {% assign metadata = page.meta %}
+{% endif %}
+{% if metadata.size %}
+  {% include item_metadata.html meta=metadata %}
+{% endif %}
