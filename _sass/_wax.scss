@@ -549,3 +549,62 @@ search box
   width: 80px;
   height: 80px;
 }
+
+/* front page */
+
+.button-menu {
+  margin: 5% 5%;
+  
+}
+
+.button-menu h5 {
+  font-weight: bold;
+}
+
+
+.featured-box {
+  width: 100%;
+  margin:auto;
+  overflow:hidden;
+  display:inline-block;
+  text-align:center;
+}
+
+
+.featured-box h5 {
+  font-weight: bold;
+}
+
+.featured-vis {
+  vertical-align: top;
+  display: inline-block;
+  width: 40%;
+  margin: 0% 3%;
+  padding: 1%;
+}
+
+.featured-vis img {
+  padding: 2%;
+  border: 2px solid black;
+}
+
+.featured-vis:hover{
+    background: #17a3b817;
+}
+.featured-data {
+  vertical-align: top;
+  display: inline-block;
+  width: 40%;
+  margin: 0% 3%;
+  padding: 1%;
+}
+.featured-data img {
+  max-width: 50% !important;
+  padding: 2%;
+  border: 2px solid black;
+
+}
+
+.featured-data:hover{
+  background: #17a3b817;
+}
