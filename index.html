@@ -13,6 +13,7 @@ show_title: false
     <p>This is a space for the data visualization teaching
       community to find, share, and contribute exemplary data visualizations +
       visualization-ready datasets.</p>
+    <div class = "button-menu">
     <h5> Select an option below to get started:</h5>
     <p><a class="btn btn-info" href="{{ '/datavis/' | relative_url }}" role="button">Browse data visualization
         examples</a></p>
@@ -20,9 +21,32 @@ show_title: false
     <p><a class="btn btn-info" href="{{ '/howtoguide/' | relative_url }}" role="button">Review our how-to guide</a></p>
     <p><i>Coming soon: contribute your own resources!</i></p>
   </div>
+  </div>
 </div>
 
-<hr>
+<div>
+  <h3>Explore the most recent uploads</h3>
+  {% assign most_recent_datavis = site.datavis | sort: "approved_date" | last %}
+  {% assign most_recent_dataset = site.datasets | sort: "approved_date" | last %}
+  <div class = "featured-box">
+    <a href="{{ most_recent_datavis.url | absolute_url }}">
+    <div class = "featured-vis">
+      <img src='{{ most_recent_datavis.full | absolute_url }}' alt='{{ most_recent_datavis.label }}'/>
+      <h5>{{most_recent_datavis.label}}</h5>
+      <p>{{most_recent_datavis.creator}}. {{most_recent_datavis.date_of_creation}}. </p>
+      <p>{{most_recent_datavis.description}}</p>
+      </div></a>
+  <a href="{{ most_recent_dataset.url | absolute_url }}">
+  <div class = "featured-data">
+    <img src="{{ 'img/csv_design.png' | absolute_url }}" alt="{{ most_recent_dataset.label }}"/>
+    <h5>{{most_recent_dataset.label}}</h5>
+    <p>{{most_recent_dataset.creator}}. {{most_recent_dataset.date_of_creation}}. </p>
+    <p>{{most_recent_dataset.description}}</p>
+    </div>
+  </a>
+  </div>
+</div>
+
 <div>
   <h3>More about the project</h3>
   <p><strong>Visualizing the Future</strong> is an
