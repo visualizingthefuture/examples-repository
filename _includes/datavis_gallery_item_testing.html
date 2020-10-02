@@ -1,0 +1,23 @@
+<div id={{ item.pid }} class='gallery-item' style="max-width: 240px; max-height: unset; background-color: #eae7de;  border: unset;">
+  <a href='{{ item.url | absolute_url }}'>
+    <div class='hovereffect' style="max-height: 240px; cursor: unset;">
+      <img class='img-responsive gallery-thumb' src='{{ item.thumbnail | absolute_url }}' alt='{{ item.label }}'/>
+    </div>
+  </a>
+  <div style="padding: 5px;">
+    <a href='{{ item.url | absolute_url }}'>
+          <h3 style="margin: unset; margin-bottom: 5px; font-size: 1.2rem; ">{{ item.label | truncatewords: 11 }}</h3>
+    </a>
+    {% for facet in page.facet_by %}
+      <p style="margin: 0px; font-size: unset; line-height: unset;"><strong>
+        {% if labels.size %}
+          {% assign dict_entry = labels | where: 'field_name', facet | first %}
+          {{ dict_entry.field_label }}
+        {% else %}
+          {{ facet }}
+        {% endif %}
+      </strong>: {{ item[facet] | join: ", " }}</p>
+    {% endfor %}
+
+  </div>
+</div>
