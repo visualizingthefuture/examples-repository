@@ -48,10 +48,22 @@ meta:
 {% if viewer and page.full %}
     {% if viewer == 'openseadragon' %}
     <div style="width: 100%; margin-bottom: 20px;">
-      <a href="{{ page.full | absolute_url }}">
-      <img class="img-fluid mx-auto" style="display: block;"
-            src="{{ page.full | absolute_url }}" />
-      </a>
+    </div>
+    <div class="item-summary">
+
+      <div class="col-sm-4 order-sm-1">
+        <p><b>{{page.label}}</b></p>
+        <p>{{page.creator}}. {{page.date_of_creation}}.</p>
+        <p><a href="{{ page.full | absolute_url }}">Download full-sized image</a></p>
+        <p><a href="{{ page.source_url | absolute_url }}">View source URL</a></p>
+        
+      </div>
+
+      <div class="col-sm-8 order-sm-2">
+        <a href="{{ page.full | absolute_url }}">
+          <img src="{{ page.full | absolute_url }}" />
+          </a>
+      </div>
     </div>
     {% endif %}
 {% endif %}
