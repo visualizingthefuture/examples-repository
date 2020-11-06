@@ -1,9 +1,11 @@
 #  Teach Viz by Example (TVBE) repository
 
-- [Prerequisites](#Prerequisites)
-- [Making modifications](#Modify)
-- [Pages in this repository](#Pages)
-- [Support & contact information](#Support)
+- [Summary](#Summary)
+- [Installation](#Installation)
+- [Documentation](#Documentation)
+- [Helpful Tips](#Helpful Tips)
+- [Contributing - coming soon!](#Contributing - coming soon!)
+- [Support](#Support)
 
 ## Summary
 
