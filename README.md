@@ -1,44 +1,21 @@
-# VST Examples Repository
+#  Teach Viz by Example (TVBE) repository
 
 - [Prerequisites](#Prerequisites)
 - [Making modifications](#Modify)
 - [Pages in this repository](#Pages)
 - [Support & contact information](#Support)
 
-## Prerequisites
+## Summary
 
-You'll need `Ruby >= 2.4` with `bundler` installed. Check your versions with:
+The Teach Viz by Example (TVBE) repository is a space for the data visualization teaching community to find, share, and contribute exemplary data visualizations and visualization-ready datasets. The site builds on Minicomp’s [Wax](https://github.com/minicomp/wax) project, a lightweight framework for digital exhibits built on Jekyll and GitHub Pages. This project extends Wax by including additional processing scripts, page layouts, and includes.
 
-```bash
-$ ruby -v
-  ruby 2.4.5p335 (2018-10-18 revision 65137) [x86_64-darwin18]
-
-$ bundler -v
-  Bundler version 2.0.1
-```
-
-To process images, you will also need to have ImageMagick and Ghostscript installed and functional. You can check to see if you have ImageMagick by running:
-
-```bash
-$ convert -version
-  Version: ImageMagick 6.9.9-20 Q16 x86_64 2017-10-15 http://www.imagemagick.org
-  Copyright: (c) 1999-2017 ImageMagick Studio LLC
-```
-
-... and check Ghostscript with:
-```bash
-$ gs -version
-  GPL Ghostscript 9.21 (2017-03-16)
-  Copyright (C) 2017 Artifex Software, Inc.  All rights reserved.
-```
-
-### Downloading the demo
+## Installation
 
 1. Change directory into where you'd like your site, e.g., your Desktop:
     ```sh
     cd ~/Desktop
     ```
-2. Download the zip file from the [Visualizing the Future github repository](https://github.com/visualizingthefuture/examples-repository). The option to download the zip file should be on the button labeled "Clone or download." Your browser will save the file where it normally saves downloads.
+2. Download the zip file from the [Visualizing the Future github repository](https://github.com/visualizingthefuture/examples-repository). The option to download the zip file should be on the button labeled "Code." Your browser will save the file where it normally saves downloads.
 
 3. Move the zip file to the location you will use. In our example, to the Desktop.
 
@@ -59,111 +36,39 @@ $ gs -version
     ```
 After the last step the terminal will provide you with a localhost URL for you to see your local copy of the site on your browser.
 
-## Modify
+## Documentation
 
-### Method 1: Locally (Recommended)
+### Wax
 
-To start hosting a local server, you'll want to run this line in the terminal:
+For general information about dependencies and installation for Wax, see the [main Wax GitHub repository](https://github.com/minicomp/wax) and [wiki documentation](https://minicomp.github.io/wiki/wax/).
 
-```markdown
-bundle exec jekyll serve
+### Jekyll
 
-```
-This should provide you with a localhost URL. You can now make changes locally (using an IDE such as Visual Studio code). Changes will automatically update to the local server while you code. Once you're satisfied with the changes you made, push them all at once to the Github account through Github Desktop.
+[Jekyll’s documentation](https://jekyllrb.com/) includes information about setting up a local development environment for Jekyll site building.
 
-### Method 2: From Github (Online)
-You can also use the [editor on GitHub](https://github.com/Contrafabulists/think-tanks/edit/master/README.md) to maintain and preview the content for this website. This doesn't require installing Ruby or cloning the repository but it can take longer to write new lines of code.
+### TVBE data processing scripts
 
-Whenever you "commit" a change, GitHub Pages will automatically run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site.
+The TVBE repository includes two data processing scripts: a tailored [Google Apps Script](https://github.com/visualizingthefuture/examples-repository/blob/master/data-tools/GoogleSheetEmbeddedScript.gs) that processes Google Form submissions into a series of separate sheets for separate collections, and a python script that processes the .csv files exported from Google Sheets into JSON metadata files read for Wax processing.
 
-### Adding or modifying a collections
+#### [Google Apps Script](https://github.com/visualizingthefuture/examples-repository/blob/master/data-tools/GoogleSheetEmbeddedScript.gs)
 
-(See also: [Wax's Preparing your collection data page](https://minicomp.github.io/wiki/wax/preparing-your-collection-data/).)
+The examples hosted in this repository are submitted via a (currently in development) Google Form. The Google Form allows users to submit examples for our two primary collections (data visualizations and datasets) as well as other examples that may be related but fall outside those collections. The results from the Google Form must then be split into separate sheets for each collection. Additional processing helps prepare the data for Wax and adds support for multi-value fields, like “visualization type” and “audience level.” The script is specifically tailored to the fields and data values included in the Google Form for this project. This script is hosted in the Google Sheet produced by the Google Form and is run whenever a new example is submitted. The sheets produced by the script are then manually downloaded as .csv files, saved to the [data-tools](https://github.com/visualizingthefuture/examples-repository/tree/master/data-tools) directory, and processed with the python script to produce JSON.
 
-To create a new collection, you will first create a .csv file of metadata for collection objects. The file should be created in the "\_data" directory. The file must contain a column called "pid" that lists unique identifiers for each collection object. Wax developers recommend avoiding Excel to create/edit this .csv file.
+#### [Parse Google Sheet python script](https://github.com/visualizingthefuture/examples-repository/blob/master/data-tools/parse_google_sheet.py)
 
-If you have raw image files for your collection objects, create a directory matching the exact name of the collection .csv file in the "\_data/raw_images" directory. In that collection directory, include raw image files for each pid, using the pid as the name of the file. An example can also have multiple raw files, in which case you can create a subdirectory with the same name as the pid.
+The Parse Google Sheet python script uses a delimiter added by the Google Apps Script (a “|” character) to identify multi-value fields in the .csv file. The script converts the .csv to JSON, processing multi-value fields into JSON arrays instead of strings. The JSON output from this script should be saved to the `_data` directory in preparation for the `wax:pages` rake task.
 
-### Running (raking) tasks to prepare site data/metadata
+## Helpful Tips
 
-Wax, the underlying Jekyll framework powering this site, has a few additional ways of Doing Things that impact the process of modifying code. In particular, Wax requires that a user go through a set of **tasks** to transform data held in a .csv file into elements of the site such as metadata, images, search index, etc.
+We have compiled a few [helpful tips for developers](https://github.com/visualizingthefuture/examples-repository/blob/master/developer-tips) on modifying Wax, Jekyll, and our scripts.
 
-Wax describes a list of main tasks [in their documentation](https://minicomp.github.io/wiki/wax/running-the-tasks/).
+## Contributing - coming soon!
 
-Note: There is a [documented issue](https://github.com/minicomp/wax/issues/82) where Wax cannot process .csv files that begin with the invisible character <U+FEFF> (BOM). This may be more likely to occur when using Excel to generate or modify .csv files, so if you are having trouble getting Wax to read your .csv file in the rake step for building derivatives or pages, you may need to search for and replace this character or find some other way to clean your .csv ([example using vim](https://gist.github.com/szydan/b225749445b3602083ed)). **Windows users:** open the csv in Notepad and save as type:"All Files" with the original filename.csv, select Encoding:"UTF-8" and save to rewrite the original file.
-
-We will add more information on what tasks to rake and in what order here. For now, please keep in mind that the last task, which **must come after raking the collections**, is to generate the search index.
-
-To accomplish this, navigate to the `examples-repository` folder in your command line/terminal and run the command: `bundle exec rake wax:search main` This command will update the `search/index.json` file.
-
-If you modify the metadata of an existing collection object (e.g., change a metadata value, add a column to existing rows), you cannot simply rerun the wax:pages task. The old pages will not be overwritten. You should first delete the .md files from the collection directory (that is, the top-level directory that starts with "\_" and ends with the name of the collection). Then you should be able to rerun the wax:pages task and have the new metadata show up. (Of course, you would also then update the search configuration to take into account any new fields and rerun the wax:search task.)
-
-(Look for more updates here soon!)
-
-## Pages
-All of the files that work on connection to the functioning of each page and what they do.
-
-### Main Page
-Relevant files:
-```
-- index.html
-- img
-    - logo_white.png
-```
-
-### User Guide
-Relevant files:
-```
-- pages
-    - how_to.md
-- img
-    - how_to_photo.png
-```
-
-### Search
-Relevant files:
-```
-- config.yml
-- search folder
-    - index.json
-- pages
-    - search.md
-- includes
-    - search_box.html
-    - total_data.html
-```
-
-
-### Browse
-Relevant files:
-```
-- config.yml
-- _datasets
-    - (relevant objects)
-- _datavis
-    - (relevant objects)
-- pages
-    - datasets.html
-    - datavis.html
-- includes
-    - dataset_data.html
-    - datavis_data.html
-    - faceted_search_option.html
-```
-
-### Exhibits
-Relevant files:
-```
-- _exhibits
-    - a.md
-    - b.md
-```
+We are actively developing this resource and plan to release a workflow and documentation to facilitate user contributions in Spring 2021. 
 
 ## Support
 
-Having trouble with Pages? Feel free to lodge a new issue or contact Amanda West and amawest@umich.edu.
-
-You can also try checking out the [documentation](https://help.github.com/categories/github-pages-basics/) or [contact Github support](https://github.com/contact).
+The best way to reach out with technical concerns is to [lodge an issue on GitHub](https://github.com/visualizingthefuture/examples-repository/issues?page=1&q=is%3Aissue+is%3Aopen/). You can also view our code [in our repository](https://github.com/visualizingthefuture/examples-repository).
 
 [![Gem Version](https://badge.fury.io/rb/wax_theme.svg)](https://badge.fury.io/rb/wax_tasks)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
