@@ -20,6 +20,9 @@ If you choose checkboxes from more than one facet group, your search will become
 ## Search
 The "Search" link in the menu will take you to a search box that will search across various metadata fields for both data visualization and dataset examples. This is most useful if you know the name of the data set or visualization you are searching for, or some other qualifying information. A few examples include searching by title, creator, or topic (i.e., gun violence).
 
+## Contribute
+We are actively developing this resource and plan to release a workflow and documentation to facilitate user contributions in Spring 2021. As we move forward, we'd love to hear from you! The best way to reach out with technical concerns is to [lodge an issue on GitHub.](https://github.com/visualizingthefuture/examples-repository/issues?page=1&q=is%3Aissue+is%3Aopen/) You can also view our code [in our repository.](https://github.com/visualizingthefuture/examples-repository)
+
 <!--
 ---
 ### Notes
