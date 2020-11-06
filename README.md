@@ -3,8 +3,8 @@
 - [Summary](#Summary)
 - [Installation](#Installation)
 - [Documentation](#Documentation)
-- [Helpful Tips](#Helpful Tips)
-- [Contributing - coming soon!](#Contributing - coming soon!)
+- [Helpful Tips](#helpful-tips)
+- [Contributing - coming soon!](#contributing---coming-soon)
 - [Support](#Support)
 
 ## Summary
