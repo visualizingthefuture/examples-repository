@@ -62,7 +62,7 @@ The Parse Google Sheet python script uses a delimiter added by the Google Apps S
 
 ## Helpful Tips
 
-We have compiled a few [helpful tips for developers](https://github.com/visualizingthefuture/examples-repository/blob/master/developer-tips) on modifying Wax, Jekyll, and our scripts.
+We have compiled a few [helpful tips for developers](https://github.com/visualizingthefuture/examples-repository/blob/master/developer-tips.md) on modifying Wax, Jekyll, and our scripts.
 
 ## Contributing - coming soon!
 
