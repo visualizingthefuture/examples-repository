@@ -62,6 +62,21 @@ The examples hosted in this repository are submitted via a (currently in develop
 
 The Parse Google Sheet python script uses a delimiter added by the Google Apps Script (a “|” character) to identify multi-value fields in the .csv file. The script converts the .csv to JSON, processing multi-value fields into JSON arrays instead of strings. The JSON output from this script should be saved to the `_data` directory in preparation for the `wax:pages` rake task.
 
+### Data Dictionary
+
+The TVBE also includes a data dictionary to supplement the metadata file used by Wax to generate item pages. In the original Wax project, a similar function is provided by adding metadata into an item layout, e.g., [qatar_item.html](https://github.com/minicomp/wax/blob/main/_layouts/qatar_item.html). To reduce redundancy across collections and to make the same values available across multiple layouts, TVBE uses a centralized data dictionary approach.
+
+The [data dictionary](https://github.com/visualizingthefuture/examples-repository/blob/master/_data/data_dictionary.yaml) is a YAML file placed in the `_data` directory that provides additional details about the different fields that can appear in collection items - for example, human-readable labels and details about the field type. To associate a collection with a data dictionary, edit the `_config.yml` file to add, e.g., `dictionary: 'data_dictionary'` under a collection. Currently, all collections use the same data dictionary, but each collection can be linked to its own data dictionary if needed. 
+
+The data dictionary can then be used in a page with code like the following:
+
+```
+{% assign col_metadata = site.collections | where: 'label', page.collection | first %}
+{% assign dictionary = site.data[col_metadata.dictionary] %}
+```
+
+An example of a layout that uses the data dictionary is the [gallery-page-multi-facet.html](https://github.com/visualizingthefuture/examples-repository/blob/master/_layouts/gallery-page-multi-facet.html) layout. The layout finds the dictionary associated with the specified collection, and for metadata fields specified as facets, the layout pulls the human-readable label ("field_label") out of the data dictionary. The data dictionary also drives formatting inside the modified [item_metadata include](https://github.com/visualizingthefuture/examples-repository/blob/master/_includes/item_metadata.html), which checks the field type in the data dictionary before decided on the proper formatting for field values.
+
 ## Helpful Tips
 
 We have compiled a few [helpful tips for developers](https://github.com/visualizingthefuture/examples-repository/blob/master/developer-tips.md) on modifying Wax, Jekyll, and our scripts.
