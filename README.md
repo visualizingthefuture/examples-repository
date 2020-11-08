@@ -11,6 +11,8 @@
 
 The Teach Viz by Example (TVBE) repository is a space for the data visualization teaching community to find, share, and contribute exemplary data visualizations and visualization-ready datasets. The site builds on Minicomp’s [Wax](https://github.com/minicomp/wax) project, a lightweight framework for digital exhibits built on Jekyll and GitHub Pages. This project extends Wax by including additional processing scripts, page layouts, and includes.
 
+This project, and other work by the [Visualizing the Future](https://visualizingthefuture.github.io/) grant, was made possible in part by the [Institute of Museum and Library Services](https://www.imls.gov/), RE-73-18-0059-18.
+
 ## Installation
 
 1. Change directory into where you'd like your site, e.g., your Desktop:
