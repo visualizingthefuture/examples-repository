@@ -75,7 +75,23 @@ The data dictionary can then be used in a page with code like the following:
 {% assign dictionary = site.data[col_metadata.dictionary] %}
 ```
 
-An example of a layout that uses the data dictionary is the [gallery-page-multi-facet.html](https://github.com/visualizingthefuture/examples-repository/blob/master/_layouts/gallery-page-multi-facet.html) layout. The layout finds the dictionary associated with the specified collection, and for metadata fields specified as facets, the layout pulls the human-readable label ("field_label") out of the data dictionary. The data dictionary also drives formatting inside the modified [item_metadata include](https://github.com/visualizingthefuture/examples-repository/blob/master/_includes/item_metadata.html), which checks the field type in the data dictionary before decided on the proper formatting for field values.
+An example of a layout that uses the data dictionary is the [gallery-page-multi-facet.html](https://github.com/visualizingthefuture/examples-repository/blob/master/_layouts/gallery-page-multi-facet.html) layout. The layout finds the dictionary associated with the specified collection, and for metadata fields specified as facets, the layout pulls the human-readable label ("field_label") out of the data dictionary. The data dictionary also drives formatting inside the modified [item_metadata include](https://github.com/visualizingthefuture/examples-repository/blob/master/_includes/item_metadata.html), which checks the field type in the data dictionary before deciding on the proper formatting for field values.
+
+### Changes to page layouts and includes
+
+TVBE extends Wax by modifying and adding page layouts and includes, as well. 
+
+#### Multi-facet gallery layout and gallery item includes
+
+One major addition is the inclusion of a layout that supports check-box (multi-select) filters on multiple metadata fields - [gallery-page-multi-facet.html](https://github.com/visualizingthefuture/examples-repository/blob/master/_layouts/gallery-page-multi-facet.html). This layout is built on Wax's [collection_gallery.html](https://github.com/minicomp/wax/blob/main/_includes/collection_gallery.html) include. 
+
+Our version uses HTML and Liquid templating to build the main page elements, including a sidebar of checkbox filters and a gallery of collection items. Embedded JavaScript controls the hiding and showing of gallery items based on the checkbox filters. (Filter functionality is still a work in progress.) Finally, to support both visual and non-visual collections, this layout uses a page metadata field called `item_include` to control the display of items in the gallery. (TVBE has two new item includes - [datasets_gallery_item.html](https://github.com/visualizingthefuture/examples-repository/blob/master/_includes/datasets_gallery_item.html) and [datavis_gallery_item.html](https://github.com/visualizingthefuture/examples-repository/blob/master/_includes/datavis_gallery_item.html).)
+
+#### Item page layout and metadata include
+
+Another addition is a modification of the code that formats the item pages. Our [indiv_example.html](https://github.com/visualizingthefuture/examples-repository/blob/master/_layouts/indiv_example.html) layout -- which is a modification of Wax's [generic_collection_item.html](https://github.com/minicomp/wax/blob/main/_layouts/generic_collection_item.html) layout -- adjusts the layout to work for either visual or non-visual collections by separating the page title and pagination code from the image viewer, which may or may not be present. A list of desired metadata fields (in their desired order) is specified in the header of this file so certain metadata fields can be excluded from display for an entire collection, even if they appear in the original collection metadata and data dictionary.
+
+The item page layout still uses an include to build the metadata table, but the new layout adds support for passing the collection's data dictionary to the include. The [item_metadata.html](https://github.com/visualizingthefuture/examples-repository/blob/master/_includes/item_metadata.html) include that formats the item metadata table has been updated to respond to the new data dictionary field types. For example, if a field has a type `internal` (a new data type used by TVBE), the code finds a collection item with the correct pid and pulls in the item's metadata. This include also supports metadata fields that contain list, a feature made possible by the [TVBE data processing scripts](#tvbe-data-processing-scripts).
 
 ## Helpful Tips
 
