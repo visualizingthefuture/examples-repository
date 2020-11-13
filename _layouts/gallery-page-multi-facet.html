@@ -33,8 +33,8 @@ layout: default
           {% for option in options %}
           <div class="form-check">
             {% assign slugopt = option | slugify %}
-            <input type='checkbox' id='{{ slugopt }}' name='{{ slugopt }}' value='{{ slugopt }}' class='facet {{ facet }} form-check-input' data-filter='{{ slugopt }}'>
-            <label class="form-check-label" for='{{ slugopt }}'>{{ option }}</label>
+            <input type='checkbox' name='{{ facet }}' value='{{ slugopt }}' id='{{ slugopt }}' class='facet {{ facet }} form-check-input'>
+            <label class="form-check-label" for='{{ slugopt }}'>{{ option }}</label> <span id="{{ slugopt }}-num"><span>
           </div>
           {% endfor %}
           <button id='{{ facet }}-clear' class='btn btn-light clearAll' data-filter='{{ facet }}' style='margin: 10px;'>clear all</button>
@@ -60,103 +60,125 @@ layout: default
 
 <script type="text/javascript">
 
-  //TODO: figure out how to deal with examples that list more than
-  //one value for a facet (e.g., multiple vis types)
-  //TODO: better labels for the facets - specify in config?
-  //TODO: style
-
   $( document ).ready(function() {
     {% if page.facet_by %}
 
-      var allFacets = '{{ page.facet_by | join: ","}}'.split(",");;
-      //console.log(allFacets);
-
-      {% for facet in page.facet_by %}
-        checkAllInGroup('{{ facet }}');
-
-        {% for item in the_collection %}
-        var element = document.getElementById("{{ item.pid }}");
-          {% for facet_option in item[facet] %}
-          element.classList.add("{{ facet_option | slugify }}");
-          {% endfor %}
+    {% for facet in page.facet_by %}
+      {% for item in the_collection %}
+      var element = document.getElementById("{{ item.pid }}");
+        {% for facet_option in item[facet] %}
+        element.classList.add("{{ facet_option | slugify }}");
         {% endfor %}
-
       {% endfor %}
 
-      $(".facet").click(function(){
-          var facetGroup = this.classList[1]; // first class is "facet", second is facet group
+    {% endfor %}
 
-          // when something is manually clicked, you want to focus
-          // on the facet group for the new selection. other facet groups
-          // should be ignored at first. so, find the other facet groups
-          // and uncheck everything.
 
-          for (group in allFacets) {
-            if (allFacets[group] != facetGroup) {
-              uncheckAllInGroup(allFacets[group]);
-            }
-          }
-          updateResultsBasedOnChecks(facetGroup);
+    var allCheckboxes = document.querySelectorAll('input[type=checkbox]');
+    var allItems = Array.from(document.querySelectorAll('.gallery-item'));
+    var checked = {};
 
+    var allFacets = '{{ page.facet_by | join: ","}}'.split(",");
+
+    for (facet in allFacets) {
+      getChecked(allFacets[facet]);
+    }
+
+    Array.prototype.forEach.call(allCheckboxes, function (el) {
+      el.addEventListener('change', toggleCheckbox);
+    });
+
+    updateCounts();
+
+    function toggleCheckbox(e) {
+      getChecked(e.target.name);
+      setVisibility();
+    }
+
+    function getChecked(name) {
+      checked[name] = Array.from(document.querySelectorAll('input[name=' + name + ']:checked')).map(function (el) {
+        return el.value;
       });
+    }
 
-      $('.selectAll').click(function(event) {  //on click
-          var facetGroup = $(this).attr('data-filter');
-          for (facet in allFacets) {
-            checkAllInGroup(allFacets[facet]);
-          }
-          updateResultsBasedOnChecks(facetGroup);
+    function setCheckedAll(name) {
+      //jQuery version
+      //$('.'+name).each(function() {
+      //    $(this).prop('checked',true);
+      //});
+      Array.from(document.querySelectorAll('input[name=' + name + ']')).map(function (el) {
+        el.checked = true;
       });
+      getChecked(name);
+    }
 
-      $('.clearAll').click(function(event) {  //on click
-        var facetGroup = $(this).attr('data-filter');
+    function setUncheckedAll(name) {
+      Array.from(document.querySelectorAll('input[name=' + name + ']')).map(function (el) {
+        el.checked = false;
+      });
+      getChecked(name);
+    }
+
+    $('.selectAll').click(function(event) {  //on click
+      setCheckedAll(event.target.getAttribute('data-filter'));
+      setVisibility();
+    });
+
+    $('.clearAll').click(function(event) {  //on click
+      setUncheckedAll(event.target.getAttribute('data-filter'));
+      setVisibility();
+    });
+
+    function setVisibility() {
+      allItems.map(function (el) {
+        var itemValuesByFacet = {};
+
         for (facet in allFacets) {
-          uncheckAllInGroup(allFacets[facet]);
-        }
-        updateResultsBasedOnChecks(facetGroup);
-      });
-
-      function uncheckAllInGroup(facetGroup) {
-        $(`.${facetGroup}`).each(function() {
-            $(this).prop('checked',false);
-        });
-        //console.log(`${facetGroup} turned off`);
-      }
-
-      function checkAllInGroup(facetGroup) {
-        $(`.${facetGroup}`).each(function() {
-            $(this).prop('checked',true);
-        });
-        //console.log(`${facetGroup} turned on`);
-      }
-
-      function updateResultsBasedOnChecks(facetGroup){
-        $('.gallery-item').hide('slow');
-        var checkedOptions = $(`.${facetGroup}`).filter(":checked").map(function(){return $(this).attr("data-filter");}).get();
-        //console.log(checkedOptions);
-        var allClasses = [];
-        var allItems = new jQuery.fn.init;
-        for (option in checkedOptions) {
-          var items = $(`.${checkedOptions[option]}`);
-          allItems = allItems.add(items);
-          var itemClassLists = items.map(function(){return this.classList}).get();
-          for (ind in itemClassLists) {
-              itemClassLists[ind].forEach(function(x){ if (x != "gallery-item" & x != "all") {allClasses.push(x);}});
+          var facetName = allFacets[facet];
+          if (checked[facetName].length) {
+            var itemClasses = Array.from(el.classList);
+            var checkedClasses = checked[facetName];
+            var intersection = itemClasses.filter(value => checkedClasses.includes(value));
+            itemValuesByFacet[facetName] = intersection.length;
+          } else {
+            itemValuesByFacet[facetName] = true;
           }
         }
-        uniqueClasses = [...new Set(allClasses)];
-        allItems = jQuery.uniqueSort( allItems );
-        allItems.show('slow');
-        //console.log(uniqueClasses);
 
-        document.getElementById("count").innerHTML = allItems.length;
-
-        for (cl in uniqueClasses) {
-          $(`#${uniqueClasses[cl]}`).prop('checked',true);
+        // test if all item values are true
+        if (Object.values(itemValuesByFacet).every(Boolean)) {
+          el.style.display = 'block';
+        } else {
+          el.style.display = 'none';
         }
+      });
+      updateCounts();
 
+    }
 
-      }
+    function updateCounts() {
+      var visibleItems = $("div:visible.gallery-item");
+      document.getElementById("count").innerHTML = visibleItems.length;
+
+      var allClasses = [];
+      var itemClassLists = visibleItems.map(function(){return $(this).attr('class').split(/\s+/);}).get()
+      itemClassLists.map(function(x){ if (x != "gallery-item" & x != "any") {allClasses.push(x);}});
+
+      let class_counts = allClasses.reduce((total, value) => {total[value] = (
+          total[value] || 0) + 1;
+          return total;}, Object.create(null));
+
+      var allCounts = $("[id$=num]");
+      allCounts.each( function(index, el){
+        var name = $(el).attr("id").replace("-num","");
+        if (name in class_counts) {
+          el.innerHTML = "[" + class_counts[name] + "]";
+        }
+        else {
+          el.innerHTML = "[0]";
+        }
+      });
+    }
 
     {% endif %}
   });
