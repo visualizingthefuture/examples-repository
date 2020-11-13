@@ -1,240 +1,47 @@
-<div class="row">
-{% for facet in include.facet_by %}
-<div class="col-md-12 col-sm-6 col-xs-12">
-<h3 style="margin-top: 1rem;">
-{% if labels.size %}
-  {% assign dict_entry = include.labels | where: 'field_name', facet | first %}
-  {{ dict_entry.field_label }}
-{% else %}
-  {{ facet }}
-{% endif %}
-</h3>
-<div id="{{ include.collection_name }}-{{ facet }}-buttons" >
-  {% assign options = include.collection_items | map: facet | compact | uniq | sort_natural %}
-  {% for option in options %}
-  <div class="form-check">
-    {% assign slugopt = option | slugify %}
-    <input type='checkbox' name='{{ facet }}' value='{{ slugopt }}' id='{{ slugopt }}' class='facet {{ facet }} form-check-input'>
-    <label class="form-check-label" for='{{ slugopt }}'>{{ option }}</label> <span id="{{ slugopt }}-num"><span>
-  </div>
-  {% endfor %}
-  <button id='{{ facet }}-clear' class='btn btn-light clearAll' data-filter='{{ facet }}' style='margin: 10px;'>clear all</button>
-  <button id='{{ facet }}-select' class='btn btn-light selectAll' data-filter='{{ facet }}' style='margin: 10px;'>select all</button>
-
-</div>
-</div>
-{% endfor %}
-</div>
-
 <div id="accordionGroup" class="Accordion">
+  {% for facet in include.facet_by %}
+    {% assign first_facet = include.facet_by | first %}
+    {% if facet == first_facet %}
+      {% assign expansion = "true" %}
+    {% else %}
+      {% assign expansion = "false" %}
+    {% endif %}
+
     <h3>
-      <button aria-expanded="true"
+      <button aria-expanded="{{ expansion }}"
               class="Accordion-trigger"
-              aria-controls="sect1"
-              id="accordion1id">
+              aria-controls="{{ include.collection_name }}-{{ facet }}-buttons"
+              id="{{ include.collection_name }}-{{ facet }}-header">
         <span class="Accordion-title">
-          Personal Information
+          {% if labels.size %}
+            {% assign dict_entry = include.labels | where: 'field_name', facet | first %}
+            {{ dict_entry.field_label }}
+          {% else %}
+            {{ facet }}
+          {% endif %}
           <span class="Accordion-icon"></span>
         </span>
       </button>
     </h3>
-    <div id="sect1"
+    <div id="{{ include.collection_name }}-{{ facet }}-buttons"
          role="region"
-         aria-labelledby="accordion1id"
-         class="Accordion-panel">
-      <div>
-        <!-- Variable content within section, may include any type of markup or interactive widgets. -->
-        <fieldset>
-          <p>
-            <label for="cufc1">
-              Name
-              <span aria-hidden="true">
-                *
-              </span>
-              :
-            </label>
-            <input type="text"
-                   value=""
-                   name="Name"
-                   id="cufc1"
-                   class="required"
-                   aria-required="true">
-          </p>
-          <p>
-            <label for="cufc2">
-              Email
-              <span aria-hidden="true">
-                *
-              </span>
-              :
-            </label>
-            <input type="text"
-                   value=""
-                   name="Email"
-                   id="cufc2"
-                   aria-required="true">
-          </p>
-          <p>
-            <label for="cufc3">
-              Phone:
-            </label>
-            <input type="text"
-                   value=""
-                   name="Phone"
-                   id="cufc3">
-          </p>
-          <p>
-            <label for="cufc4">
-              Extension:
-            </label>
-            <input type="text"
-                   value=""
-                   name="Ext"
-                   id="cufc4">
-          </p>
-          <p>
-            <label for="cufc5">
-              Country:
-            </label>
-            <input type="text"
-                   value=""
-                   name="Country"
-                   id="cufc5">
-          </p>
-          <p>
-            <label for="cufc6">
-              City/Province:
-            </label>
-            <input type="text"
-                   value=""
-                   name="City_Province"
-                   id="cufc6">
-          </p>
-        </fieldset>
-      </div>
-    </div>
-    <h3>
-      <button aria-expanded="false"
-              class="Accordion-trigger"
-              aria-controls="sect2"
-              id="accordion2id">
-        <span class="Accordion-title">
-          Billing Address
-          <span class="Accordion-icon"></span>
-        </span>
-      </button>
-    </h3>
-    <div id="sect2"
-         role="region"
-         aria-labelledby="accordion2id"
+         aria-labelledby="{{ include.collection_name }}-{{ facet }}-header"
          class="Accordion-panel"
-         hidden="">
-      <div>
-        <fieldset>
-          <p>
-            <label for="b-add1">
-              Address 1:
-            </label>
-            <input type="text"
-                   name="b-add1"
-                   id="b-add1">
-          </p>
-          <p>
-            <label for="b-add2">
-              Address 2:
-            </label>
-            <input type="text"
-                   name="b-add2"
-                   id="b-add2">
-          </p>
-          <p>
-            <label for="b-city">
-              City:
-            </label>
-            <input type="text"
-                   name="b-city"
-                   id="b-city">
-          </p>
-          <p>
-            <label for="b-state">
-              State:
-            </label>
-            <input type="text"
-                   name="b-state"
-                   id="b-state">
-          </p>
-          <p>
-            <label for="b-zip">
-              Zip Code:
-            </label>
-            <input type="text"
-                   name="b-zip"
-                   id="b-zip">
-          </p>
-        </fieldset>
-      </div>
+         {% if facet != first_facet %}
+           hidden=""
+         {% endif %}>
+         {% assign options = include.collection_items | map: facet | compact | uniq | sort_natural %}
+         {% for option in options %}
+         <div class="form-check">
+           {% assign slugopt = option | slugify %}
+           <input type='checkbox' name='{{ facet }}' value='{{ slugopt }}' id='{{ slugopt }}' class='facet {{ facet }} form-check-input'>
+           <label class="form-check-label" for='{{ slugopt }}'>{{ option }}</label> <span id="{{ slugopt }}-num"><span>
+         </div>
+         {% endfor %}
+         <button id='{{ facet }}-clear' class='btn btn-light clearAll' data-filter='{{ facet }}' style='margin: 10px;'>clear all</button>
+         <button id='{{ facet }}-select' class='btn btn-light selectAll' data-filter='{{ facet }}' style='margin: 10px;'>select all</button>
     </div>
-    <h3>
-      <button aria-expanded="false"
-              class="Accordion-trigger"
-              aria-controls="sect3"
-              id="accordion3id">
-        <span class="Accordion-title">
-          Shipping Address
-          <span class="Accordion-icon"></span>
-        </span>
-      </button>
-    </h3>
-    <div id="sect3"
-         role="region"
-         aria-labelledby="accordion3id"
-         class="Accordion-panel"
-         hidden="">
-      <div>
-        <fieldset>
-          <p>
-            <label for="m-add1">
-              Address 1:
-            </label>
-            <input type="text"
-                   name="m-add1"
-                   id="m-add1">
-          </p>
-          <p>
-            <label for="m-add2">
-              Address 2:
-            </label>
-            <input type="text"
-                   name="m-add2"
-                   id="m-add2">
-          </p>
-          <p>
-            <label for="m-city">
-              City:
-            </label>
-            <input type="text"
-                   name="m-city"
-                   id="m-city">
-          </p>
-          <p>
-            <label for="m-state">
-              State:
-            </label>
-            <input type="text"
-                   name="m-state"
-                   id="m-state">
-          </p>
-          <p>
-            <label for="m-zip">
-              Zip Code:
-            </label>
-            <input type="text"
-                   name="m-zip"
-                   id="m-zip">
-          </p>
-        </fieldset>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 
   <script type='text/javascript' src="{{ '/assets/accordion.js' | absolute_url }}"></script>
