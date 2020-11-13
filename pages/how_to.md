@@ -1,13 +1,13 @@
 ---
 layout: exhibit
 title: 'How-to guide to using this site'
-publish_date: 2020-9-11
+publish_date: 2020-11-06
 permalink: /howtoguide/
 ---
 
 *Note: this documentation reflects the alpha build of the repository which is currently undergoing redesign in September 2020. Please expect some specifics of e.g. interface interaction to shift. This note will be removed when user guide is caught up with the current build.*
 
-## Summary    
+## Summary
 The Teach Viz by Example repository is a space for the data visualization teaching community to find, share, and contribute exemplary data visualizations + visualization-ready datasets. The beta version of this website comprises a set of sample data visualization and data set objects, including related images and metadata. The collection items in this demo were suggested by the [Visualizing the Future](https://visualizingthefuture.github.io/) fellows and organizers.
 
 ## Browse
@@ -19,6 +19,9 @@ If you choose checkboxes from more than one facet group, your search will become
 
 ## Search
 The "Search" link in the menu will take you to a search box that will search across various metadata fields for both data visualization and dataset examples. This is most useful if you know the name of the data set or visualization you are searching for, or some other qualifying information. A few examples include searching by title, creator, or topic (i.e., gun violence).
+
+## Contribute
+We are actively developing this resource and plan to release a workflow and documentation to facilitate user contributions in Spring 2021. As we move forward, we'd love to hear from you! The best way to reach out with technical concerns is to [lodge an issue on GitHub.](https://github.com/visualizingthefuture/examples-repository/issues?page=1&q=is%3Aissue+is%3Aopen/) You can also view our code [in our repository.](https://github.com/visualizingthefuture/examples-repository)
 
 <!--
 ---

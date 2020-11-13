@@ -4,43 +4,47 @@ show_title: false
 ---
 
 <div class="row">
-  <div class="col-sm-4 order-sm-12">
+  <div class="col-sm-4 order-sm-2">
     <img src="img/logo_white.png" />
   </div>
   <div class="col-sm-8 order-sm-1">
-    <h2>Welcome to the Teach Viz by Example
-      repository!</h2>
+    <h1>Welcome to the Teach Viz by Example
+      repository!</h1>
     <p>This is a space for the data visualization teaching
       community to find, share, and contribute exemplary data visualizations +
       visualization-ready datasets.</p>
-    <h3> Select an option below to get started</h3>
-    <div class = "button-menu">
+      <p><i>Please explore our beta release and let us know what you think! Look for an option to contribute new material soon.</i></p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 order-sm-1 button-flex-box">
+    <h2 class="button-group-label"> Select an option below to get started</h2>
+    <div class = "index-button-group" role = "group">
 
-    <p><a class="btn btn-info" href="{{ '/datavis/' | relative_url }}" role="button">Browse data visualization
-        examples</a></p>
-    <p><a class="btn btn-info" href="{{ '/datasets/' | relative_url }}" role="button">Browse dataset examples</a></p>
-    <p><a class="btn btn-info" href="{{ '/howtoguide/' | relative_url }}" role="button">Review our how-to guide</a></p>
-    <p><i>Coming soon: contribute your own resources!</i></p>
+    <button><a class="btn btn-info" href="{{ '/datavis/' | relative_url }}" role="button">Browse data visualization
+        examples</a></button>
+    <button><a class="btn btn-info" href="{{ '/datasets/' | relative_url }}" role="button">Browse dataset examples</a></button>
+    <button><a class="btn btn-info" href="{{ '/howtoguide/' | relative_url }}" role="button">Review our how-to guide</a></button>
   </div>
   </div>
 </div>
 
 <div>
-  <h3>Explore the most recent uploads</h3>
+  <h2>Explore the most recent uploads</h2>
   {% assign most_recent_datavis = site.datavis | sort: "approved_date" | last %}
   {% assign most_recent_dataset = site.datasets | sort: "approved_date" | last %}
   <div class = "featured-box">
     <a href="{{ most_recent_datavis.url | absolute_url }}">
     <div class = "featured-vis">
       <img src='{{ most_recent_datavis.full | absolute_url }}' alt='{{ most_recent_datavis.label }}'/>
-      <h5>{{most_recent_datavis.label}}</h5>
+      <h3>{{most_recent_datavis.label}}</h3>
       <p>{{most_recent_datavis.creator}}. {{most_recent_datavis.date_of_creation}}. </p>
       <p>{{most_recent_datavis.description}}</p>
       </div></a>
   <a href="{{ most_recent_dataset.url | absolute_url }}">
   <div class = "featured-data">
-    <img src="{{ 'img/csv_design.png' | absolute_url }}" alt="{{ most_recent_dataset.label }}"/>
-    <h5>{{most_recent_dataset.label}}</h5>
+    <img src="{{ 'img/dataset_design.png' | absolute_url }}" alt="{{ most_recent_dataset.label }}"/>
+    <h3>{{most_recent_dataset.label}}</h3>
     <p>{{most_recent_dataset.creator}}. {{most_recent_dataset.date_of_creation}}. </p>
     <p>{{most_recent_dataset.description}}</p>
     </div>
@@ -49,8 +53,8 @@ show_title: false
 </div>
 
 <div>
-  <h3>More about the project</h3>
-  <p><strong>Visualizing the Future</strong> is an
+  <h2>More about the project</h2>
+  <p><strong><a href="https://visualizingthefuture.github.io/">Visualizing the Future</a></strong> is an
     <a href="https://www.imls.gov/grants/available/national-leadership-grants-libraries">IMLS
       National Forum</a> grant project to develop a literacy-based instructional and research
     agenda for library and information professionals with the aim to create a community of
@@ -61,7 +65,7 @@ show_title: false
     exemplary data visualizations and datasets for instructor use across a variety of contexts.</p>
 
   <p><strong>Note:</strong> We are actively developing this resource and
-    anticipate a beta release in fall 2020. As we move forward, we'd love to hear
+    anticipate a beta release in spring 2021. As we move forward, we'd love to hear
     from you! The best way to reach out with technical concerns is to
     <a href="https://github.com/visualizingthefuture/examples-repository/issues?page=1&q=is%3Aissue+is%3Aopen/">
       lodge an issue on GitHub</a>. You can also view our code
