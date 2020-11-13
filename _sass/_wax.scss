@@ -1,4 +1,5 @@
 @import 'bootstrap';
+@import 'accordion';
 
 /*
 
@@ -559,10 +560,10 @@ search box
 .index-button-group {
   align-items: center;
   padding: 2% 0%;
-  
+
 }
 
-.btn-info { 
+.btn-info {
   padding: 0.8em 0.6em;
   font-size: 1.1em;
 }
