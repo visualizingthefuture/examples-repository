@@ -22,12 +22,9 @@ title:            'Teach Viz by Example'
 url:              'https://visualizingthefuture.github.io'
 baseurl:          '/examples-repository'
 copyright:        'Visualizing the Future, 2020'
-logo:             '/assets/logo.png'
-integration_spreadsheet_key: 1jLCQG-Z5gwpT7zgF0MT6ww3A-QBf1ktcZuTQhfyjxd0
+logo:             '/img/logo.png'
 github_user: visualizingthefuture
 github_repo: examples-repository
-gdrive:
-  sheet: "google-sheet-to-github-website-links"
 
 # ---------------------------------------------------------------
 # BUILD SETTINGS
@@ -195,5 +192,7 @@ footer:
       link: 'https://github.com/visualizingthefuture/examples-repository'
     - label: 'Credits'
       link: '/credits'
+  logos:
+    - img: '/img/logo.png'
 
 # FIN
