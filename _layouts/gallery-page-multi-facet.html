@@ -15,38 +15,12 @@ layout: default
 <div id='wax-gallery-{{ page.collection }}-container' class='wax-gallery-container full-width'>
   <div class='wax-inline-container'>
     <div class="row">
-      <div id="filter-container" class="col-md-4" style="background-color: #eae7de;">
-        <h2>Filters</h2>
-        <div class="row">
-        {% for facet in page.facet_by %}
-        <div class="col-md-12 col-sm-6 col-xs-12">
-        <h3 style="margin-top: 1rem;">
-        {% if labels.size %}
-          {% assign dict_entry = labels | where: 'field_name', facet | first %}
-          {{ dict_entry.field_label }}
-        {% else %}
-          {{ facet }}
-        {% endif %}
-        </h3>
-        <div id="{{ page.collection }}-{{ facet }}-buttons" >
-          {% assign options = the_collection | map: facet | compact | uniq | sort_natural %}
-          {% for option in options %}
-          <div class="form-check">
-            {% assign slugopt = option | slugify %}
-            <input type='checkbox' name='{{ facet }}' value='{{ slugopt }}' id='{{ slugopt }}' class='facet {{ facet }} form-check-input'>
-            <label class="form-check-label" for='{{ slugopt }}'>{{ option }}</label> <span id="{{ slugopt }}-num"><span>
-          </div>
-          {% endfor %}
-          <button id='{{ facet }}-clear' class='btn btn-light clearAll' data-filter='{{ facet }}' style='margin: 10px;'>clear all</button>
-          <button id='{{ facet }}-select' class='btn btn-light selectAll' data-filter='{{ facet }}' style='margin: 10px;'>select all</button>
-
-        </div>
-        </div>
-        {% endfor %}
-        </div>
+      <div id="filter-container" class="col-md-4">
+        <h2 style="margin-top: 1rem;">Filters</h2>
+        {% include filter_accordion.html facet_by=page.facet_by labels=labels collection_name=page.collection collection_items=the_collection %}
       </div>
       <div id="results-container" class="col-md-8">
-        <h2>Results</h2>
+        <h2 style="margin-top: 1rem;">Results</h2>
         <div><span id="count">{{ num }}</span>&nbsp;examples selected</div>
         <div id="wax-gallery-{{ page.collection }}" class="wax-gallery" >
           {% for item in the_collection %}

@@ -1,0 +1,47 @@
+<div id="accordionGroup" class="Accordion">
+  {% for facet in include.facet_by %}
+    {% assign first_facet = include.facet_by | first %}
+    {% if facet == first_facet %}
+      {% assign expansion = "true" %}
+    {% else %}
+      {% assign expansion = "false" %}
+    {% endif %}
+
+    <h3 style="margin: 0;">
+      <button aria-expanded="{{ expansion }}"
+              class="Accordion-trigger"
+              aria-controls="{{ include.collection_name }}-{{ facet }}-buttons"
+              id="{{ include.collection_name }}-{{ facet }}-header">
+        <span class="Accordion-title">
+          {% if labels.size %}
+            {% assign dict_entry = include.labels | where: 'field_name', facet | first %}
+            {{ dict_entry.field_label }}
+          {% else %}
+            {{ facet }}
+          {% endif %}
+          <span class="Accordion-icon"></span>
+        </span>
+      </button>
+    </h3>
+    <div id="{{ include.collection_name }}-{{ facet }}-buttons"
+         role="region"
+         aria-labelledby="{{ include.collection_name }}-{{ facet }}-header"
+         class="Accordion-panel"
+         {% if facet != first_facet %}
+           hidden=""
+         {% endif %}>
+         {% assign options = include.collection_items | map: facet | compact | uniq | sort_natural %}
+         {% for option in options %}
+         <div class="form-check">
+           {% assign slugopt = option | slugify %}
+           <input type='checkbox' name='{{ facet }}' value='{{ slugopt }}' id='{{ slugopt }}' class='facet {{ facet }} form-check-input'>
+           <label class="form-check-label" for='{{ slugopt }}'>{{ option }}</label> <span id="{{ slugopt }}-num"><span>
+         </div>
+         {% endfor %}
+         <button id='{{ facet }}-clear' class='btn clearAll' data-filter='{{ facet }}' style='margin: 10px; background-color: #eae7de;'>clear all</button>
+         <button id='{{ facet }}-select' class='btn selectAll' data-filter='{{ facet }}' style='margin: 10px; background-color: #eae7de;'>select all</button>
+    </div>
+    {% endfor %}
+  </div>
+
+  <script type='text/javascript' src="{{ '/assets/accordion.js' | absolute_url }}"></script>
