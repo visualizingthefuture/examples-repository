@@ -54,6 +54,17 @@ meta:
       </a>
     </div>
     {% endif %}
+{% comment %}
+  An include like this can be used to display in-page data tables, when
+  data assets are ready. Will need to tailor for item data instead of
+  collection metadata.
+  Probably want an elsif and another test; for example, instead of
+  looking for page.full, could look for page.csv_preview or something.
+{% else %}
+  <div style="width: 100%; margin-bottom: 20px;">
+    {% include interactive_metadata_table.html collection=page.collection %}
+  </div>
+{% endcomment %}
 {% endif %}
 
 {% comment %}
