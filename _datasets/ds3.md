@@ -40,4 +40,5 @@ vis_type: ''
 order: '2'
 layout: indiv_example
 collection: datasets
+data_preview: files/derivatives/ds3/preview.csv
 ---
