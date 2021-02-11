@@ -11,5 +11,14 @@ bundle config local.wax_tasks ../exarepo_tasks
 # Clobber existing wax-generated files for the dataset collection
 bundle exec rake wax:clobber datasets
 
+# Generate file derivatives
+bundle exec rake wax:file_derivatives:simple datasets
+
+# After clobber, run pages again
+bundle exec rake wax:pages datasets
+
+# Finally, recreate wax search
+bundle exec rake wax:search main
+
 # bundle exec rake --tasks
 # bundle exec jekyll serve

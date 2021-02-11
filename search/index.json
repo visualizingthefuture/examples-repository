@@ -1,0 +1,434 @@
+---
+layout: none
+---
+[
+  {
+    "audience_composition": "General",
+    "audience_level": "Adult beginner (high school and older)",
+    "creator": "C.Chan",
+    "data_processing": "",
+    "data_type": "",
+    "date_of_creation": "February 16, 2014",
+    "description": "Visualization of the number of gun deaths in Florida from 1990-2013",
+    "ethical_quandries": "",
+    "geospatial_std": "",
+    "label": "Gun Deaths in Florida",
+    "language_tool": "",
+    "linked_code": "",
+    "linked_example": "",
+    "linked_instr_mtl": "",
+    "original_context": "news article",
+    "pedagogical_description": "Demonstrates the power of visual encoding to make the visualization harder to interpret. The creator tried to use the metaphor of dripping blood and flipped the y-axis but it's easier to see the rise in gun deaths when the y-axis is in the more traditional direction. Flipped version of the chart is later in the article.",
+    "pid": "dv2",
+    "source_url": "https://www.businessinsider.com/gun-deaths-in-florida-increased-with-stand-your-ground-2014-2",
+    "subject_area": "safety",
+    "vis_type": "line chart",
+    "collection": "datavis",
+    "thumbnail": "img/derivatives/simple/dv2/thumbnail.jpg",
+    "permalink": "/datavis/dv2",
+    "lunr_id": 0
+  },
+  {
+    "audience_composition": [
+      "General",
+      "Librarian/information professional"
+    ],
+    "audience_level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "creator": "Andy Rutkowski",
+    "data_processing": "Data joins",
+    "data_type": [
+      "1 or more date/time variables",
+      "1 or more geospatial variables"
+    ],
+    "date_of_creation": "2015 (latest update 2019)",
+    "description": "This visualization shows every building in Los Angeles County mapped by the year in which it was built. The example is aimed at showing how open source tools such as QGIS, Leaflet, and Mapbox might be used to visualize open data. ",
+    "ethical_quandries": "This dataset is a great way for people to think about development, access to housing, and issues in urban studies.",
+    "geospatial_std": "",
+    "label": "built : Los Angeles",
+    "language_tool": "ArcGIS, QGIS",
+    "linked_code": "",
+    "linked_example": "",
+    "linked_instr_mtl": "",
+    "original_context": [
+      "just for fun",
+      "public data"
+    ],
+    "pedagogical_description": "Location based example that draws people in because housing is so important in Los Angeles. Shows the development of Los Angeles via building data which is freely available.",
+    "pid": "dv3",
+    "source_url": "https://github.com/cityhubla/LA_Building_Age",
+    "subject_area": "housing",
+    "vis_type": [
+      "map / spatial data",
+      "animation"
+    ],
+    "collection": "datavis",
+    "thumbnail": "img/derivatives/simple/dv3/thumbnail.jpg",
+    "permalink": "/datavis/dv3",
+    "lunr_id": 1
+  },
+  {
+    "audience_composition": [
+      "General",
+      "Librarian/information professional"
+    ],
+    "audience_level": [
+      "Adult beginner (high school and older)",
+      "Intermediate"
+    ],
+    "creator": "Charles Minard",
+    "data_processing": "counted and mapped to space",
+    "data_type": [
+      "1 or more categorical variables",
+      "1 or more numerical variables",
+      "1 or more date/time variables",
+      "1 or more geospatial variables"
+    ],
+    "date_of_creation": "1869",
+    "description": "Charles Minard's visualization depicting Napoleon's march on Moscow",
+    "ethical_quandries": "",
+    "geospatial_std": "",
+    "label": "Minard's Map of Napoleon's March",
+    "language_tool": "",
+    "linked_code": "",
+    "linked_example": "",
+    "linked_instr_mtl": "",
+    "original_context": "historical",
+    "pedagogical_description": "Good example of making choices about what and how to visualize, including removing superfluous elements",
+    "pid": "dv1",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Minard.png",
+    "subject_area": "war",
+    "vis_type": [
+      "line chart",
+      "map / spatial data"
+    ],
+    "collection": "datavis",
+    "thumbnail": "img/derivatives/simple/dv1/thumbnail.jpg",
+    "permalink": "/datavis/dv1",
+    "lunr_id": 2
+  },
+  {
+    "audience_composition": "General",
+    "audience_level": [
+      "Adult beginner (high school and older)",
+      "Intermediate"
+    ],
+    "creator": "Simon Scarr",
+    "data_processing": "",
+    "data_type": "",
+    "date_of_creation": "2011",
+    "description": "A visualization of casualties of the Iraq war. From the creator: \"This graphic was created to mark the end of the United States' military engagement in Iraq in 2011. Over 4,800 coalition soldiers and tens of thousands of Iraqis lost their lives in the war.\n\nOne deliberate design choice with this graphic was the visual metaphor of blood. This striking visual would hopefully draw the reader into the graphic.\"",
+    "ethical_quandries": "Questions about representation (e.g. who is represented and who is not represented?). Issues of spatial aggregation in the map (How do casualty count port to troop population size? Can we know if one area was more dangerous than another?) ",
+    "geospatial_std": "",
+    "label": "Casualties of the Iraq War",
+    "language_tool": "",
+    "linked_code": "",
+    "linked_example": "",
+    "linked_instr_mtl": "https://www.youtube.com/watch?v=Ybwh4lejYO4",
+    "original_context": "news article",
+    "pedagogical_description": "Data visualization tells a story. Emotional ",
+    "pid": "dv4",
+    "source_url": "http://www.simonscarr.com/iraqs-bloody-toll",
+    "subject_area": "war",
+    "vis_type": [
+      "bar chart",
+      "line chart",
+      "map / spatial data",
+      "infographic",
+      "dashboard"
+    ],
+    "collection": "datavis",
+    "thumbnail": "img/derivatives/simple/dv4/thumbnail.jpg",
+    "permalink": "/datavis/dv4",
+    "lunr_id": 3
+  },
+  {
+    "audience_composition": "General",
+    "audience_level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "creator": "USGS VIZLAB",
+    "data_processing": "",
+    "data_type": [
+      "1 or more categorical variables",
+      "1 or more numerical variables",
+      "1 or more date/time variables",
+      "1 or more geospatial variables"
+    ],
+    "date_of_creation": "5/15/2019",
+    "description": "A compilation of data visualizations about water use in the U.S. in 2015, based on data from the U.S. Geological Survey (USGS) National Water Use Science Project.",
+    "ethical_quandries": "",
+    "geospatial_std": "",
+    "label": "Water Use in the U.S.",
+    "language_tool": "",
+    "linked_code": "",
+    "linked_example": "ds3",
+    "linked_instr_mtl": [
+      "https://github.com/USGS-VIZLAB/water-use-15",
+      "https://pubs.er.usgs.gov/publication/cir1441"
+    ],
+    "original_context": "public data",
+    "pedagogical_description": "Example data visualizations are presented with corresponding dataset and code linked on the page, programming and data visualizations created using GitHub and Java, Jenkins, CSS, Docker, Rstudio/R, data visualizations can be recreated from data using multiple tools/programs and compared with original source and include examples of design principles and best practices in use.",
+    "pid": "dv5",
+    "source_url": "https://owi.usgs.gov/vizlab/water-use-15/#view=NC&category=thermoelectric",
+    "subject_area": [
+      "geography",
+      "hydrology"
+    ],
+    "vis_type": [
+      "bar chart",
+      "pie chart or donut chart",
+      "map / spatial data"
+    ],
+    "collection": "datavis",
+    "thumbnail": "img/derivatives/simple/dv5/thumbnail.jpg",
+    "permalink": "/datavis/dv5",
+    "lunr_id": 4
+  },
+  {
+    "audience_composition": "General",
+    "audience_level": [
+      "Adult beginner (high school and older)",
+      "Intermediate"
+    ],
+    "creator": "John Wilkerson and Rohnin Randles",
+    "data_processing": "",
+    "data_type": [
+      "1 or more categorical variables",
+      "1 or more numerical variables",
+      "1 or more date/time variables"
+    ],
+    "date_of_creation": "2020",
+    "description": "Visualization to see the legislative process from start to finish. Follow from bills to law. Has options for the United States and for Washington (state).",
+    "ethical_quandries": "Transparency -- links to the original bills so that users can read about it further. But how would they handle representing bipartisan legislation? Also, uncertain if this visualization is web accessible. ",
+    "geospatial_std": "",
+    "label": "Legislative Explorer",
+    "language_tool": "",
+    "linked_code": "",
+    "linked_example": "",
+    "linked_instr_mtl": "",
+    "original_context": "educational",
+    "pedagogical_description": "Value of being able to filter, use of a timeline",
+    "pid": "dv6",
+    "source_url": "http://legex.org/",
+    "subject_area": "law",
+    "vis_type": "animation",
+    "collection": "datavis",
+    "thumbnail": "img/derivatives/simple/dv6/thumbnail.jpg",
+    "permalink": "/datavis/dv6",
+    "lunr_id": 5
+  },
+  {
+    "audience_composition": "General",
+    "audience_level": "Adult beginner (high school and older)",
+    "creator": "Gregor Aisch, Damon Darlin, Rich Harris, Josh Katz, Adam Pearce and Kevin Quealy",
+    "data_processing": "Original format lacks much in the way of description, but a processed version (https://github.com/amzoss/ggplot2-DF18/blob/master/data/got_ratings.csv) has added gender and family loyalty columns.",
+    "data_type": [
+      "1 or more categorical variables",
+      "1 or more numerical variables"
+    ],
+    "date_of_creation": "2017",
+    "description": "A dataset that aggregates subjective ratings of the evilness and attractiveness of various Game of Thrones characters (originally part of a NY Times Upshot article).",
+    "ethical_quandries": "",
+    "geospatial_std": "",
+    "label": "Good, Evil, Ugly, Beautiful: Help Us Make a ‘Game of Thrones’ Chart",
+    "language_tool": "",
+    "linked_code": "",
+    "linked_example": "",
+    "linked_instr_mtl": "https://github.com/amzoss/ggplot2-DF18",
+    "original_context": "news article",
+    "pedagogical_description": "This dataset is simple and has broad appeal and useful data properties, but doesn't necessarily have anything tricky or interested of pedagogical value.",
+    "pid": "ds5",
+    "source_url": [
+      "https://www.nytimes.com/interactive/2017/08/09/upshot/game-of-thrones-chart.html",
+      "https://int.nyt.com/newsgraphics/2017/2017-07-17-got-matrix/mean.json"
+    ],
+    "subject_area": "entertainment",
+    "vis_type": "",
+    "collection": "datasets",
+    "permalink": "/datasets/ds5",
+    "lunr_id": 6
+  },
+  {
+    "audience_composition": "General",
+    "audience_level": [
+      "Adult beginner (high school and older)",
+      "Intermediate"
+    ],
+    "creator": "Matt Haughey",
+    "data_processing": "None",
+    "data_type": [
+      "1 or more categorical variables",
+      "1 or more date/time variables"
+    ],
+    "date_of_creation": "2020",
+    "description": "Small dataset of movies starring Jason Statham and how long it takes for him to punch someone.",
+    "ethical_quandries": "",
+    "geospatial_std": "",
+    "label": "Time to Statham punch",
+    "language_tool": "",
+    "linked_code": "",
+    "linked_example": "",
+    "linked_instr_mtl": "https://github.com/amzoss/ggplot2-DF18",
+    "original_context": "just for fun",
+    "pedagogical_description": "Small, easy to understand, and general for various audiences. Depending on the tool, may have to do some data cleaning on time field, so that could be a useful exercise.",
+    "pid": "ds1",
+    "source_url": "http://time.to.stathampun.ch/",
+    "subject_area": "entertainment",
+    "vis_type": "",
+    "collection": "datasets",
+    "permalink": "/datasets/ds1",
+    "lunr_id": 7
+  },
+  {
+    "audience_composition": [
+      "General",
+      "Librarian/information professional"
+    ],
+    "audience_level": [
+      "Young beginner (pre-high school)",
+      "Adult beginner (high school and older)",
+      "Intermediate"
+    ],
+    "creator": "Gapminder",
+    "data_processing": "processed dataset uses averages instead of annual data",
+    "data_type": [
+      "1 or more categorical variables",
+      "1 or more numerical variables",
+      "1 or more geospatial variables"
+    ],
+    "date_of_creation": "2020",
+    "description": "A simple dataset from original Gapminder visualization/tool to describe the health and wealth of nations.",
+    "ethical_quandries": "",
+    "geospatial_std": "Not sure what standard Country Name might be using, if any",
+    "label": "Averaged Gapminder data from ggplot2-DF18 workshop",
+    "language_tool": "",
+    "linked_code": "",
+    "linked_example": "",
+    "linked_instr_mtl": [
+      "https://github.com/amzoss/ggplot2-DF18",
+      "https://www.gapminder.org/for-teachers/"
+    ],
+    "original_context": "educational",
+    "pedagogical_description": "Can be used to produce a well-known visualization, can discuss the logistical challenges of measuring the health and wealth of nations, uses data most people can relate to, can introduce log scale",
+    "pid": "ds6",
+    "source_url": [
+      "https://github.com/amzoss/ggplot2-DF18/blob/master/data/gapminder_avg.csv",
+      "https://www.gapminder.org/data/",
+      "https://docs.google.com/spreadsheets/u/0/d/1OxmGUNWeADbPJkQxVPupSOK5MbAECdqThnvyPrwG5Os/pub?gid=1"
+    ],
+    "subject_area": [
+      "health",
+      "finance",
+      "public policy"
+    ],
+    "vis_type": "",
+    "collection": "datasets",
+    "permalink": "/datasets/ds6",
+    "lunr_id": 8
+  },
+  {
+    "audience_composition": "General",
+    "audience_level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "creator": "Dieter, C.A., Linsey, K.S., Caldwell, R.R., Harris, M.A., Ivahnenko, T.I., Lovelace, J.K., Maupin, M.A., and Barber, N.L.",
+    "data_processing": "Data has been processed for release to the public, specific processing is noted in accompanying metadata file.",
+    "data_type": [
+      "1 or more categorical variables",
+      "1 or more numerical variables",
+      "1 or more date/time variables",
+      "1 or more geospatial variables"
+    ],
+    "date_of_creation": "2018-06-19",
+    "description": "A dataset of water-use estimates for 2015, aggregated to the county level in the US, from the U.S. Geological Survey (USGS) National Water Use Science Project. ",
+    "ethical_quandries": "",
+    "geospatial_std": "FGDC-STD-001-1998",
+    "label": "Estimated Use of Water in the United States County-Level Data for 2015",
+    "language_tool": "",
+    "linked_code": "",
+    "linked_example": "dv5",
+    "linked_instr_mtl": "https://github.com/USGS-VIZLAB/water-use-15",
+    "original_context": "public data",
+    "pedagogical_description": "Good examples of field dictionaries and abbreviations in action, FIPS codes and other location/geography codes/shorthand, cleaned dataset with accompanying visualizations. Is a good example of government data protocols and regulations in action.",
+    "pid": "ds3",
+    "source_url": "https://doi.org/10.5066/F7TB15V5",
+    "subject_area": [
+      "geography",
+      "hydrology"
+    ],
+    "vis_type": "",
+    "collection": "datasets",
+    "permalink": "/datasets/ds3",
+    "lunr_id": 9
+  },
+  {
+    "audience_composition": "General",
+    "audience_level": [
+      "Adult beginner (high school and older)",
+      "Intermediate"
+    ],
+    "creator": "Van Panhuis W., Cross A., Burke D.",
+    "data_processing": "Follows the Project Tycho Standard Data Format",
+    "data_type": [
+      "1 or more categorical variables",
+      "1 or more numerical variables",
+      "1 or more date/time variables",
+      "1 or more geospatial variables"
+    ],
+    "date_of_creation": "April 1, 2018",
+    "description": "Measles cases reported in the United States from 1888-2002.",
+    "ethical_quandries": "",
+    "geospatial_std": "ISO 3166 for country name and code and administrative subdivision name and code, second order administrative division and city names from Geonames",
+    "label": "United States of America (Measles) Dataset - Project Tycho",
+    "language_tool": "",
+    "linked_code": "",
+    "linked_example": "",
+    "linked_instr_mtl": "",
+    "original_context": "scholarly research",
+    "pedagogical_description": "Larger dataset, visualization of this dataset can reinforce previous knowledge, particularly it reflects the difference the introduction of the vaccine had on the population and news stories of smaller outbreaks happening in the early 1990s. There is also missing data for some states. One noticeable omission is data from New York after 1960.",
+    "pid": "ds2",
+    "source_url": "http://doi.org/10.25337/T7/ptycho.v2.0/US.14189004",
+    "subject_area": "health",
+    "vis_type": "",
+    "collection": "datasets",
+    "permalink": "/datasets/ds2",
+    "lunr_id": 10
+  },
+  {
+    "audience_composition": "General",
+    "audience_level": [
+      "Young beginner (pre-high school)",
+      "Adult beginner (high school and older)"
+    ],
+    "creator": "City of Seattle: FAS - Seattle Animal Shelter",
+    "data_processing": "None",
+    "data_type": [
+      "1 or more categorical variables",
+      "1 or more date/time variables",
+      "1 or more geospatial variables"
+    ],
+    "date_of_creation": "2020",
+    "description": "Active/current pet licenses issued in the city of Seattle, WA. ",
+    "ethical_quandries": "",
+    "geospatial_std": "",
+    "label": "Seattle Pet Licenses",
+    "language_tool": "",
+    "linked_code": "",
+    "linked_example": "",
+    "linked_instr_mtl": "",
+    "original_context": "just for fun",
+    "pedagogical_description": "1. Discussion about how the License Number is a unique identifier, not a numerical value that can be measured. 2. There is a major drop in active licenses the further back in time you go (presumably the pets died or moved away), so can have discussion about being clear about language (active licenses issued vs all licenses ever issued). 3. Potentially narrowing down to zip code of where someone lives if you know they're in the Seattle area and know their pet's name -- conversation about privacy, being identified in data, etc.",
+    "pid": "ds4",
+    "source_url": "https://data.seattle.gov/Community/Seattle-Pet-Licenses/jguv-t9rb/data",
+    "subject_area": "recreation and lifestyle",
+    "vis_type": "",
+    "collection": "datasets",
+    "permalink": "/datasets/ds4",
+    "lunr_id": 11
+  }
+]
