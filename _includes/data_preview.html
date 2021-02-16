@@ -1,0 +1,60 @@
+<link rel="stylesheet" type="text/css" href="{{ '/assets/datatables/datatables.css' | absolute_url }}" />
+<script type="text/javascript" src="{{ 'assets/datatables/datatables.min.js' | absolute_url }}"></script>
+
+
+{% assign data_file = include.data_file %}
+{% assign identifier = include.pid %}
+
+
+
+
+
+<script>
+
+  $(document).ready(function () {
+
+    var data_object = $.getJSON("{{ data_file | absolute_url }}")
+      .done(function(data) {
+
+        $('#data-preview').append("<h2>Data Preview</h2><table id='{{ identifier }}-datatable' class='datatable display compact'></table>");
+
+        var keys = Object.keys(data[0]);
+
+        var i;
+        var columns = [];
+
+        for (i = 0; i < keys.length; i++) {
+          columns.push({title: keys[i], data: keys[i]});
+        }
+
+        // column format should be:
+        //var columns = [{title: "character", data: "character"},
+        //          {title: "moral", data: "moral"},
+        //          {title: "physical", data: "physical"}];
+
+        $('#{{ identifier }}-datatable').DataTable({
+          // alternate to data, if doing this outside the $.getJSON function?
+          //ajaxSource: "{{ data_file }}",
+          data: data,
+          //columns: [{{ columns }}],
+          columns: columns,
+          //scrollY: 600,
+          //scrollX: 600,
+          paging: false,
+          fixedHeader: false,
+          searching: false,
+          ordering:  false//,
+          //dom: 'Bfrtip'//,
+          //buttons: [
+          //  'csvHtml5'
+          //]
+        });
+
+      })
+      .fail(function() {
+        console.log( "Error reading JSON from data file." );
+      });
+
+
+  });
+</script>
