@@ -61,9 +61,9 @@ meta:
   Probably want an elsif and another test; for example, instead of
   looking for page.full, could look for page.csv_preview or something.
   {% endcomment %}
-{% elsif page.data_preview %}
+{% elsif page.preview %}
       <div id="data-preview" style="width: 100%; margin-bottom: 20px;">
-        {% include data_preview.html data_file=page.data_preview pid=page.pid %}
+        {% include data_preview.html data_file=page.preview pid=page.pid %}
       </div>
 {% endif %}
 

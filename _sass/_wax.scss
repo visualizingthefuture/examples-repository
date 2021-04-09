@@ -544,6 +544,10 @@ search box
   margin: $super-margin 0 $super-margin 0;
 }
 
+table.dataTable {
+  margin: 0 !important;
+}
+
 .sq-thumb-sm{
   object-fit: cover;
   object-position: 50% 20%;

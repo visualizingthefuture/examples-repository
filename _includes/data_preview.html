@@ -20,9 +20,15 @@
 
         var keys = Object.keys(data[0]);
 
+        //var max_columns = Math.min(7, keys.length);
+
+
+
         var i;
         var columns = [];
 
+        // if we want to support inconsistent headers, just go through all rows
+        // and make sure our columns list is complete
         for (i = 0; i < keys.length; i++) {
           columns.push({title: keys[i], data: keys[i]});
         }
@@ -38,9 +44,11 @@
           data: data,
           //columns: [{{ columns }}],
           columns: columns,
-          //scrollY: 600,
-          //scrollX: 600,
+          scrollY: 300,
+          scrollX: true,
+          //scrollCollapse: true,
           paging: false,
+          autoWidth: true,
           fixedHeader: false,
           searching: false,
           ordering:  false//,
