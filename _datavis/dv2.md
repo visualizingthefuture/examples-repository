@@ -30,5 +30,5 @@ order: '1'
 layout: indiv_example
 collection: datavis
 thumbnail: img/derivatives/simple/dv2/thumbnail.jpg
-full: img/derivatives/simple/dv2/full.jpg
+full: "/img/derivatives/simple/dv2/fullwidth.jpg"
 ---

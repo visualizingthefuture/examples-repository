@@ -1,6 +1,9 @@
 spec = Gem::Specification.find_by_name 'wax_tasks'
 Dir.glob("#{spec.gem_dir}/lib/tasks/*.rake").each { |r| load r }
 
+gem_dir = File.expand_path("../exarepo_tasks")
+Dir.glob("#{gem_dir}/lib/tasks/*.rake").each { |r| load r }
+
 require 'html-proofer'
 
 namespace :wax do

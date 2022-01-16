@@ -6,6 +6,80 @@
       "Librarian/information professional"
     ],
     "audience_level": [
+      "Adult beginner (high school and older)",
+      "Intermediate"
+    ],
+    "creator": "Charles Minard",
+    "data_processing": "counted and mapped to space",
+    "data_type": [
+      "1 or more categorical variables",
+      "1 or more numerical variables",
+      "1 or more date/time variables",
+      "1 or more geospatial variables"
+    ],
+    "date_of_creation": "1869",
+    "description": "Charles Minard's visualization depicting Napoleon's march on Moscow",
+    "ethical_quandries": "",
+    "example_type": "data visualization",
+    "geospatial_std": "",
+    "label": "Minard's Map of Napoleon's March",
+    "language_tool": "",
+    "linked_code": "",
+    "linked_example": "",
+    "linked_instr_mtl": "",
+    "original_context": "historical",
+    "pedagogical_description": "Good example of making choices about what and how to visualize, including removing superfluous elements",
+    "pid": "dv1",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Minard.png",
+    "subject_area": "war",
+    "timestamp": "5/12/2020",
+    "vis_type": [
+      "line chart",
+      "map / spatial data"
+    ],
+    "order": "0",
+    "layout": "indiv_example",
+    "collection": "datavis",
+    "thumbnail": "img/derivatives/simple/dv1/thumbnail.jpg",
+    "full": "/img/derivatives/simple/dv1/fullwidth.jpg"
+  },
+  {
+    "approved_date": "6/26/2020",
+    "audience_composition": "General",
+    "audience_level": "Adult beginner (high school and older)",
+    "creator": "C.Chan",
+    "data_processing": "",
+    "data_type": "",
+    "date_of_creation": "February 16, 2014",
+    "description": "Visualization of the number of gun deaths in Florida from 1990-2013",
+    "ethical_quandries": "",
+    "example_type": "data visualization",
+    "geospatial_std": "",
+    "label": "Gun Deaths in Florida",
+    "language_tool": "",
+    "linked_code": "",
+    "linked_example": "",
+    "linked_instr_mtl": "",
+    "original_context": "news article",
+    "pedagogical_description": "Demonstrates the power of visual encoding to make the visualization harder to interpret. The creator tried to use the metaphor of dripping blood and flipped the y-axis but it's easier to see the rise in gun deaths when the y-axis is in the more traditional direction. Flipped version of the chart is later in the article.",
+    "pid": "dv2",
+    "source_url": "https://www.businessinsider.com/gun-deaths-in-florida-increased-with-stand-your-ground-2014-2",
+    "subject_area": "safety",
+    "timestamp": "5/12/2020",
+    "vis_type": "line chart",
+    "order": "1",
+    "layout": "indiv_example",
+    "collection": "datavis",
+    "thumbnail": "img/derivatives/simple/dv2/thumbnail.jpg",
+    "full": "/img/derivatives/simple/dv2/fullwidth.jpg"
+  },
+  {
+    "approved_date": "6/26/2020",
+    "audience_composition": [
+      "General",
+      "Librarian/information professional"
+    ],
+    "audience_level": [
       "Intermediate",
       "Advanced"
     ],
@@ -42,81 +116,46 @@
     "layout": "indiv_example",
     "collection": "datavis",
     "thumbnail": "img/derivatives/simple/dv3/thumbnail.jpg",
-    "full": "img/derivatives/simple/dv3/full.jpg"
+    "full": "/img/derivatives/simple/dv3/fullwidth.jpg"
   },
   {
     "approved_date": "6/26/2020",
     "audience_composition": "General",
-    "audience_level": "Adult beginner (high school and older)",
-    "creator": "C.Chan",
-    "data_processing": "",
-    "data_type": "",
-    "date_of_creation": "February 16, 2014",
-    "description": "Visualization of the number of gun deaths in Florida from 1990-2013",
-    "ethical_quandries": "",
-    "example_type": "data visualization",
-    "geospatial_std": "",
-    "label": "Gun Deaths in Florida",
-    "language_tool": "",
-    "linked_code": "",
-    "linked_example": "",
-    "linked_instr_mtl": "",
-    "original_context": "news article",
-    "pedagogical_description": "Demonstrates the power of visual encoding to make the visualization harder to interpret. The creator tried to use the metaphor of dripping blood and flipped the y-axis but it's easier to see the rise in gun deaths when the y-axis is in the more traditional direction. Flipped version of the chart is later in the article.",
-    "pid": "dv2",
-    "source_url": "https://www.businessinsider.com/gun-deaths-in-florida-increased-with-stand-your-ground-2014-2",
-    "subject_area": "safety",
-    "timestamp": "5/12/2020",
-    "vis_type": "line chart",
-    "order": "1",
-    "layout": "indiv_example",
-    "collection": "datavis",
-    "thumbnail": "img/derivatives/simple/dv2/thumbnail.jpg",
-    "full": "img/derivatives/simple/dv2/full.jpg"
-  },
-  {
-    "approved_date": "6/26/2020",
-    "audience_composition": [
-      "General",
-      "Librarian/information professional"
-    ],
     "audience_level": [
       "Adult beginner (high school and older)",
       "Intermediate"
     ],
-    "creator": "Charles Minard",
-    "data_processing": "counted and mapped to space",
-    "data_type": [
-      "1 or more categorical variables",
-      "1 or more numerical variables",
-      "1 or more date/time variables",
-      "1 or more geospatial variables"
-    ],
-    "date_of_creation": "1869",
-    "description": "Charles Minard's visualization depicting Napoleon's march on Moscow",
-    "ethical_quandries": "",
+    "creator": "Simon Scarr",
+    "data_processing": "",
+    "data_type": "",
+    "date_of_creation": "2011",
+    "description": "A visualization of casualties of the Iraq war. From the creator: \"This graphic was created to mark the end of the United States' military engagement in Iraq in 2011. Over 4,800 coalition soldiers and tens of thousands of Iraqis lost their lives in the war.\n\nOne deliberate design choice with this graphic was the visual metaphor of blood. This striking visual would hopefully draw the reader into the graphic.\"",
+    "ethical_quandries": "Questions about representation (e.g. who is represented and who is not represented?). Issues of spatial aggregation in the map (How do casualty count port to troop population size? Can we know if one area was more dangerous than another?) ",
     "example_type": "data visualization",
     "geospatial_std": "",
-    "label": "Minard's Map of Napoleon's March",
+    "label": "Casualties of the Iraq War",
     "language_tool": "",
     "linked_code": "",
     "linked_example": "",
-    "linked_instr_mtl": "",
-    "original_context": "historical",
-    "pedagogical_description": "Good example of making choices about what and how to visualize, including removing superfluous elements",
-    "pid": "dv1",
-    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Minard.png",
+    "linked_instr_mtl": "https://www.youtube.com/watch?v=Ybwh4lejYO4",
+    "original_context": "news article",
+    "pedagogical_description": "Data visualization tells a story. Emotional ",
+    "pid": "dv4",
+    "source_url": "http://www.simonscarr.com/iraqs-bloody-toll",
     "subject_area": "war",
     "timestamp": "5/12/2020",
     "vis_type": [
+      "bar chart",
       "line chart",
-      "map / spatial data"
+      "map / spatial data",
+      "infographic",
+      "dashboard"
     ],
-    "order": "0",
+    "order": "3",
     "layout": "indiv_example",
     "collection": "datavis",
-    "thumbnail": "img/derivatives/simple/dv1/thumbnail.jpg",
-    "full": "img/derivatives/simple/dv1/full.jpg"
+    "thumbnail": "img/derivatives/simple/dv4/thumbnail.jpg",
+    "full": "/img/derivatives/simple/dv4/fullwidth.jpg"
   },
   {
     "approved_date": "6/26/2020",
@@ -164,46 +203,7 @@
     "layout": "indiv_example",
     "collection": "datavis",
     "thumbnail": "img/derivatives/simple/dv5/thumbnail.jpg",
-    "full": "img/derivatives/simple/dv5/full.jpg"
-  },
-  {
-    "approved_date": "6/26/2020",
-    "audience_composition": "General",
-    "audience_level": [
-      "Adult beginner (high school and older)",
-      "Intermediate"
-    ],
-    "creator": "Simon Scarr",
-    "data_processing": "",
-    "data_type": "",
-    "date_of_creation": "2011",
-    "description": "A visualization of casualties of the Iraq war. From the creator: \"This graphic was created to mark the end of the United States' military engagement in Iraq in 2011. Over 4,800 coalition soldiers and tens of thousands of Iraqis lost their lives in the war.\n\nOne deliberate design choice with this graphic was the visual metaphor of blood. This striking visual would hopefully draw the reader into the graphic.\"",
-    "ethical_quandries": "Questions about representation (e.g. who is represented and who is not represented?). Issues of spatial aggregation in the map (How do casualty count port to troop population size? Can we know if one area was more dangerous than another?) ",
-    "example_type": "data visualization",
-    "geospatial_std": "",
-    "label": "Casualties of the Iraq War",
-    "language_tool": "",
-    "linked_code": "",
-    "linked_example": "",
-    "linked_instr_mtl": "https://www.youtube.com/watch?v=Ybwh4lejYO4",
-    "original_context": "news article",
-    "pedagogical_description": "Data visualization tells a story. Emotional ",
-    "pid": "dv4",
-    "source_url": "http://www.simonscarr.com/iraqs-bloody-toll",
-    "subject_area": "war",
-    "timestamp": "5/12/2020",
-    "vis_type": [
-      "bar chart",
-      "line chart",
-      "map / spatial data",
-      "infographic",
-      "dashboard"
-    ],
-    "order": "3",
-    "layout": "indiv_example",
-    "collection": "datavis",
-    "thumbnail": "img/derivatives/simple/dv4/thumbnail.jpg",
-    "full": "img/derivatives/simple/dv4/full.jpg"
+    "full": "/img/derivatives/simple/dv5/fullwidth.jpg"
   },
   {
     "approved_date": "6/26/2020",
@@ -240,6 +240,6 @@
     "layout": "indiv_example",
     "collection": "datavis",
     "thumbnail": "img/derivatives/simple/dv6/thumbnail.jpg",
-    "full": "img/derivatives/simple/dv6/full.jpg"
+    "full": "/img/derivatives/simple/dv6/fullwidth.jpg"
   }
 ]

@@ -82,6 +82,8 @@ collections:
       source: 'datasets.json' # path to the metadata file within `_data`
     images:
       source: 'raw_images/datasets' # path to the directory of images within `_data`
+    files:
+      source: 'raw_files/datasets'
 
 
 # --------------------------------------------------------------

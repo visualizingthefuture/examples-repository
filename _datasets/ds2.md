@@ -36,5 +36,5 @@ vis_type: ''
 order: '1'
 layout: indiv_example
 collection: datasets
-data_preview: files/derivatives/ds2/preview.csv
+data_preview: files/derivatives/ds2/data_preview.json
 ---
